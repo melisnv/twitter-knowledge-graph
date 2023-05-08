@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:ns1="https://w3id.org/framester/pb/pbdata/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="https://w3id.org/framester/pb/pbdata/find/02">
+    <rdf:type rdf:resource="https://w3id.org/framester/pb/pbdata/Frame"/>
+    <rdfs:label>find.02</rdfs:label>
+    <ns1:hasFrameRelationPB rdf:resource="https://w3id.org/framester/pb/pbdata/Perception"/>
+    <ns1:hasFrameRelationPB rdf:resource="https://w3id.org/framester/pb/pbdata/Scrutiny"/>
+    <ns1:hasFrameRelationPB rdf:resource="https://w3id.org/framester/pb/pbdata/See_through"/>
+    <ns1:hasFrameRelationPB rdf:resource="https://w3id.org/framester/pb/pbdata/Awareness"/>
+    <ns1:hasFrameRelationPB rdf:resource="https://w3id.org/framester/pb/pbdata/Fall_for"/>
+    <ns1:hasFrameRelationPB rdf:resource="https://w3id.org/framester/pb/pbdata/Mental_activity"/>
+    <ns1:hasFrameRelationPB rdf:resource="https://w3id.org/framester/pb/pbdata/Event"/>
+    <ns1:hasFrameRelationPB rdf:resource="https://w3id.org/framester/pb/pbdata/Turning_out"/>
+    <ns1:hasFrameRelationPB rdf:resource="https://w3id.org/framester/pb/pbdata/Communication"/>
+    <ns1:hasFrameRelationPB rdf:resource="https://w3id.org/framester/pb/pbdata/Trial"/>
+    <ns1:hasFrameRelationPB rdf:resource="https://w3id.org/framester/pb/pbdata/Legal_rulings"/>
+    <ns1:hasFrameRelationPB rdf:resource="https://w3id.org/framester/pb/pbdata/Jury_deliberation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/framester/pb/pbdata/case/04">
+    <rdf:type rdf:resource="https://w3id.org/framester/pb/pbdata/Frame"/>
+    <rdfs:label>case.04</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/framester/pb/pbdata/sentence/01">
+    <rdf:type rdf:resource="https://w3id.org/framester/pb/pbdata/Frame"/>
+    <rdfs:label>sentence.01</rdfs:label>
+    <ns1:hasFrameRelationPB rdf:resource="https://w3id.org/framester/pb/pbdata/Trial"/>
+    <ns1:hasFrameRelationPB rdf:resource="https://w3id.org/framester/pb/pbdata/Communication"/>
+    <ns1:hasFrameRelationPB rdf:resource="https://w3id.org/framester/pb/pbdata/Criminal_process"/>
+  </rdf:Description>
+</rdf:RDF>
