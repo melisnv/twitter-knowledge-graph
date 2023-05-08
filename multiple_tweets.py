@@ -23,6 +23,7 @@ with open('data/sample_data.csv', 'r', encoding="utf8") as csvfile:
         # extract the text of the tweet from the 'text' column
         tweet_text = row['text']
         tweet_id = row['id']
+        tweet_topic = row['topic']
 
         # create the data dictionary for the API call
         data = {
@@ -40,11 +41,15 @@ with open('data/sample_data.csv', 'r', encoding="utf8") as csvfile:
         fcg_output['id'] = tweet_id
         output_dict[tweet_id] = fcg_output
 
+        # adding tweet topic to output
+        fcg_output['topic'] = tweet_topic
+        output_dict[tweet_topic] = fcg_output
+
         # append the fcg_output to the list
         fcg_output_list.append(fcg_output)
 
         # print the frames extracted for the tweet text
-        #print(fcg_output)
+        print(fcg_output)
 
 # write the list to a JSON file
 with open('fcg_output.json', 'w') as outfile:
@@ -65,6 +70,7 @@ for output in fcg_output_list:
     if output.get("frameSet") is not None and output["frameSet"] is not None:
         frame_set = output["frameSet"]
         tweet_id = output["id"]
+        topic_list = output['topic'].split(', ') # make topics list
         tweet_frames = {}
 
         for frame in frame_set:
@@ -76,7 +82,7 @@ for output in fcg_output_list:
                 role_name = role["role"]
                 role_string = role["string"]
                 frame_roles[role_name] = role_string
-                print(f"Tweet ID: {tweet_id}, Frame: {frame_name}, Role: {role_name}, String: {role_string}")
+                print(f"Tweet ID: {tweet_id}, Frame: {frame_name}, Role: {role_name}, String: {role_string}, Topic : {topic_list}" )
 
             tweet_frames[frame_name] = frame_roles
 
@@ -124,19 +130,8 @@ for output in fcg_output_list:
                     arg_uri = rdflib.URIRef(arg)
                     arg_val = Literal(val)
 
-                print("\n")
-                print("arg_uri: ", arg_uri)
-                print("arg_val: ", arg_val)
-                print("arguments: ", arguments)
-                print("tweet_uri : ", tweet_uri)
-                print("\n")
-
                 matchedFrames_uri = rdflib.URIRef(result['matchedFrames']['value'])
                 matchedFrameName = result['matchedFrames']['value'].split("/")[-1]
-
-                #print("frameName: \n", frameName)
-                #print("frame_uri: \n", frame_uri)
-                #print("matchedFrameName: \n", matchedFrameName)
 
                 # Add the frame and matched frames to the tweet frames dictionary
                 if frame_name not in tweet_frames:
@@ -147,6 +142,13 @@ for output in fcg_output_list:
                 # Tweet
                 g.add((tweet_uri, RDF.type, URIRef('http://example.com/Tweet')))
                 g.add((tweet_uri, RDFS.label, Literal(tweet_id)))
+
+                # Tweet Topic (About)
+                for topic in topic_list:
+                    topic_uri = rdflib.URIRef(topic)
+                    g.add((topic_uri, RDF.type, URIRef('http://example.com/Topic')))
+                    g.add((topic_uri, RDFS.label, Literal(topic_uri)))
+                    g.add((topic_uri, URIRef('http://example.com/isAbout'), tweet_uri))
 
                 # Frame
                 g.add((frame_uri, RDF.type, URIRef('https://w3id.org/framester/framenet/tbox/Frame')))
@@ -167,16 +169,15 @@ for output in fcg_output_list:
                 g.add((frame_uri, URIRef('http://example.com/hasMatchedFrames'), matchedFrames_uri))
                 g.add((matchedFrames_uri, URIRef('http://example.com/relatesTo'), frame_uri))
 
-            #print(g.serialize(format='turtle'))
 
             # Add the triples to the graph for all tweets
             g_all_tweets += g
 
 
             # Serialize the RDF graph and save it to a file
-            with open("deneme.ttl", 'wb') as f:
+            with open("8thMay.ttl", 'wb') as f:
                 f.write(g_all_tweets.serialize(format="turtle").encode())
 
-            print(f"RDF graph saved to deneme.ttl file.")
+            print(f"RDF graph saved to 8thMay.ttl file.")
 
 
