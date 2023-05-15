@@ -1,85 +1,55 @@
 @prefix ns1: <http://example.com/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<Equity> a ns1:Topic ;
-    rdfs:label "Equity" ;
-    ns1:isAbout <1457054652197920770> .
-
-<Focus> a ns1:Topic ;
-    rdfs:label "Focus" ;
-    ns1:isAbout <1457054652197920770> .
-
-<There> a ns1:Topic ;
-    rdfs:label "There" ;
-    ns1:isAbout <1457055203388280833> .
-
-<anything> a ns1:Topic ;
-    rdfs:label "anything" ;
-    ns1:isAbout <1457054652197920770> .
+<committee> a ns1:Topic ;
+    rdfs:label "committee" ;
+    ns1:isAbout <1457054652197920770>,
+        <1457055203388280833> .
 
 <community> a ns1:Topic ;
     rdfs:label "community" ;
-    ns1:isAbout <1457055203388280833> .
+    ns1:isAbout <1457054652197920770>,
+        <1457055203388280833> .
 
-<economic> a ns1:Topic ;
-    rdfs:label "economic" ;
-    ns1:isAbout <1457055203388280833> .
-
-<equitybased> a ns1:Topic ;
-    rdfs:label "equitybased" ;
-    ns1:isAbout <1457054652197920770> .
-
-<explanation> a ns1:Topic ;
-    rdfs:label "explanation" ;
-    ns1:isAbout <1457054652197920770> .
-
-<guaranteed> a ns1:Topic ;
-    rdfs:label "guaranteed" ;
-    ns1:isAbout <1457054652197920770> .
+<equity> a ns1:Topic ;
+    rdfs:label "equity" ;
+    ns1:isAbout <1457054652197920770>,
+        <1457055203388280833> .
 
 <handled> a ns1:Topic ;
     rdfs:label "handled" ;
-    ns1:isAbout <1457054652197920770> .
+    ns1:isAbout <1457054652197920770>,
+        <1457055203388280833> .
 
 <inequality> a ns1:Topic ;
     rdfs:label "inequality" ;
-    ns1:isAbout <1457054652197920770> .
-
-<investigative> a ns1:Topic ;
-    rdfs:label "investigative" ;
-    ns1:isAbout <1457055203388280833> .
-
-<know> a ns1:Topic ;
-    rdfs:label "know" ;
-    ns1:isAbout <1457054652197920770> .
+    ns1:isAbout <1457054652197920770>,
+        <1457055203388280833> .
 
 <libs> a ns1:Topic ;
     rdfs:label "libs" ;
-    ns1:isAbout <1457055203388280833> .
+    ns1:isAbout <1457054652197920770>,
+        <1457055203388280833> .
 
-<nothing> a ns1:Topic ;
-    rdfs:label "nothing" ;
-    ns1:isAbout <1457055203388280833> .
+<love> a ns1:Topic ;
+    rdfs:label "love" ;
+    ns1:isAbout <1457054652197920770>,
+        <1457055203388280833> .
 
-<one> a ns1:Topic ;
-    rdfs:label "one" ;
-    ns1:isAbout <1457055203388280833> .
-
-<point> a ns1:Topic ;
-    rdfs:label "point" ;
-    ns1:isAbout <1457054652197920770> .
-
-<problems> a ns1:Topic ;
-    rdfs:label "problems" ;
-    ns1:isAbout <1457055203388280833> .
-
-<proposals> a ns1:Topic ;
-    rdfs:label "proposals" ;
-    ns1:isAbout <1457055203388280833> .
+<problem> a ns1:Topic ;
+    rdfs:label "problem" ;
+    ns1:isAbout <1457054652197920770>,
+        <1457055203388280833> .
 
 <set> a ns1:Topic ;
     rdfs:label "set" ;
-    ns1:isAbout <1457055203388280833> .
+    ns1:isAbout <1457054652197920770>,
+        <1457055203388280833> .
+
+<way> a ns1:Topic ;
+    rdfs:label "way" ;
+    ns1:isAbout <1457054652197920770>,
+        <1457055203388280833> .
 
 <arg1> a ns1:arg1 ;
     rdfs:label "about institutional problems" .

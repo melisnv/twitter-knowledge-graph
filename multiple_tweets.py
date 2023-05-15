@@ -1,5 +1,4 @@
 import csv
-
 import rdflib
 import requests
 import json
@@ -17,7 +16,7 @@ fcg_output_list = []
 output_dict = {}
 
 # open the data.csv file in read mode
-with open('data/sample_data.csv', 'r', encoding="utf8") as csvfile:
+with open('data/sample_tweet_data.csv', 'r', encoding="utf8") as csvfile:
     reader = csv.DictReader(csvfile)
     for row in reader:
         # extract the text of the tweet from the 'text' column
@@ -175,9 +174,9 @@ for output in fcg_output_list:
 
 
             # Serialize the RDF graph and save it to a file
-            with open("8thMay.ttl", 'wb') as f:
+            with open("15thMayVersion2.ttl", 'wb') as f:
                 f.write(g_all_tweets.serialize(format="turtle").encode())
 
-            print(f"RDF graph saved to 8thMay.ttl file.")
+            print(f"RDF graph saved to 15thMayVersion2.ttl file.")
 
 
