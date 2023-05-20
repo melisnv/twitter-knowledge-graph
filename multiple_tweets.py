@@ -51,7 +51,7 @@ with open('data/sample_tweet_data.csv', 'r', encoding="utf8") as csvfile:
         print(fcg_output)
 
 # write the list to a JSON file
-with open('fcg_output.json', 'w') as outfile:
+with open('data/fcg_output.json', 'w') as outfile:
     json.dump(fcg_output_list, outfile)
 
 

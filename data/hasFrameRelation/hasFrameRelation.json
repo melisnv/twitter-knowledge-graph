@@ -1,0 +1,370 @@
+[
+    {
+        "frame_name": "love.01",
+        "results": {
+            "head": {
+                "link": [],
+                "vars": [
+                    "frame",
+                    "related"
+                ]
+            },
+            "results": {
+                "distinct": false,
+                "ordered": true,
+                "bindings": [
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Experiencer_focus"
+                        },
+                        "related": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Emotions"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Experiencer_focus"
+                        },
+                        "related": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Cause_emotion"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Experiencer_focus"
+                        },
+                        "related": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Desiring"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Experiencer_focus"
+                        },
+                        "related": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Tolerating"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Experiencer_focus"
+                        },
+                        "related": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Desirability"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Experiencer_focus"
+                        },
+                        "related": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Mental_stimulus_exp_focus"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Personal_relationship"
+                        },
+                        "related": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Forming_relationships"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Personal_relationship"
+                        },
+                        "related": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Relation_between_individuals"
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "frame_name": "talk.01",
+        "results": {
+            "head": {
+                "link": [],
+                "vars": [
+                    "frame",
+                    "related"
+                ]
+            },
+            "results": {
+                "distinct": false,
+                "ordered": true,
+                "bindings": [
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Chatting"
+                        },
+                        "related": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Discussion"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Chatting"
+                        },
+                        "related": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Reciprocality"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Chatting"
+                        },
+                        "related": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Statement"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Statement"
+                        },
+                        "related": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Affirm_or_deny"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Statement"
+                        },
+                        "related": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Adducing"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Statement"
+                        },
+                        "related": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Attributed_information"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Statement"
+                        },
+                        "related": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Chatting"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Statement"
+                        },
+                        "related": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Communication"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Statement"
+                        },
+                        "related": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Complaining"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Statement"
+                        },
+                        "related": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Judgment_communication"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Statement"
+                        },
+                        "related": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Predicting"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Statement"
+                        },
+                        "related": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Reading_aloud"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Statement"
+                        },
+                        "related": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Recording"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Statement"
+                        },
+                        "related": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Renunciation"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Statement"
+                        },
+                        "related": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Reveal_secret"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Statement"
+                        },
+                        "related": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Telling"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Statement"
+                        },
+                        "related": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Unattributed_information"
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "frame_name": "have.lv",
+        "results": {
+            "head": {
+                "link": [],
+                "vars": [
+                    "frame",
+                    "related"
+                ]
+            },
+            "results": {
+                "distinct": false,
+                "ordered": true,
+                "bindings": []
+            }
+        }
+    },
+    {
+        "frame_name": "effect.03",
+        "results": {
+            "head": {
+                "link": [],
+                "vars": [
+                    "frame",
+                    "related"
+                ]
+            },
+            "results": {
+                "distinct": false,
+                "ordered": true,
+                "bindings": []
+            }
+        }
+    },
+    {
+        "frame_name": "educate.01",
+        "results": {
+            "head": {
+                "link": [],
+                "vars": [
+                    "frame",
+                    "related"
+                ]
+            },
+            "results": {
+                "distinct": false,
+                "ordered": true,
+                "bindings": [
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Education_teaching"
+                        },
+                        "related": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Memorization"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Education_teaching"
+                        },
+                        "related": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Intentionally_affect"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Education_teaching"
+                        },
+                        "related": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Studying"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]
