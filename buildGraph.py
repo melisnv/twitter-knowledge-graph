@@ -1,54 +1,66 @@
+import rdflib
+from rdflib import Graph, Namespace, Literal, URIRef, RDF, RDFS
 import json
-from rdflib import Graph, Namespace, URIRef, Literal, RDF, RDFS
-from SPARQLWrapper import SPARQLWrapper, JSON
 
-# Load the fcg_output.json file
-with open('data/fcg_output.json') as f:
-    fcg_output_list = json.load(f)
+# Read the merged JSON data
+with open('data/combined.json') as file:
+    merged_data = json.load(file)
 
-# Load the merged.json file
-with open('data/merged.json') as f:
-    merged_output_dict = json.load(f)
-
-# an RDF graph
-g = Graph()
-
-# defining namespaces for Framester and WebVOWL
+# Define RDF namespaces
 fv = Namespace('https://w3id.org/framester/ontology/')
 vowl = Namespace('http://www.w3.org/2002/07/owl#')
 FRAME = Namespace('https://w3id.org/framester/framenet/tbox/')
 
-for output, merged_output in zip(fcg_output_list, merged_output_dict['results']['bindings']):
-    print("MERGED OUTPUT",merged_output)
-    print("OUTPUT",output)
-    print("\n")
+# Create an RDF graph
+g_all_tweets = Graph()
 
-    if output.get("frameSet") is not None and output["frameSet"] is not None:
-        frame_set = output["frameSet"]
-        tweet_id = output["id"]
-        topic_list = output['topic'].split(', ')  # make topics list
-        tweet_frames = {}
+# Iterate over merged data
+for entry in merged_data:
+    frame_name = entry['frame_name']
+    tweet_id = entry['tweet_id']
+    topics = entry['topics']
+    results = entry['results']
 
-        for frame in frame_set:
-            frame_name = frame["frameName"]
-            roles = frame["roles"]
-            frame_roles = {}
+    # Create tweet URI
+    tweet_uri = rdflib.URIRef(tweet_id)
 
-            for role in roles:
-                role_name = role["role"]
-                role_string = role["string"]
-                frame_roles[role_name] = role_string
-                print(
-                    f"Tweet ID: {tweet_id}, Frame: {frame_name}, Role: {role_name}, String: {role_string}, Topic: {topic_list}")
+    # Add tweet triples
+    g_all_tweets.add((tweet_uri, RDF.type, URIRef('http://example.com/Tweet')))
+    g_all_tweets.add((tweet_uri, RDFS.label, Literal(tweet_id)))
 
-            tweet_frames[frame_name] = frame_roles
+    # Add topic triples
+    for topic in topics:
+        topic_uri = rdflib.URIRef(topic)
+        g_all_tweets.add((topic_uri, RDF.type, URIRef('http://example.com/Topic')))
+        g_all_tweets.add((topic_uri, RDFS.label, Literal(topic_uri)))
+        g_all_tweets.add((topic_uri, URIRef('http://example.com/isAbout'), tweet_uri))
 
-            # Access the relevant data from merged_output
-            matched_frame_name = frame_name
-            print("matched frame name", matched_frame_name)
+    # Process frame-related results
+    hasFrame_results = results['hasFrame']
+    closeMatch_results = results['closeMatch']
 
+    for result in hasFrame_results:
+        frame_uri = rdflib.URIRef(result['frame']['value'])
+        frameName = result['related']['value'].split("/")[-1]  # Extract the frame name from the URL
 
-            merged_output = next((item for item in merged_output_dict['results']['bindings'] if
-                                  item['frame']['value'] == matched_frame_name), None)
+        # Add frame triples
+        g_all_tweets.add((frame_uri, RDF.type, FRAME.Frame))
+        g_all_tweets.add((frame_uri, RDFS.label, Literal(frameName)))
+        g_all_tweets.add((tweet_uri, URIRef('http://example.com/hasFrame'), frame_uri))
 
-            print(merged_output)
+    for result in closeMatch_results:
+        matchedFrames_uri = rdflib.URIRef(result['matchedFrames']['value'])
+        matchedFrameName = result['name']['value']
+
+        # Add matched frames triples
+        g_all_tweets.add((matchedFrames_uri, RDF.type, FRAME.hasFrameRelation))
+        g_all_tweets.add((matchedFrames_uri, RDFS.label, Literal(matchedFrameName)))
+
+        g_all_tweets.add((frame_uri, URIRef('http://example.com/hasMatchedFrames'), matchedFrames_uri))
+        g_all_tweets.add((matchedFrames_uri, URIRef('http://example.com/relatesTo'), frame_uri))
+
+# Serialize the RDF graph and save it to a file
+with open("data/20thMay.ttl", 'wb') as f:
+    f.write(g_all_tweets.serialize(format="turtle").encode())
+
+print(f"RDF graph saved to 20thMay.ttl file.")

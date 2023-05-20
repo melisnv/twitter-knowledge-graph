@@ -1,6 +1,21 @@
 [
     {
         "frame_name": "love.01",
+        "tweet_id": "1457055203388280833",
+        "role_name": "argmAdv",
+        "role_string": "more",
+        "topics": [
+            "equity",
+            "inequality",
+            "set",
+            "problem",
+            "love",
+            "committee",
+            "way",
+            "community",
+            "handled",
+            "libs"
+        ],
         "results": {
             "head": {
                 "link": [],
@@ -99,6 +114,21 @@
     },
     {
         "frame_name": "talk.01",
+        "tweet_id": "1457055203388280833",
+        "role_name": "arg1",
+        "role_string": "about institutional problems",
+        "topics": [
+            "equity",
+            "inequality",
+            "set",
+            "problem",
+            "love",
+            "committee",
+            "way",
+            "community",
+            "handled",
+            "libs"
+        ],
         "results": {
             "head": {
                 "link": [],
@@ -287,6 +317,21 @@
     },
     {
         "frame_name": "have.lv",
+        "tweet_id": "1457055130914861057",
+        "role_name": "argmPrr",
+        "role_string": "effects",
+        "topics": [
+            "people",
+            "inequality",
+            "effect",
+            "everywhere",
+            "also",
+            "tend",
+            "class",
+            "mostly",
+            "ethnicity",
+            "thomaschattwill"
+        ],
         "results": {
             "head": {
                 "link": [],
@@ -304,6 +349,21 @@
     },
     {
         "frame_name": "effect.03",
+        "tweet_id": "1457055130914861057",
+        "role_name": "argmLvb",
+        "role_string": "has",
+        "topics": [
+            "people",
+            "inequality",
+            "effect",
+            "everywhere",
+            "also",
+            "tend",
+            "class",
+            "mostly",
+            "ethnicity",
+            "thomaschattwill"
+        ],
         "results": {
             "head": {
                 "link": [],
@@ -321,6 +381,21 @@
     },
     {
         "frame_name": "educate.01",
+        "tweet_id": "1457054652197920770",
+        "role_name": "arg2",
+        "role_string": "equity'-based",
+        "topics": [
+            "equity",
+            "inequality",
+            "set",
+            "problem",
+            "love",
+            "committee",
+            "way",
+            "community",
+            "handled",
+            "libs"
+        ],
         "results": {
             "head": {
                 "link": [],

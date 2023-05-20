@@ -105,6 +105,10 @@ for output in fcg_output_list:
             # print("RESULTS:", results)
             results_with_frame_name = {
                 "frame_name": frame_name,
+                "tweet_id": tweet_id,
+                "role_name" : role_name,
+                "role_string": role_string,
+                "topics": topic_list,
                 "results": results
             }
             results_list.append(results_with_frame_name)  # Append the results to the results_list
