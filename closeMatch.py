@@ -84,13 +84,12 @@ for output in fcg_output_list:
             # the SPARQL query to retrieve information about the frame from Framester
             sparql_template = r'''
                         PREFIX tbox: <https://w3id.org/framester/framenet/tbox/>
-                        SELECT DISTINCT ?frame ?name ?matchedFrames
+                        SELECT DISTINCT ?frame ?name ?matchedFrames (STR(?matchedFrameLabel) AS ?label)
                         WHERE {{
                         ?frame a tbox:Frame ;
-                            tbox:frame_name ?name ;
-                            rdfs:comment ?def ;
                             skos:closeMatch ?matchedFrames ;
                             skos:closeMatch ?closeFrames .
+                            ?matchedFrames rdfs:label ?matchedFrameLabel .
                         FILTER regex(str(?closeFrames), "{frame_name}")
                         }}
                         '''

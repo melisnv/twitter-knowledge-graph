@@ -60,17 +60,17 @@ for entry in merged_data:
 
     for result in closeMatch_results:
         matchedFrames_uri = rdflib.URIRef(result['matchedFrames']['value'])
-        matchedFrameName = result['name']['value']
+        matchedFrameName = result['label']['value'].split("/")[-1]
 
-        # Add matched frames triples
-        g_all_tweets.add((matchedFrames_uri, RDF.type, FRAME.hasFrameRelation))
+        # adding closeMatch frames
+        g_all_tweets.add((matchedFrames_uri, RDF.type, URIRef('http://example.com/NounSynset')))
         g_all_tweets.add((matchedFrames_uri, RDFS.label, Literal(matchedFrameName)))
 
-        g_all_tweets.add((frame_uri, URIRef('http://example.com/hasMatchedFrames'), matchedFrames_uri))
-        g_all_tweets.add((matchedFrames_uri, URIRef('http://example.com/relatesTo'), frame_uri))
+        g_all_tweets.add((frame_uri, URIRef('http://example.com/closeMatchFrame'), matchedFrames_uri))
+        g_all_tweets.add((matchedFrames_uri, URIRef('http://example.com/synonymOf'), frame_uri))
 
 # Serialize the RDF graph and save it to a file
-with open("graphs/deneme.ttl", 'wb') as f:
+with open("graphs/21thMay.ttl", 'wb') as f:
     f.write(g_all_tweets.serialize(format="turtle").encode())
 
-print(f"RDF graph saved to deneme.ttl file.")
+print(f"RDF graph saved to 21thMay.ttl file.")
