@@ -2,8 +2,17 @@
     {
         "frame_name": "love.01",
         "tweet_id": "1457055203388280833",
-        "role_name": "argmAdv",
-        "role_string": "more",
+        "frame_roles": {
+            "V": [
+                "love"
+            ],
+            "arg0": [
+                "libs"
+            ],
+            "argmAdv": [
+                "more"
+            ]
+        },
         "topics": [
             "equity",
             "inequality",
@@ -21,6 +30,7 @@
                 "link": [],
                 "vars": [
                     "frame",
+                    "name",
                     "matchedFrames",
                     "label"
                 ]
@@ -8996,8 +9006,14 @@
     {
         "frame_name": "talk.01",
         "tweet_id": "1457055203388280833",
-        "role_name": "arg1",
-        "role_string": "about institutional problems",
+        "frame_roles": {
+            "V": [
+                "talking"
+            ],
+            "arg1": [
+                "about institutional problems"
+            ]
+        },
         "topics": [
             "equity",
             "inequality",
@@ -9015,6 +9031,7 @@
                 "link": [],
                 "vars": [
                     "frame",
+                    "name",
                     "matchedFrames",
                     "label"
                 ]
@@ -44548,8 +44565,17 @@
     {
         "frame_name": "have.lv",
         "tweet_id": "1457055130914861057",
-        "role_name": "argmPrr",
-        "role_string": "effects",
+        "frame_roles": {
+            "V": [
+                "has"
+            ],
+            "argmLoc": [
+                "everywhere"
+            ],
+            "argmPrr": [
+                "effects"
+            ]
+        },
         "topics": [
             "people",
             "inequality",
@@ -44567,6 +44593,7 @@
                 "link": [],
                 "vars": [
                     "frame",
+                    "name",
                     "matchedFrames",
                     "label"
                 ]
@@ -44581,8 +44608,17 @@
     {
         "frame_name": "effect.03",
         "tweet_id": "1457055130914861057",
-        "role_name": "argmLvb",
-        "role_string": "has",
+        "frame_roles": {
+            "V": [
+                "effects"
+            ],
+            "arg0": [
+                "Inequality"
+            ],
+            "argmLvb": [
+                "has"
+            ]
+        },
         "topics": [
             "people",
             "inequality",
@@ -44600,6 +44636,7 @@
                 "link": [],
                 "vars": [
                     "frame",
+                    "name",
                     "matchedFrames",
                     "label"
                 ]
@@ -44614,8 +44651,14 @@
     {
         "frame_name": "educate.01",
         "tweet_id": "1457054652197920770",
-        "role_name": "arg2",
-        "role_string": "equity'-based",
+        "frame_roles": {
+            "V": [
+                "education"
+            ],
+            "arg2": [
+                "equity'-based"
+            ]
+        },
         "topics": [
             "equity",
             "inequality",
@@ -44633,6 +44676,7 @@
                 "link": [],
                 "vars": [
                     "frame",
+                    "name",
                     "matchedFrames",
                     "label"
                 ]

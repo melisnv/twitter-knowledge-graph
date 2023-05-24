@@ -24,7 +24,7 @@ with open('data/sample_tweet_data.csv', 'r', encoding="utf8") as csvfile:
         tweet_id = row['id']
         tweet_topic = row['topic']
 
-        # create the data dictionary for the API call
+        # the data dictionary for the API call
         data = {
             "utterance": tweet_text,
             "package": "propbank-grammar",
@@ -44,18 +44,16 @@ with open('data/sample_tweet_data.csv', 'r', encoding="utf8") as csvfile:
         fcg_output['topic'] = tweet_topic
         output_dict[tweet_topic] = fcg_output
 
-        # append the fcg_output to the list
+        # appending the fcg_output to the list
         fcg_output_list.append(fcg_output)
 
-        # print the frames extracted for the tweet text
-        print(fcg_output)
 
-# write the list to a JSON file
+# writing the list to a JSON file
 with open('data/hasFrameRelation/fcg_output_hasFrameRelation.json', 'w') as outfile:
     json.dump(fcg_output_list, outfile)
 
 
-# Create an empty list to store the results of all frames from all tweets
+# creating an list to store the results of all frames from all tweets
 combined_results_list = []
 
 for output in fcg_output_list:
@@ -75,11 +73,17 @@ for output in fcg_output_list:
             for role in roles:
                 role_name = role["role"]
                 role_string = role["string"]
-                frame_roles[role_name] = role_string
+
+                # Store the role and string in the frame_roles dictionary
+                if role_name in frame_roles:
+                    frame_roles[role_name].append(role_string)
+                else:
+                    frame_roles[role_name] = [role_string]
+
                 print(
                     f"Tweet ID: {tweet_id}, Frame: {frame_name}, Role: {role_name}, String: {role_string}, Topic: {topic_list}")
 
-            tweet_frames[frame_name] = frame_roles
+            #tweet_frames[frame_name] = frame_roles
 
             # the SPARQL query to retrieve information about the frame from Framester
             sparql_template = r'''
@@ -104,16 +108,18 @@ for output in fcg_output_list:
             results_with_frame_name = {
                 "frame_name": frame_name,
                 "tweet_id": tweet_id,
-                "role_name": role_name,
-                "role_string": role_string,
+                #"role_name": role_name,
+                #"role_string": role_string,
+                "frame_roles": frame_roles,
                 "topics": topic_list,
                 "results": results
             }
-            results_list.append(results_with_frame_name)  # Append the results to the results_list
+            results_list.append(results_with_frame_name)  # appending the results to the results_list
 
-        # Append the results_list to the combined_results_list
+        # appending the results_list to the combined_results_list
         combined_results_list.extend(results_list)
+        print(combined_results_list)
 
-# Write the combined_results_list to a single JSON file
+# writing the combined_results_list to a single JSON file
 with open('data/hasFrameRelation/hasFrameRelation.json', 'w') as f:
     json.dump(combined_results_list, f, indent=4)

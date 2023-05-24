@@ -1,3 +1,6 @@
+import re
+import urllib
+
 import rdflib
 from rdflib import Graph, Namespace, Literal, URIRef, RDF, RDFS
 import json
@@ -18,22 +21,54 @@ g_all_tweets = Graph()
 for entry in merged_data:
     frame_name = entry['frame_name']
     tweet_id = entry['tweet_id']
+    frame_roles = entry['frame_roles']
     topics = entry['topics']
     results = entry['results']
 
-    # Create tweet URI
+    # creating tweet URI and frameURI
+    frame_FCG = rdflib.URIRef(frame_name)
     tweet_uri = rdflib.URIRef(tweet_id)
 
-    # Add tweet triples
+    # creating frame role and frame string ( arg0, arg1, arg2 etc.)
+
+    # adding tweet triples and frame triple
     g_all_tweets.add((tweet_uri, RDF.type, URIRef('http://example.com/Tweet')))
     g_all_tweets.add((tweet_uri, RDFS.label, Literal(tweet_id)))
 
-    # Add topic triples
+    g_all_tweets.add((frame_FCG, RDF.type, URIRef('http://example.com/Frame')))
+    g_all_tweets.add((frame_FCG, RDFS.label, Literal(frame_name)))
+    g_all_tweets.add((frame_FCG, URIRef('http://example.com/frameOf'), tweet_uri))
+    g_all_tweets.add((tweet_uri, URIRef('http://example.com/hasFrame'), frame_FCG))
+
+
+    # adding frame roles
+    for role,value_list in frame_roles.items():
+        for value in value_list: # extra loop inside of value_list
+            print(value)
+
+            modified_value = value.replace(" ", "-")
+            modified_value = re.sub("[']", "", modified_value)
+            role_string = rdflib.URIRef(f'http://example.com/{modified_value}')
+            #role_string = rdflib.URIRef(value)
+            role_arg = rdflib.URIRef(role)
+            role_capitalize = role.capitalize()
+            print("str",role_string)
+            print("arg",role_arg)
+            print("cap",role_capitalize)
+            print("\n")
+
+            g_all_tweets.add((tweet_uri, URIRef(f'http://example.com/hasArgument'), role_arg))
+            g_all_tweets.add((role_arg, URIRef(f'http://example.com/{role}Of'), tweet_uri))
+            g_all_tweets.add((role_arg, URIRef(f'http://example.com/hasValue'), role_string))
+
+
+    # adding topic triples
     for topic in topics:
         topic_uri = rdflib.URIRef(topic)
         g_all_tweets.add((topic_uri, RDF.type, URIRef('http://example.com/Topic')))
         g_all_tweets.add((topic_uri, RDFS.label, Literal(topic_uri)))
-        g_all_tweets.add((topic_uri, URIRef('http://example.com/isAbout'), tweet_uri))
+        g_all_tweets.add((tweet_uri, URIRef('http://example.com/isAbout'), topic_uri))
+        g_all_tweets.add((topic_uri, URIRef('http://example.com/topicOf'), tweet_uri))
 
     # processing frame-related results
     hasFrame_results = results['hasFrame']
@@ -54,7 +89,7 @@ for entry in merged_data:
         g_all_tweets.add((relatedFrame_uri, RDF.type, URIRef('http://example.com/SymmetricProperty')))
         g_all_tweets.add((relatedFrame_uri, RDFS.label, Literal(relatedFrameName)))
 
-        g_all_tweets.add((tweet_uri, URIRef('http://example.com/hasFrame'), frame_uri))
+        g_all_tweets.add((frame_FCG, URIRef('http://example.com/closeMatchOf'), frame_uri))
         g_all_tweets.add((frame_uri, URIRef('http://example.com/hasFrameRelation'), relatedFrame_uri))
         g_all_tweets.add((relatedFrame_uri, URIRef('http://example.com/isRelated'), frame_uri))
 
@@ -70,7 +105,7 @@ for entry in merged_data:
         g_all_tweets.add((matchedFrames_uri, URIRef('http://example.com/synonymOf'), frame_uri))
 
 # Serialize the RDF graph and save it to a file
-with open("graphs/21thMay.ttl", 'wb') as f:
+with open("graphs/denemeFour2.ttl", 'wb') as f:
     f.write(g_all_tweets.serialize(format="turtle").encode())
 
-print(f"RDF graph saved to 21thMay.ttl file.")
+print(f"RDF graph saved to denemeFour2.ttl file.")

@@ -11,6 +11,7 @@ with open('data/closeMatch/closeMatch.json') as file:
 combined_data = []
 for hasFrame_entry in hasFrame_data:
     frame_name = hasFrame_entry['frame_name']
+    frame_roles = hasFrame_entry['frame_roles']
     tweet_id = hasFrame_entry['tweet_id']
     topics = hasFrame_entry['topics']
     results = hasFrame_entry['results']['results']['bindings']
@@ -20,6 +21,7 @@ for hasFrame_entry in hasFrame_data:
         combined_entry = {
             'frame_name': frame_name,
             'tweet_id': tweet_id,
+            'frame_roles' : frame_roles,
             'topics': topics,
             'results': {
                 'hasFrame': results,

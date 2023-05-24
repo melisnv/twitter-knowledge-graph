@@ -75,11 +75,17 @@ for output in fcg_output_list:
             for role in roles:
                 role_name = role["role"]
                 role_string = role["string"]
-                frame_roles[role_name] = role_string
+
+                # storing the role and string in the frame_roles dictionary
+                if role_name in frame_roles:
+                    frame_roles[role_name].append(role_string)
+                else:
+                    frame_roles[role_name] = [role_string]
+
                 print(
                     f"Tweet ID: {tweet_id}, Frame: {frame_name}, Role: {role_name}, String: {role_string}, Topic: {topic_list}")
 
-            tweet_frames[frame_name] = frame_roles
+            #tweet_frames[frame_name] = frame_roles
 
             # the SPARQL query to retrieve information about the frame from Framester
             sparql_template = r'''
@@ -105,8 +111,7 @@ for output in fcg_output_list:
             results_with_frame_name = {
                 "frame_name": frame_name,
                 "tweet_id": tweet_id,
-                "role_name" : role_name,
-                "role_string": role_string,
+                "frame_roles": frame_roles,
                 "topics": topic_list,
                 "results": results
             }
@@ -114,6 +119,7 @@ for output in fcg_output_list:
 
         # Append the results_list to the combined_results_list
         combined_results_list.extend(results_list)
+        print(combined_results_list)
 
 # Write the combined_results_list to a single JSON file
 with open('data/closeMatch/closeMatch.json', 'w') as f:
