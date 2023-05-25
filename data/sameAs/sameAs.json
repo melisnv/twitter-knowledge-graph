@@ -1,0 +1,254 @@
+[
+    {
+        "frame_name": "love.01",
+        "tweet_id": "1457055203388280833",
+        "frame_roles": {
+            "V": [
+                "love"
+            ],
+            "arg0": [
+                "libs"
+            ],
+            "argmAdv": [
+                "more"
+            ]
+        },
+        "topics": [
+            "equity",
+            "inequality",
+            "set",
+            "problem",
+            "love",
+            "committee",
+            "way",
+            "community",
+            "handled",
+            "libs"
+        ],
+        "results": {
+            "head": {
+                "link": [],
+                "vars": [
+                    "frame",
+                    "sameAs"
+                ]
+            },
+            "results": {
+                "distinct": false,
+                "ordered": true,
+                "bindings": [
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Experiencer_focus"
+                        },
+                        "sameAs": {
+                            "type": "uri",
+                            "value": "http://premon.fbk.eu/resource/fn17-experiencer_focus"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Personal_relationship"
+                        },
+                        "sameAs": {
+                            "type": "uri",
+                            "value": "http://premon.fbk.eu/resource/fn17-personal_relationship"
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "frame_name": "talk.01",
+        "tweet_id": "1457055203388280833",
+        "frame_roles": {
+            "V": [
+                "talking"
+            ],
+            "arg1": [
+                "about institutional problems"
+            ]
+        },
+        "topics": [
+            "equity",
+            "inequality",
+            "set",
+            "problem",
+            "love",
+            "committee",
+            "way",
+            "community",
+            "handled",
+            "libs"
+        ],
+        "results": {
+            "head": {
+                "link": [],
+                "vars": [
+                    "frame",
+                    "sameAs"
+                ]
+            },
+            "results": {
+                "distinct": false,
+                "ordered": true,
+                "bindings": [
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Chatting"
+                        },
+                        "sameAs": {
+                            "type": "uri",
+                            "value": "http://premon.fbk.eu/resource/fn17-chatting"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Statement"
+                        },
+                        "sameAs": {
+                            "type": "uri",
+                            "value": "http://premon.fbk.eu/resource/fn17-statement"
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "frame_name": "have.lv",
+        "tweet_id": "1457055130914861057",
+        "frame_roles": {
+            "V": [
+                "has"
+            ],
+            "argmLoc": [
+                "everywhere"
+            ],
+            "argmPrr": [
+                "effects"
+            ]
+        },
+        "topics": [
+            "people",
+            "inequality",
+            "effect",
+            "everywhere",
+            "also",
+            "tend",
+            "class",
+            "mostly",
+            "ethnicity",
+            "thomaschattwill"
+        ],
+        "results": {
+            "head": {
+                "link": [],
+                "vars": [
+                    "frame",
+                    "sameAs"
+                ]
+            },
+            "results": {
+                "distinct": false,
+                "ordered": true,
+                "bindings": []
+            }
+        }
+    },
+    {
+        "frame_name": "effect.03",
+        "tweet_id": "1457055130914861057",
+        "frame_roles": {
+            "V": [
+                "effects"
+            ],
+            "arg0": [
+                "Inequality"
+            ],
+            "argmLvb": [
+                "has"
+            ]
+        },
+        "topics": [
+            "people",
+            "inequality",
+            "effect",
+            "everywhere",
+            "also",
+            "tend",
+            "class",
+            "mostly",
+            "ethnicity",
+            "thomaschattwill"
+        ],
+        "results": {
+            "head": {
+                "link": [],
+                "vars": [
+                    "frame",
+                    "sameAs"
+                ]
+            },
+            "results": {
+                "distinct": false,
+                "ordered": true,
+                "bindings": []
+            }
+        }
+    },
+    {
+        "frame_name": "educate.01",
+        "tweet_id": "1457054652197920770",
+        "frame_roles": {
+            "V": [
+                "education"
+            ],
+            "arg2": [
+                "equity'-based"
+            ]
+        },
+        "topics": [
+            "equity",
+            "inequality",
+            "set",
+            "problem",
+            "love",
+            "committee",
+            "way",
+            "community",
+            "handled",
+            "libs"
+        ],
+        "results": {
+            "head": {
+                "link": [],
+                "vars": [
+                    "frame",
+                    "sameAs"
+                ]
+            },
+            "results": {
+                "distinct": false,
+                "ordered": true,
+                "bindings": [
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Education_teaching"
+                        },
+                        "sameAs": {
+                            "type": "uri",
+                            "value": "http://premon.fbk.eu/resource/fn17-education_teaching"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

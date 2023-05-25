@@ -32,6 +32,7 @@ for entry in merged_data:
     # creating frame role and frame string ( arg0, arg1, arg2 etc.)
 
     # adding tweet triples and frame triple
+    # TODO: add a namespace for each tweetID
     g_all_tweets.add((tweet_uri, RDF.type, URIRef('http://example.com/Tweet')))
     g_all_tweets.add((tweet_uri, RDFS.label, Literal(tweet_id)))
 

@@ -51,7 +51,7 @@ with open('data/sample_tweet_data.csv', 'r', encoding="utf8") as csvfile:
         print(fcg_output)
 
 # write the list to a JSON file
-with open('data/closeMatch/fcg_output_closeMatch.json', 'w') as outfile:
+with open('data/sameAs/fcg_output_sameAs.json', 'w') as outfile:
     json.dump(fcg_output_list, outfile)
 
 
@@ -90,15 +90,14 @@ for output in fcg_output_list:
             # the SPARQL query to retrieve information about the frame from Framester
             sparql_template = r'''
                         PREFIX tbox: <https://w3id.org/framester/framenet/tbox/>
-                        SELECT DISTINCT ?frame ?matchedFrames (STR(?matchedFrameLabel) AS ?label)
+                        SELECT DISTINCT ?frame ?sameAs
                         WHERE {{
-                        ?frame a tbox:Frame ;
-                            skos:closeMatch ?matchedFrames ;
+                            ?frame a tbox:Frame ;
+                            owl:sameAs ?sameAs;
                             skos:closeMatch ?closeFrames .
-                            ?matchedFrames rdfs:label ?matchedFrameLabel .
-                        FILTER regex(str(?closeFrames), "{frame_name}")
+                            FILTER regex(str(?closeFrames), "{frame_name}")
                         }}
-                        '''
+                    '''
 
             sparql_query = sparql_template.format(frame_name=frame_name, sent_number=1)
             sparql = SPARQLWrapper("http://etna.istc.cnr.it/framester2/sparql")
@@ -122,5 +121,5 @@ for output in fcg_output_list:
         print(combined_results_list)
 
 # Write the combined_results_list to a single JSON file
-with open('data/closeMatch/closeMatch.json', 'w') as f:
+with open('data/sameAs/sameAs.json', 'w') as f:
     json.dump(combined_results_list, f, indent=4)

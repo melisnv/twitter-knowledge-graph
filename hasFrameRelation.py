@@ -85,6 +85,9 @@ for output in fcg_output_list:
 
             #tweet_frames[frame_name] = frame_roles
 
+            # TODO: Add an agent
+            # SPARQLWrapper(sparql_endpoint, agent=agent)
+
             # the SPARQL query to retrieve information about the frame from Framester
             sparql_template = r'''
             PREFIX tbox: <https://w3id.org/framester/framenet/tbox/>
