@@ -9069,6 +9069,28 @@
                         "value": "unrelated"
                     }
                 }
+            ],
+            "sameAs": [
+                {
+                    "frame": {
+                        "type": "uri",
+                        "value": "https://w3id.org/framester/framenet/abox/frame/Experiencer_focus"
+                    },
+                    "sameAs": {
+                        "type": "uri",
+                        "value": "http://premon.fbk.eu/resource/fn17-experiencer_focus"
+                    }
+                },
+                {
+                    "frame": {
+                        "type": "uri",
+                        "value": "https://w3id.org/framester/framenet/abox/frame/Personal_relationship"
+                    },
+                    "sameAs": {
+                        "type": "uri",
+                        "value": "http://premon.fbk.eu/resource/fn17-personal_relationship"
+                    }
+                }
             ]
         }
     },
@@ -44787,6 +44809,28 @@
                         "value": "Nineteenth Amendment"
                     }
                 }
+            ],
+            "sameAs": [
+                {
+                    "frame": {
+                        "type": "uri",
+                        "value": "https://w3id.org/framester/framenet/abox/frame/Chatting"
+                    },
+                    "sameAs": {
+                        "type": "uri",
+                        "value": "http://premon.fbk.eu/resource/fn17-chatting"
+                    }
+                },
+                {
+                    "frame": {
+                        "type": "uri",
+                        "value": "https://w3id.org/framester/framenet/abox/frame/Statement"
+                    },
+                    "sameAs": {
+                        "type": "uri",
+                        "value": "http://premon.fbk.eu/resource/fn17-statement"
+                    }
+                }
             ]
         }
     },
@@ -44818,7 +44862,8 @@
         ],
         "results": {
             "hasFrame": [],
-            "closeMatch": []
+            "closeMatch": [],
+            "sameAs": []
         }
     },
     {
@@ -44849,7 +44894,8 @@
         ],
         "results": {
             "hasFrame": [],
-            "closeMatch": []
+            "closeMatch": [],
+            "sameAs": []
         }
     },
     {
@@ -49149,6 +49195,18 @@
                     "label": {
                         "type": "literal",
                         "value": "Calvinist"
+                    }
+                }
+            ],
+            "sameAs": [
+                {
+                    "frame": {
+                        "type": "uri",
+                        "value": "https://w3id.org/framester/framenet/abox/frame/Education_teaching"
+                    },
+                    "sameAs": {
+                        "type": "uri",
+                        "value": "http://premon.fbk.eu/resource/fn17-education_teaching"
                     }
                 }
             ]

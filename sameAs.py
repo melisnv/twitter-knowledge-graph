@@ -90,12 +90,16 @@ for output in fcg_output_list:
             # the SPARQL query to retrieve information about the frame from Framester
             sparql_template = r'''
                         PREFIX tbox: <https://w3id.org/framester/framenet/tbox/>
-                        SELECT DISTINCT ?frame ?sameAs
+                        PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+                        
+                        SELECT DISTINCT ?frame ?sameAs ?label
                         WHERE {{
                             ?frame a tbox:Frame ;
-                            owl:sameAs ?sameAs;
-                            skos:closeMatch ?closeFrames .
-                            FILTER regex(str(?closeFrames), "{frame_name}")
+                            owl:sameAs ?sameAs ;
+                            skos:closeMatch ?closeFrames ;
+                            rdfs:label ?label .
+                          FILTER regex(str(?closeFrames), "{frame_name}")
+                          FILTER (?sameAs = ?targetSameAs)
                         }}
                     '''
 

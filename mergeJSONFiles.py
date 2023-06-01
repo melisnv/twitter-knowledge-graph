@@ -7,6 +7,9 @@ with open('data/hasFrameRelation/hasFrameRelation.json') as file:
 with open('data/closeMatch/closeMatch.json') as file:
     closeMatch_data = json.load(file)
 
+with open('data/sameAs/sameAs.json') as file:
+    sameAs_data = json.load(file)
+
 # Combine the JSON data
 combined_data = []
 for hasFrame_entry in hasFrame_data:
@@ -15,9 +18,14 @@ for hasFrame_entry in hasFrame_data:
     tweet_id = hasFrame_entry['tweet_id']
     topics = hasFrame_entry['topics']
     results = hasFrame_entry['results']['results']['bindings']
+
     closeMatch_entry = next((entry for entry in closeMatch_data if entry['frame_name'] == frame_name), None)
-    if closeMatch_entry:
+    sameAs_entry = next((entry for entry in sameAs_data if entry['frame_name'] == frame_name), None)
+
+    if closeMatch_entry and sameAs_entry:
         closeMatch_results = closeMatch_entry['results']['results']['bindings']
+        sameAs_results = sameAs_entry['results']['results']['bindings']
+
         combined_entry = {
             'frame_name': frame_name,
             'tweet_id': tweet_id,
@@ -25,7 +33,8 @@ for hasFrame_entry in hasFrame_data:
             'topics': topics,
             'results': {
                 'hasFrame': results,
-                'closeMatch': closeMatch_results
+                'closeMatch': closeMatch_results,
+                'sameAs': sameAs_results
             }
         }
         combined_data.append(combined_entry)
