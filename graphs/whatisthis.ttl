@@ -1,0 +1,51 @@
+@prefix ns1: <http://example.com/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://example.org/1457054652197920770> a ns1:Tweet ;
+    rdfs:label "1457054652197920770" .
+
+<https://example.org/1457055130914861057> a ns1:Tweet ;
+    rdfs:label "1457055130914861057" .
+
+<https://example.org/1457055203388280833> a ns1:Tweet ;
+    rdfs:label "1457055203388280833" .
+
+<https://w3id.org/framester/ontology/1457054652197920770-intermediate> a ns1:IntermediateNode ;
+    ns1:connects <https://example.org/1457054652197920770>,
+        <https://example.org/educate.01> ;
+    ns1:hasFrame <https://example.org/educate.01> .
+
+<https://example.org/educate.01> a ns1:Frame ;
+    rdfs:label "educate.01" ;
+    ns1:frameOf <https://w3id.org/framester/ontology/1457054652197920770-intermediate> .
+
+<https://example.org/effect.03> a ns1:Frame ;
+    rdfs:label "effect.03" ;
+    ns1:frameOf <https://w3id.org/framester/ontology/1457055130914861057-intermediate> .
+
+<https://example.org/have.lv> a ns1:Frame ;
+    rdfs:label "have.lv" ;
+    ns1:frameOf <https://w3id.org/framester/ontology/1457055130914861057-intermediate> .
+
+<https://example.org/love.01> a ns1:Frame ;
+    rdfs:label "love.01" ;
+    ns1:frameOf <https://w3id.org/framester/ontology/1457055203388280833-intermediate> .
+
+<https://example.org/talk.01> a ns1:Frame ;
+    rdfs:label "talk.01" ;
+    ns1:frameOf <https://w3id.org/framester/ontology/1457055203388280833-intermediate> .
+
+<https://w3id.org/framester/ontology/1457055130914861057-intermediate> a ns1:IntermediateNode ;
+    ns1:connects <https://example.org/1457055130914861057>,
+        <https://example.org/effect.03>,
+        <https://example.org/have.lv> ;
+    ns1:hasFrame <https://example.org/effect.03>,
+        <https://example.org/have.lv> .
+
+<https://w3id.org/framester/ontology/1457055203388280833-intermediate> a ns1:IntermediateNode ;
+    ns1:connects <https://example.org/1457055203388280833>,
+        <https://example.org/love.01>,
+        <https://example.org/talk.01> ;
+    ns1:hasFrame <https://example.org/love.01>,
+        <https://example.org/talk.01> .
+

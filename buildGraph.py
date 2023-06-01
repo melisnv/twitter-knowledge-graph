@@ -11,6 +11,8 @@ with open('data/combined.json') as file:
 
 # Define RDF namespaces
 fv = Namespace('https://w3id.org/framester/ontology/')
+framespace = Namespace('https://example.org/')
+twt = Namespace('https://example.org/')
 vowl = Namespace('http://www.w3.org/2002/07/owl#')
 FRAME = Namespace('https://w3id.org/framester/framenet/tbox/')
 
@@ -26,20 +28,28 @@ for entry in merged_data:
     results = entry['results']
 
     # creating tweet URI and frameURI
-    frame_FCG = rdflib.URIRef(frame_name)
-    tweet_uri = rdflib.URIRef(tweet_id)
+    frame_FCG = framespace[frame_name]
+    tweet_uri = twt[tweet_id]
+    #tweet_uri = rdflib.URIRef(tweet_id)
 
-    # creating frame role and frame string ( arg0, arg1, arg2 etc.)
+    print(frame_FCG)
+    print(tweet_uri)
+
+    # creating intermediate node URI
+    intermediate_node_uri = fv['intermediateNode']
 
     # adding tweet triples and frame triple
-    # TODO: add a namespace for each tweetID
+    g_all_tweets.add((intermediate_node_uri, RDF.type, URIRef('http://example.com/IntermediateNode')))
+    g_all_tweets.add((intermediate_node_uri, URIRef('http://example.com/connects'), tweet_uri))
+    g_all_tweets.add((intermediate_node_uri, URIRef('http://example.com/connects'), frame_FCG))
+
     g_all_tweets.add((tweet_uri, RDF.type, URIRef('http://example.com/Tweet')))
     g_all_tweets.add((tweet_uri, RDFS.label, Literal(tweet_id)))
 
     g_all_tweets.add((frame_FCG, RDF.type, URIRef('http://example.com/Frame')))
     g_all_tweets.add((frame_FCG, RDFS.label, Literal(frame_name)))
-    g_all_tweets.add((frame_FCG, URIRef('http://example.com/frameOf'), tweet_uri))
-    g_all_tweets.add((tweet_uri, URIRef('http://example.com/hasFrame'), frame_FCG))
+    g_all_tweets.add((frame_FCG, URIRef('http://example.com/frameOf'), intermediate_node_uri))
+    g_all_tweets.add((intermediate_node_uri, URIRef('http://example.com/hasFrame'), frame_FCG))
 
 
     # adding frame roles
@@ -50,16 +60,11 @@ for entry in merged_data:
             modified_value = value.replace(" ", "-")
             modified_value = re.sub("[']", "", modified_value)
             role_string = rdflib.URIRef(f'http://example.com/{modified_value}')
-            #role_string = rdflib.URIRef(value)
             role_arg = rdflib.URIRef(role)
             role_capitalize = role.capitalize()
-            print("str",role_string)
-            print("arg",role_arg)
-            print("cap",role_capitalize)
-            print("\n")
 
-            g_all_tweets.add((tweet_uri, URIRef(f'http://example.com/hasArgument'), role_arg))
-            g_all_tweets.add((role_arg, URIRef(f'http://example.com/{role}Of'), tweet_uri))
+            g_all_tweets.add((intermediate_node_uri, URIRef(f'http://example.com/hasArgument'), role_arg))
+            g_all_tweets.add((role_arg, URIRef(f'http://example.com/{role}Of'), intermediate_node_uri))
             g_all_tweets.add((role_arg, URIRef(f'http://example.com/hasValue'), role_string))
 
 
@@ -68,8 +73,8 @@ for entry in merged_data:
         topic_uri = rdflib.URIRef(topic)
         g_all_tweets.add((topic_uri, RDF.type, URIRef('http://example.com/Topic')))
         g_all_tweets.add((topic_uri, RDFS.label, Literal(topic_uri)))
-        g_all_tweets.add((tweet_uri, URIRef('http://example.com/isAbout'), topic_uri))
-        g_all_tweets.add((topic_uri, URIRef('http://example.com/topicOf'), tweet_uri))
+        g_all_tweets.add((intermediate_node_uri, URIRef('http://example.com/isAbout'), topic_uri))
+        g_all_tweets.add((topic_uri, URIRef('http://example.com/topicOf'), intermediate_node_uri))
 
     # processing frame-related results
     hasFrame_results = results['hasFrame']
@@ -106,7 +111,7 @@ for entry in merged_data:
         g_all_tweets.add((matchedFrames_uri, URIRef('http://example.com/synonymOf'), frame_uri))
 
 # Serialize the RDF graph and save it to a file
-with open("graphs/denemeFour2.ttl", 'wb') as f:
+with open("graphs/letsnottrythis.ttl", 'wb') as f:
     f.write(g_all_tweets.serialize(format="turtle").encode())
 
-print(f"RDF graph saved to denemeFour2.ttl file.")
+print(f"RDF graph saved to letsnottrythis.ttl file.")
