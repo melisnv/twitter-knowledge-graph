@@ -12,6 +12,7 @@ with open('data/combined.json') as file:
 # Define RDF namespaces
 fv = Namespace('https://w3id.org/framester/ontology/')
 framespace = Namespace('https://example.org/')
+topicspace = Namespace('https://example.org/Topic/')
 twt = Namespace('https://example.org/')
 vowl = Namespace('http://www.w3.org/2002/07/owl#')
 FRAME = Namespace('https://w3id.org/framester/framenet/tbox/')
@@ -60,9 +61,10 @@ for entry in merged_data:
 
     # adding topic triples
     for topic in topics:
-        topic_uri = rdflib.URIRef(topic)
+        topic_uri = topicspace[topic]
+        #topic_uri = rdflib.URIRef(topic)
         g_all_tweets.add((topic_uri, RDF.type, URIRef('http://example.com/Topic')))
-        g_all_tweets.add((topic_uri, RDFS.label, Literal(topic_uri)))
+        g_all_tweets.add((topic_uri, RDFS.label, Literal(topic)))
         g_all_tweets.add((tweet_uri, URIRef('http://example.com/isAbout'), topic_uri))
         g_all_tweets.add((topic_uri, URIRef('http://example.com/topicOf'), tweet_uri))
 
@@ -70,10 +72,6 @@ for entry in merged_data:
     hasFrame_results = results['hasFrame']
     closeMatch_results = results['closeMatch']
     sameAs_results = results["sameAs"]
-
-    for result in sameAs_results:
-        frame_uri = rdflib.URIRef(result['frame']['value'])
-        frameName = result['frame']['value'].split("/")[-1]  # Extract the frame name from the URL
 
     for result in hasFrame_results:
         frame_uri = rdflib.URIRef(result['frame']['value'])
@@ -94,6 +92,22 @@ for entry in merged_data:
         g_all_tweets.add((frame_uri, URIRef('http://example.com/hasFrameRelation'), relatedFrame_uri))
         g_all_tweets.add((relatedFrame_uri, URIRef('http://example.com/isRelated'), frame_uri))
 
+
+    for result in sameAs_results:
+        frame_uri = rdflib.URIRef(result['frame']['value'])
+        frameName = result['frame']['value'].split("/")[-1]  # Extract the frame name from the URL
+
+        sameAsFrame_uri = rdflib.URIRef(result['sameAs']['value'])
+        sameAsFrameName = result['label']['value']
+
+        # adding sameAs
+        g_all_tweets.add((sameAsFrame_uri, RDF.type, URIRef('http://example.com/EquivalentClass')))
+        g_all_tweets.add((sameAsFrame_uri, RDFS.label, Literal(sameAsFrameName)))
+
+        g_all_tweets.add((frame_uri, URIRef('http://example.com/sameAs'), sameAsFrame_uri))
+        g_all_tweets.add((sameAsFrame_uri, URIRef('http://example.com/similarConceptOf'), frame_uri))
+
+
     for result in closeMatch_results:
         matchedFrames_uri = rdflib.URIRef(result['matchedFrames']['value'])
         matchedFrameName = result['label']['value'].split("/")[-1]
@@ -106,7 +120,7 @@ for entry in merged_data:
         g_all_tweets.add((matchedFrames_uri, URIRef('http://example.com/synonymOf'), frame_uri))
 
 # Serialize the RDF graph and save it to a file
-with open("graphs/throwTopic.ttl", 'wb') as f:
+with open("graphs/3rdJune.ttl", 'wb') as f:
     f.write(g_all_tweets.serialize(format="turtle").encode())
 
-print(f"RDF graph saved to throwTopic.ttl file.")
+print(f"RDF graph saved to 3rdJune.ttl file.")

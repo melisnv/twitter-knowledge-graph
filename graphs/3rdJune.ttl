@@ -39,6 +39,26 @@
     rdfs:label "everywhere" ;
     ns1:topicOf <https://example.org/1457055130914861057> .
 
+<http://premon.fbk.eu/resource/fn17-chatting> a ns1:EquivalentClass ;
+    rdfs:label "Chatting" ;
+    ns1:similarConceptOf <https://w3id.org/framester/framenet/abox/frame/Chatting> .
+
+<http://premon.fbk.eu/resource/fn17-education_teaching> a ns1:EquivalentClass ;
+    rdfs:label "Education_teaching" ;
+    ns1:similarConceptOf <https://w3id.org/framester/framenet/abox/frame/Education_teaching> .
+
+<http://premon.fbk.eu/resource/fn17-experiencer_focus> a ns1:EquivalentClass ;
+    rdfs:label "Experiencer_focus" ;
+    ns1:similarConceptOf <https://w3id.org/framester/framenet/abox/frame/Experiencer_focus> .
+
+<http://premon.fbk.eu/resource/fn17-personal_relationship> a ns1:EquivalentClass ;
+    rdfs:label "Personal_relationship" ;
+    ns1:similarConceptOf <https://w3id.org/framester/framenet/abox/frame/Personal_relationship> .
+
+<http://premon.fbk.eu/resource/fn17-statement> a ns1:EquivalentClass ;
+    rdfs:label "Statement" ;
+    ns1:similarConceptOf <https://w3id.org/framester/framenet/abox/frame/Statement> .
+
 <https://example.org/educate.01> a ns1:Frame ;
     rdfs:label "educate.01" ;
     ns1:closeMatchOf <https://w3id.org/framester/framenet/abox/frame/Education_teaching> ;
@@ -13770,7 +13790,8 @@
     ns1:hasFrameRelation <https://w3id.org/framester/framenet/abox/frame/Discussion>,
         <https://w3id.org/framester/framenet/abox/frame/Reciprocality>,
         <https://w3id.org/framester/framenet/abox/frame/Statement> ;
-    ns1:isRelated <https://w3id.org/framester/framenet/abox/frame/Statement> .
+    ns1:isRelated <https://w3id.org/framester/framenet/abox/frame/Statement> ;
+    ns1:sameAs <http://premon.fbk.eu/resource/fn17-chatting> .
 
 <https://w3id.org/framester/framenet/abox/frame/Experiencer_focus> a ns1:Frame ;
     rdfs:label "Experiencer_focus" ;
@@ -13779,7 +13800,8 @@
         <https://w3id.org/framester/framenet/abox/frame/Desiring>,
         <https://w3id.org/framester/framenet/abox/frame/Emotions>,
         <https://w3id.org/framester/framenet/abox/frame/Mental_stimulus_exp_focus>,
-        <https://w3id.org/framester/framenet/abox/frame/Tolerating> .
+        <https://w3id.org/framester/framenet/abox/frame/Tolerating> ;
+    ns1:sameAs <http://premon.fbk.eu/resource/fn17-experiencer_focus> .
 
 <https://example.org/1457054652197920770> a ns1:Tweet ;
     rdfs:label "1457054652197920770" ;
@@ -14143,7 +14165,8 @@
         <https://w3id.org/framester/wn/wn30/instances/synset-yogi-noun-2> ;
     ns1:hasFrameRelation <https://w3id.org/framester/framenet/abox/frame/Intentionally_affect>,
         <https://w3id.org/framester/framenet/abox/frame/Memorization>,
-        <https://w3id.org/framester/framenet/abox/frame/Studying> .
+        <https://w3id.org/framester/framenet/abox/frame/Studying> ;
+    ns1:sameAs <http://premon.fbk.eu/resource/fn17-education_teaching> .
 
 <https://w3id.org/framester/framenet/abox/frame/Personal_relationship> a ns1:Frame ;
     rdfs:label "Personal_relationship" ;
@@ -14779,7 +14802,8 @@
         <https://w3id.org/framester/wn/wn30/instances/synset-xenophobic-adjectivesatellite-1>,
         <https://w3id.org/framester/wn/wn30/instances/synset-yearn-verb-3> ;
     ns1:hasFrameRelation <https://w3id.org/framester/framenet/abox/frame/Forming_relationships>,
-        <https://w3id.org/framester/framenet/abox/frame/Relation_between_individuals> .
+        <https://w3id.org/framester/framenet/abox/frame/Relation_between_individuals> ;
+    ns1:sameAs <http://premon.fbk.eu/resource/fn17-personal_relationship> .
 
 <https://w3id.org/framester/framenet/abox/frame/Statement> a ns1:Frame,
         ns1:SymmetricProperty ;
@@ -17254,5 +17278,6 @@
         <https://w3id.org/framester/framenet/abox/frame/Reveal_secret>,
         <https://w3id.org/framester/framenet/abox/frame/Telling>,
         <https://w3id.org/framester/framenet/abox/frame/Unattributed_information> ;
-    ns1:isRelated <https://w3id.org/framester/framenet/abox/frame/Chatting> .
+    ns1:isRelated <https://w3id.org/framester/framenet/abox/frame/Chatting> ;
+    ns1:sameAs <http://premon.fbk.eu/resource/fn17-statement> .
 

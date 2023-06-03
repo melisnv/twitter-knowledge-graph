@@ -1,0 +1,209 @@
+@prefix ns1: <http://example.com/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<arg1> ns1:arg1Of <https://example.org/1457055203388280833> ;
+    ns1:hasValue ns1:about-institutional-problems .
+
+<arg2> ns1:arg2Of <https://example.org/1457054652197920770> ;
+    ns1:hasValue ns1:equity-based .
+
+<argmAdv> ns1:argmAdvOf <https://example.org/1457055203388280833> ;
+    ns1:hasValue ns1:more .
+
+<argmLoc> ns1:argmLocOf <https://example.org/1457055130914861057> ;
+    ns1:hasValue ns1:everywhere .
+
+<argmLvb> ns1:argmLvbOf <https://example.org/1457055130914861057> ;
+    ns1:hasValue ns1:has .
+
+<argmPrr> ns1:argmPrrOf <https://example.org/1457055130914861057> ;
+    ns1:hasValue ns1:effects .
+
+<https://example.org/Topic/also> a <http://example.com/Topic/> ;
+    rdfs:label "also" ;
+    ns1:topicOf <http://example.org/Topics/https://example.org/1457055130914861057> .
+
+<https://example.org/Topic/class> a <http://example.com/Topic/> ;
+    rdfs:label "class" ;
+    ns1:topicOf <http://example.org/Topics/https://example.org/1457055130914861057> .
+
+<https://example.org/Topic/effect> a <http://example.com/Topic/> ;
+    rdfs:label "effect" ;
+    ns1:topicOf <http://example.org/Topics/https://example.org/1457055130914861057> .
+
+<https://example.org/Topic/ethnicity> a <http://example.com/Topic/> ;
+    rdfs:label "ethnicity" ;
+    ns1:topicOf <http://example.org/Topics/https://example.org/1457055130914861057> .
+
+<https://example.org/Topic/everywhere> a <http://example.com/Topic/> ;
+    rdfs:label "everywhere" ;
+    ns1:topicOf <http://example.org/Topics/https://example.org/1457055130914861057> .
+
+<https://example.org/Topic/mostly> a <http://example.com/Topic/> ;
+    rdfs:label "mostly" ;
+    ns1:topicOf <http://example.org/Topics/https://example.org/1457055130914861057> .
+
+<https://example.org/Topic/people> a <http://example.com/Topic/> ;
+    rdfs:label "people" ;
+    ns1:topicOf <http://example.org/Topics/https://example.org/1457055130914861057> .
+
+<https://example.org/Topic/tend> a <http://example.com/Topic/> ;
+    rdfs:label "tend" ;
+    ns1:topicOf <http://example.org/Topics/https://example.org/1457055130914861057> .
+
+<https://example.org/Topic/thomaschattwill> a <http://example.com/Topic/> ;
+    rdfs:label "thomaschattwill" ;
+    ns1:topicOf <http://example.org/Topics/https://example.org/1457055130914861057> .
+
+<https://example.org/educate.01> a ns1:Frame ;
+    rdfs:label "educate.01" ;
+    ns1:frameOf <https://example.org/1457054652197920770> .
+
+<https://example.org/effect.03> a ns1:Frame ;
+    rdfs:label "effect.03" ;
+    ns1:frameOf <https://example.org/1457055130914861057> .
+
+<https://example.org/have.lv> a ns1:Frame ;
+    rdfs:label "have.lv" ;
+    ns1:frameOf <https://example.org/1457055130914861057> .
+
+<https://example.org/love.01> a ns1:Frame ;
+    rdfs:label "love.01" ;
+    ns1:frameOf <https://example.org/1457055203388280833> .
+
+<https://example.org/talk.01> a ns1:Frame ;
+    rdfs:label "talk.01" ;
+    ns1:frameOf <https://example.org/1457055203388280833> .
+
+<arg0> ns1:arg0Of <https://example.org/1457055130914861057>,
+        <https://example.org/1457055203388280833> ;
+    ns1:hasValue ns1:Inequality,
+        ns1:libs .
+
+<https://example.org/Topic/committee> a <http://example.com/Topic/> ;
+    rdfs:label "committee" ;
+    ns1:topicOf <http://example.org/Topics/https://example.org/1457054652197920770>,
+        <http://example.org/Topics/https://example.org/1457055203388280833> .
+
+<https://example.org/Topic/community> a <http://example.com/Topic/> ;
+    rdfs:label "community" ;
+    ns1:topicOf <http://example.org/Topics/https://example.org/1457054652197920770>,
+        <http://example.org/Topics/https://example.org/1457055203388280833> .
+
+<https://example.org/Topic/equity> a <http://example.com/Topic/> ;
+    rdfs:label "equity" ;
+    ns1:topicOf <http://example.org/Topics/https://example.org/1457054652197920770>,
+        <http://example.org/Topics/https://example.org/1457055203388280833> .
+
+<https://example.org/Topic/handled> a <http://example.com/Topic/> ;
+    rdfs:label "handled" ;
+    ns1:topicOf <http://example.org/Topics/https://example.org/1457054652197920770>,
+        <http://example.org/Topics/https://example.org/1457055203388280833> .
+
+<https://example.org/Topic/libs> a <http://example.com/Topic/> ;
+    rdfs:label "libs" ;
+    ns1:topicOf <http://example.org/Topics/https://example.org/1457054652197920770>,
+        <http://example.org/Topics/https://example.org/1457055203388280833> .
+
+<https://example.org/Topic/love> a <http://example.com/Topic/> ;
+    rdfs:label "love" ;
+    ns1:topicOf <http://example.org/Topics/https://example.org/1457054652197920770>,
+        <http://example.org/Topics/https://example.org/1457055203388280833> .
+
+<https://example.org/Topic/problem> a <http://example.com/Topic/> ;
+    rdfs:label "problem" ;
+    ns1:topicOf <http://example.org/Topics/https://example.org/1457054652197920770>,
+        <http://example.org/Topics/https://example.org/1457055203388280833> .
+
+<https://example.org/Topic/set> a <http://example.com/Topic/> ;
+    rdfs:label "set" ;
+    ns1:topicOf <http://example.org/Topics/https://example.org/1457054652197920770>,
+        <http://example.org/Topics/https://example.org/1457055203388280833> .
+
+<https://example.org/Topic/way> a <http://example.com/Topic/> ;
+    rdfs:label "way" ;
+    ns1:topicOf <http://example.org/Topics/https://example.org/1457054652197920770>,
+        <http://example.org/Topics/https://example.org/1457055203388280833> .
+
+<V> ns1:VOf <https://example.org/1457054652197920770>,
+        <https://example.org/1457055130914861057>,
+        <https://example.org/1457055203388280833> ;
+    ns1:hasValue ns1:education,
+        ns1:effects,
+        ns1:has,
+        ns1:love,
+        ns1:talking .
+
+<https://example.org/Topic/inequality> a <http://example.com/Topic/> ;
+    rdfs:label "inequality" ;
+    ns1:topicOf <http://example.org/Topics/https://example.org/1457054652197920770>,
+        <http://example.org/Topics/https://example.org/1457055130914861057>,
+        <http://example.org/Topics/https://example.org/1457055203388280833> .
+
+<https://example.org/1457054652197920770> a ns1:Tweet ;
+    rdfs:label "1457054652197920770" ;
+    ns1:hasArgument <V>,
+        <arg2> ;
+    ns1:hasFrame <https://example.org/educate.01> ;
+    ns1:hasTopics <http://example.org/Topics/https://example.org/1457054652197920770> .
+
+<https://example.org/1457055203388280833> a ns1:Tweet ;
+    rdfs:label "1457055203388280833" ;
+    ns1:hasArgument <V>,
+        <arg0>,
+        <arg1>,
+        <argmAdv> ;
+    ns1:hasFrame <https://example.org/love.01>,
+        <https://example.org/talk.01> ;
+    ns1:hasTopics <http://example.org/Topics/https://example.org/1457055203388280833> .
+
+<https://example.org/1457055130914861057> a ns1:Tweet ;
+    rdfs:label "1457055130914861057" ;
+    ns1:hasArgument <V>,
+        <arg0>,
+        <argmLoc>,
+        <argmLvb>,
+        <argmPrr> ;
+    ns1:hasFrame <https://example.org/effect.03>,
+        <https://example.org/have.lv> ;
+    ns1:hasTopics <http://example.org/Topics/https://example.org/1457055130914861057> .
+
+<http://example.org/Topics/https://example.org/1457054652197920770> rdfs:label "Topics" ;
+    ns1:isAbout <https://example.org/Topic/committee>,
+        <https://example.org/Topic/community>,
+        <https://example.org/Topic/equity>,
+        <https://example.org/Topic/handled>,
+        <https://example.org/Topic/inequality>,
+        <https://example.org/Topic/libs>,
+        <https://example.org/Topic/love>,
+        <https://example.org/Topic/problem>,
+        <https://example.org/Topic/set>,
+        <https://example.org/Topic/way> ;
+    ns1:topicsOf <https://example.org/1457054652197920770> .
+
+<http://example.org/Topics/https://example.org/1457055130914861057> rdfs:label "Topics" ;
+    ns1:isAbout <https://example.org/Topic/also>,
+        <https://example.org/Topic/class>,
+        <https://example.org/Topic/effect>,
+        <https://example.org/Topic/ethnicity>,
+        <https://example.org/Topic/everywhere>,
+        <https://example.org/Topic/inequality>,
+        <https://example.org/Topic/mostly>,
+        <https://example.org/Topic/people>,
+        <https://example.org/Topic/tend>,
+        <https://example.org/Topic/thomaschattwill> ;
+    ns1:topicsOf <https://example.org/1457055130914861057> .
+
+<http://example.org/Topics/https://example.org/1457055203388280833> rdfs:label "Topics" ;
+    ns1:isAbout <https://example.org/Topic/committee>,
+        <https://example.org/Topic/community>,
+        <https://example.org/Topic/equity>,
+        <https://example.org/Topic/handled>,
+        <https://example.org/Topic/inequality>,
+        <https://example.org/Topic/libs>,
+        <https://example.org/Topic/love>,
+        <https://example.org/Topic/problem>,
+        <https://example.org/Topic/set>,
+        <https://example.org/Topic/way> ;
+    ns1:topicsOf <https://example.org/1457055203388280833> .
+
