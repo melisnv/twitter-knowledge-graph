@@ -9079,6 +9079,10 @@
                     "sameAs": {
                         "type": "uri",
                         "value": "http://premon.fbk.eu/resource/fn17-experiencer_focus"
+                    },
+                    "label": {
+                        "type": "literal",
+                        "value": "Experiencer_focus"
                     }
                 },
                 {
@@ -9089,6 +9093,10 @@
                     "sameAs": {
                         "type": "uri",
                         "value": "http://premon.fbk.eu/resource/fn17-personal_relationship"
+                    },
+                    "label": {
+                        "type": "literal",
+                        "value": "Personal_relationship"
                     }
                 }
             ]
@@ -44819,6 +44827,10 @@
                     "sameAs": {
                         "type": "uri",
                         "value": "http://premon.fbk.eu/resource/fn17-chatting"
+                    },
+                    "label": {
+                        "type": "literal",
+                        "value": "Chatting"
                     }
                 },
                 {
@@ -44829,6 +44841,10 @@
                     "sameAs": {
                         "type": "uri",
                         "value": "http://premon.fbk.eu/resource/fn17-statement"
+                    },
+                    "label": {
+                        "type": "literal",
+                        "value": "Statement"
                     }
                 }
             ]
@@ -49207,6 +49223,10 @@
                     "sameAs": {
                         "type": "uri",
                         "value": "http://premon.fbk.eu/resource/fn17-education_teaching"
+                    },
+                    "label": {
+                        "type": "literal",
+                        "value": "Education_teaching"
                     }
                 }
             ]
