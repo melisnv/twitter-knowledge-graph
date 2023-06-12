@@ -19,8 +19,9 @@ output_dict = {}
 with open('data/sample_tweet_data.csv', 'r', encoding="utf8") as csvfile:
     reader = csv.DictReader(csvfile)
     for row in reader:
+        # TODO: Check row['cleaned_text'] condition and the results.
         # extract the text of the tweet from the 'text' column
-        tweet_text = row['text']
+        tweet_text = row['cleaned_text']
         tweet_id = row['id']
         tweet_topic = row['topic']
 
@@ -35,6 +36,15 @@ with open('data/sample_tweet_data.csv', 'r', encoding="utf8") as csvfile:
         # make the API call to extract frames for the tweet text
         response = requests.post(fcg_url, headers=headers, json=data)
         fcg_output = json.loads(response.text)
+
+        print(response.status_code)  # Print the status code of the response
+        print(response.text)  # Print the response text
+
+        try:
+            fcg_output = json.loads(response.text)
+        except json.decoder.JSONDecodeError:
+            print("Error decoding JSON response. Skipping to the next utterance.")
+            continue
 
         # adding tweet ID to output
         fcg_output['id'] = tweet_id
@@ -102,17 +112,21 @@ for output in fcg_output_list:
 
             sparql_query = sparql_template.format(frame_name=frame_name, sent_number=1)
             sparql = SPARQLWrapper("http://etna.istc.cnr.it/framester2/sparql")
+            # TODO: Try agent
+            #sparql = SPARQLWrapper(sparql_endpoint, agent=agent)
             sparql.setTimeout(300)
             sparql.setQuery(sparql_query)
             sparql.setReturnFormat(JSON)
+
+            sparql.addParameter('User-Agent',
+                                'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36')
             results = sparql.query().convert()
 
             # print("RESULTS:", results)
             results_with_frame_name = {
                 "frame_name": frame_name,
                 "tweet_id": tweet_id,
-                #"role_name": role_name,
-                #"role_string": role_string,
+                "text": tweet_text,
                 "frame_roles": frame_roles,
                 "topics": topic_list,
                 "results": results

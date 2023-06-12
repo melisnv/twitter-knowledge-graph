@@ -20,6 +20,9 @@ FRAME = Namespace('https://w3id.org/framester/framenet/tbox/')
 # Create an RDF graph
 g_all_tweets = Graph()
 
+# Initialize frame counter
+frame_counter = 1
+
 # Iterate over merged data
 for entry in merged_data:
     frame_name = entry['frame_name']
@@ -36,34 +39,40 @@ for entry in merged_data:
     g_all_tweets.add((tweet_uri, RDF.type, URIRef('http://example.com/Tweet')))
     g_all_tweets.add((tweet_uri, RDFS.label, Literal(tweet_id)))
 
+
+    # adding frame number
+    frame_number_node = URIRef(f"http://example.org/FrameNumber/{tweet_id}/{frame_counter}")
+    g_all_tweets.add((frame_number_node, RDFS.label, Literal(str(frame_counter))))
+    g_all_tweets.add((tweet_uri, URIRef('http://example.com/hasFrameNumber'), frame_number_node))
+    g_all_tweets.add((frame_number_node, URIRef('http://example.com/numberOfFrame'), tweet_uri))
+
     g_all_tweets.add((frame_FCG, RDF.type, URIRef('http://example.com/Frame')))
     g_all_tweets.add((frame_FCG, RDFS.label, Literal(frame_name)))
-    g_all_tweets.add((frame_FCG, URIRef('http://example.com/frameOf'), tweet_uri))
-    g_all_tweets.add((tweet_uri, URIRef('http://example.com/hasFrame'), frame_FCG))
+    g_all_tweets.add((frame_FCG, URIRef('http://example.com/frameOf'), frame_number_node))
+    g_all_tweets.add((frame_number_node, URIRef('http://example.com/hasFrame'), frame_FCG))
 
+    # Increment frame counter
+    frame_counter += 1
 
     # adding frame roles
-    for role,value_list in frame_roles.items():
-        for value in value_list: # extra loop inside of value_list
+    for role, value_list in frame_roles.items():
+        for value in value_list:
             print(value)
 
             modified_value = value.replace(" ", "-")
             modified_value = re.sub("[']", "", modified_value)
             role_string = rdflib.URIRef(f'http://example.com/{modified_value}')
-            #role_string = rdflib.URIRef(value)
             role_arg = rdflib.URIRef(role)
             role_capitalize = role.capitalize()
 
-            g_all_tweets.add((tweet_uri, URIRef(f'http://example.com/hasArgument'), role_arg))
-            g_all_tweets.add((role_arg, URIRef(f'http://example.com/{role}Of'), tweet_uri))
+            g_all_tweets.add((frame_FCG, URIRef(f'http://example.com/has{role}'), role_arg))
+            g_all_tweets.add((role_arg, URIRef(f'http://example.com/{role}Of'), frame_FCG))
             g_all_tweets.add((role_arg, URIRef(f'http://example.com/hasValue'), role_string))
-
 
     # adding topic triples
     for topic in topics:
         topic_uri = topicspace[topic]
-        #topic_uri = rdflib.URIRef(topic)
-        g_all_tweets.add((topic_uri, RDF.type, URIRef('http://example.com/Topic')))
+        g_all_tweets.add((topic_uri, RDF.type, URIRef('http://example.com/Topic/')))
         g_all_tweets.add((topic_uri, RDFS.label, Literal(topic)))
         g_all_tweets.add((tweet_uri, URIRef('http://example.com/isAbout'), topic_uri))
         g_all_tweets.add((topic_uri, URIRef('http://example.com/topicOf'), tweet_uri))
@@ -72,13 +81,14 @@ for entry in merged_data:
     hasFrame_results = results['hasFrame']
     closeMatch_results = results['closeMatch']
     sameAs_results = results["sameAs"]
+    inheritsFrom_results = results["inheritsFrom"]
 
     for result in hasFrame_results:
         frame_uri = rdflib.URIRef(result['frame']['value'])
-        frameName = result['frame']['value'].split("/")[-1]  # Extract the frame name from the URL
+        frameName = result['frame']['value'].split("/")[-1]
 
         relatedFrame_uri = rdflib.URIRef(result['related']['value'])
-        relatedFrameName = result['related']['value'].split("/")[-1]  # Extract the frame name from the URL
+        relatedFrameName = result['related']['value'].split("/")[-1]
 
         # adding frame triples
         g_all_tweets.add((frame_uri, RDF.type, URIRef('http://example.com/Frame')))
@@ -92,10 +102,9 @@ for entry in merged_data:
         g_all_tweets.add((frame_uri, URIRef('http://example.com/hasFrameRelation'), relatedFrame_uri))
         g_all_tweets.add((relatedFrame_uri, URIRef('http://example.com/isRelated'), frame_uri))
 
-
     for result in sameAs_results:
         frame_uri = rdflib.URIRef(result['frame']['value'])
-        frameName = result['frame']['value'].split("/")[-1]  # Extract the frame name from the URL
+        frameName = result['frame']['value'].split("/")[-1]
 
         sameAsFrame_uri = rdflib.URIRef(result['sameAs']['value'])
         sameAsFrameName = result['label']['value']
@@ -107,6 +116,19 @@ for entry in merged_data:
         g_all_tweets.add((frame_uri, URIRef('http://example.com/sameAs'), sameAsFrame_uri))
         g_all_tweets.add((sameAsFrame_uri, URIRef('http://example.com/similarConceptOf'), frame_uri))
 
+        for result in inheritsFrom_results:
+            frame_uri = rdflib.URIRef(result['frame']['value'])
+            frameName = result['frame']['value'].split("/")[-1]
+
+            inheritsFrom_uri = rdflib.URIRef(result['inheritsFromFrame']['value'])
+            inheritsFromName = result['inheritsFromFrame']['value'].split("/")[-1]
+
+            # adding sameAs
+            g_all_tweets.add((inheritsFrom_uri, RDF.type, URIRef('http://example.com/ObjectProperty')))
+            g_all_tweets.add((inheritsFrom_uri, RDFS.label, Literal(inheritsFromName)))
+
+            g_all_tweets.add((frame_uri, URIRef('http://example.com/inheritsFrom'), inheritsFrom_uri))
+            g_all_tweets.add((inheritsFrom_uri, URIRef('http://example.com/inheritedBy'), frame_uri))
 
     for result in closeMatch_results:
         matchedFrames_uri = rdflib.URIRef(result['matchedFrames']['value'])
@@ -120,7 +142,10 @@ for entry in merged_data:
         g_all_tweets.add((matchedFrames_uri, URIRef('http://example.com/synonymOf'), frame_uri))
 
 # Serialize the RDF graph and save it to a file
-with open("graphs/3rdJune.ttl", 'wb') as f:
+with open("graphs/12thJuneInherited.ttl", 'wb') as f:
     f.write(g_all_tweets.serialize(format="turtle").encode())
 
-print(f"RDF graph saved to 3rdJune.ttl file.")
+print(f"RDF graph saved to 12thJuneInherited.ttl file.")
+
+# Increment the frame number for the next tweet
+frame_counter += 1

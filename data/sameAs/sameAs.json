@@ -1,16 +1,1169 @@
 [
     {
+        "frame_name": "save.01",
+        "tweet_id": "1457055231225778177",
+        "text": "equity based education handled equity alliance minnesota know anything heard change anyone point focus changed equity outcome guaranteed inequity inequality notice explanation",
+        "frame_roles": {
+            "V": [
+                "saving"
+            ],
+            "argmLvb": [
+                "pay"
+            ]
+        },
+        "topics": [
+            "good",
+            "worsens",
+            "inequality",
+            "chrisjo",
+            "priced",
+            "bubble",
+            "tax",
+            "rent",
+            "road",
+            "fed"
+        ],
+        "results": {
+            "head": {
+                "link": [],
+                "vars": [
+                    "frame",
+                    "sameAs",
+                    "label"
+                ]
+            },
+            "results": {
+                "distinct": false,
+                "ordered": true,
+                "bindings": [
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Motion"
+                        },
+                        "sameAs": {
+                            "type": "uri",
+                            "value": "http://premon.fbk.eu/resource/fn17-motion"
+                        },
+                        "label": {
+                            "type": "literal",
+                            "value": "Motion"
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "frame_name": "pay.01",
+        "tweet_id": "1457055231225778177",
+        "text": "equity based education handled equity alliance minnesota know anything heard change anyone point focus changed equity outcome guaranteed inequity inequality notice explanation",
+        "frame_roles": {
+            "V": [
+                "pay"
+            ],
+            "arg0": [
+                "bubble good road etc"
+            ],
+            "arg1": [
+                "rent saving"
+            ]
+        },
+        "topics": [
+            "good",
+            "worsens",
+            "inequality",
+            "chrisjo",
+            "priced",
+            "bubble",
+            "tax",
+            "rent",
+            "road",
+            "fed"
+        ],
+        "results": {
+            "head": {
+                "link": [],
+                "vars": [
+                    "frame",
+                    "sameAs",
+                    "label"
+                ]
+            },
+            "results": {
+                "distinct": false,
+                "ordered": true,
+                "bindings": [
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Commerce_collect"
+                        },
+                        "sameAs": {
+                            "type": "uri",
+                            "value": "http://premon.fbk.eu/resource/fn17-commerce_collect"
+                        },
+                        "label": {
+                            "type": "literal",
+                            "value": "Commerce_collect"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Commerce_pay"
+                        },
+                        "sameAs": {
+                            "type": "uri",
+                            "value": "http://premon.fbk.eu/resource/fn17-commerce_pay"
+                        },
+                        "label": {
+                            "type": "literal",
+                            "value": "Commerce_pay"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Giving"
+                        },
+                        "sameAs": {
+                            "type": "uri",
+                            "value": "http://premon.fbk.eu/resource/fn17-giving"
+                        },
+                        "label": {
+                            "type": "literal",
+                            "value": "Giving"
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "frame_name": "good.02",
+        "tweet_id": "1457055231225778177",
+        "text": "equity based education handled equity alliance minnesota know anything heard change anyone point focus changed equity outcome guaranteed inequity inequality notice explanation",
+        "frame_roles": {
+            "V": [
+                "good"
+            ]
+        },
+        "topics": [
+            "good",
+            "worsens",
+            "inequality",
+            "chrisjo",
+            "priced",
+            "bubble",
+            "tax",
+            "rent",
+            "road",
+            "fed"
+        ],
+        "results": {
+            "head": {
+                "link": [],
+                "vars": [
+                    "frame",
+                    "sameAs",
+                    "label"
+                ]
+            },
+            "results": {
+                "distinct": false,
+                "ordered": true,
+                "bindings": []
+            }
+        }
+    },
+    {
+        "frame_name": "purchase.01",
+        "tweet_id": "1457055231225778177",
+        "text": "equity based education handled equity alliance minnesota know anything heard change anyone point focus changed equity outcome guaranteed inequity inequality notice explanation",
+        "frame_roles": {
+            "V": [
+                "purchasing"
+            ],
+            "argmMnr": [
+                "good"
+            ]
+        },
+        "topics": [
+            "good",
+            "worsens",
+            "inequality",
+            "chrisjo",
+            "priced",
+            "bubble",
+            "tax",
+            "rent",
+            "road",
+            "fed"
+        ],
+        "results": {
+            "head": {
+                "link": [],
+                "vars": [
+                    "frame",
+                    "sameAs",
+                    "label"
+                ]
+            },
+            "results": {
+                "distinct": false,
+                "ordered": true,
+                "bindings": [
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Commerce_buy"
+                        },
+                        "sameAs": {
+                            "type": "uri",
+                            "value": "http://premon.fbk.eu/resource/fn17-commerce_buy"
+                        },
+                        "label": {
+                            "type": "literal",
+                            "value": "Commerce_buy"
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "frame_name": "good.02",
+        "tweet_id": "1457055231225778177",
+        "text": "equity based education handled equity alliance minnesota know anything heard change anyone point focus changed equity outcome guaranteed inequity inequality notice explanation",
+        "frame_roles": {
+            "V": [
+                "good"
+            ]
+        },
+        "topics": [
+            "good",
+            "worsens",
+            "inequality",
+            "chrisjo",
+            "priced",
+            "bubble",
+            "tax",
+            "rent",
+            "road",
+            "fed"
+        ],
+        "results": {
+            "head": {
+                "link": [],
+                "vars": [
+                    "frame",
+                    "sameAs",
+                    "label"
+                ]
+            },
+            "results": {
+                "distinct": false,
+                "ordered": true,
+                "bindings": []
+            }
+        }
+    },
+    {
+        "frame_name": "worsen.01",
+        "tweet_id": "1457055231225778177",
+        "text": "equity based education handled equity alliance minnesota know anything heard change anyone point focus changed equity outcome guaranteed inequity inequality notice explanation",
+        "frame_roles": {
+            "V": [
+                "worsens"
+            ],
+            "arg1": [
+                "peanut"
+            ]
+        },
+        "topics": [
+            "good",
+            "worsens",
+            "inequality",
+            "chrisjo",
+            "priced",
+            "bubble",
+            "tax",
+            "rent",
+            "road",
+            "fed"
+        ],
+        "results": {
+            "head": {
+                "link": [],
+                "vars": [
+                    "frame",
+                    "sameAs",
+                    "label"
+                ]
+            },
+            "results": {
+                "distinct": false,
+                "ordered": true,
+                "bindings": []
+            }
+        }
+    },
+    {
+        "frame_name": "inflate.01",
+        "tweet_id": "1457055231225778177",
+        "text": "equity based education handled equity alliance minnesota know anything heard change anyone point focus changed equity outcome guaranteed inequity inequality notice explanation",
+        "frame_roles": {
+            "V": [
+                "inflation"
+            ]
+        },
+        "topics": [
+            "good",
+            "worsens",
+            "inequality",
+            "chrisjo",
+            "priced",
+            "bubble",
+            "tax",
+            "rent",
+            "road",
+            "fed"
+        ],
+        "results": {
+            "head": {
+                "link": [],
+                "vars": [
+                    "frame",
+                    "sameAs",
+                    "label"
+                ]
+            },
+            "results": {
+                "distinct": false,
+                "ordered": true,
+                "bindings": [
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Cause_change_of_position_on_a_scale"
+                        },
+                        "sameAs": {
+                            "type": "uri",
+                            "value": "http://premon.fbk.eu/resource/fn17-cause_change_of_position_on_a_scale"
+                        },
+                        "label": {
+                            "type": "literal",
+                            "value": "Cause_change_of_position_on_a_scale"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Cause_expansion"
+                        },
+                        "sameAs": {
+                            "type": "uri",
+                            "value": "http://premon.fbk.eu/resource/fn17-cause_expansion"
+                        },
+                        "label": {
+                            "type": "literal",
+                            "value": "Cause_expansion"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Expansion"
+                        },
+                        "sameAs": {
+                            "type": "uri",
+                            "value": "http://premon.fbk.eu/resource/fn17-expansion"
+                        },
+                        "label": {
+                            "type": "literal",
+                            "value": "Expansion"
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "frame_name": "worsen.01",
+        "tweet_id": "1457055231225778177",
+        "text": "equity based education handled equity alliance minnesota know anything heard change anyone point focus changed equity outcome guaranteed inequity inequality notice explanation",
+        "frame_roles": {
+            "V": [
+                "worsens"
+            ],
+            "arg1": [
+                "inflation"
+            ]
+        },
+        "topics": [
+            "good",
+            "worsens",
+            "inequality",
+            "chrisjo",
+            "priced",
+            "bubble",
+            "tax",
+            "rent",
+            "road",
+            "fed"
+        ],
+        "results": {
+            "head": {
+                "link": [],
+                "vars": [
+                    "frame",
+                    "sameAs",
+                    "label"
+                ]
+            },
+            "results": {
+                "distinct": false,
+                "ordered": true,
+                "bindings": []
+            }
+        }
+    },
+    {
+        "frame_name": "feed.01",
+        "tweet_id": "1457055231225778177",
+        "text": "equity based education handled equity alliance minnesota know anything heard change anyone point focus changed equity outcome guaranteed inequity inequality notice explanation",
+        "frame_roles": {
+            "V": [
+                "fed"
+            ]
+        },
+        "topics": [
+            "good",
+            "worsens",
+            "inequality",
+            "chrisjo",
+            "priced",
+            "bubble",
+            "tax",
+            "rent",
+            "road",
+            "fed"
+        ],
+        "results": {
+            "head": {
+                "link": [],
+                "vars": [
+                    "frame",
+                    "sameAs",
+                    "label"
+                ]
+            },
+            "results": {
+                "distinct": false,
+                "ordered": true,
+                "bindings": [
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Giving"
+                        },
+                        "sameAs": {
+                            "type": "uri",
+                            "value": "http://premon.fbk.eu/resource/fn17-giving"
+                        },
+                        "label": {
+                            "type": "literal",
+                            "value": "Giving"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Ingestion"
+                        },
+                        "sameAs": {
+                            "type": "uri",
+                            "value": "http://premon.fbk.eu/resource/fn17-ingestion"
+                        },
+                        "label": {
+                            "type": "literal",
+                            "value": "Ingestion"
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "frame_name": "borrow.01",
+        "tweet_id": "1457055231225778177",
+        "text": "equity based education handled equity alliance minnesota know anything heard change anyone point focus changed equity outcome guaranteed inequity inequality notice explanation",
+        "frame_roles": {
+            "V": [
+                "borrow"
+            ]
+        },
+        "topics": [
+            "good",
+            "worsens",
+            "inequality",
+            "chrisjo",
+            "priced",
+            "bubble",
+            "tax",
+            "rent",
+            "road",
+            "fed"
+        ],
+        "results": {
+            "head": {
+                "link": [],
+                "vars": [
+                    "frame",
+                    "sameAs",
+                    "label"
+                ]
+            },
+            "results": {
+                "distinct": false,
+                "ordered": true,
+                "bindings": [
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Borrowing"
+                        },
+                        "sameAs": {
+                            "type": "uri",
+                            "value": "http://premon.fbk.eu/resource/fn17-borrowing"
+                        },
+                        "label": {
+                            "type": "literal",
+                            "value": "Borrowing"
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "frame_name": "tax.01",
+        "tweet_id": "1457055231225778177",
+        "text": "equity based education handled equity alliance minnesota know anything heard change anyone point focus changed equity outcome guaranteed inequity inequality notice explanation",
+        "frame_roles": {
+            "V": [
+                "tax"
+            ]
+        },
+        "topics": [
+            "good",
+            "worsens",
+            "inequality",
+            "chrisjo",
+            "priced",
+            "bubble",
+            "tax",
+            "rent",
+            "road",
+            "fed"
+        ],
+        "results": {
+            "head": {
+                "link": [],
+                "vars": [
+                    "frame",
+                    "sameAs",
+                    "label"
+                ]
+            },
+            "results": {
+                "distinct": false,
+                "ordered": true,
+                "bindings": [
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Make_noise"
+                        },
+                        "sameAs": {
+                            "type": "uri",
+                            "value": "http://premon.fbk.eu/resource/fn17-make_noise"
+                        },
+                        "label": {
+                            "type": "literal",
+                            "value": "Make_noise"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Self_motion"
+                        },
+                        "sameAs": {
+                            "type": "uri",
+                            "value": "http://premon.fbk.eu/resource/fn17-self_motion"
+                        },
+                        "label": {
+                            "type": "literal",
+                            "value": "Self_motion"
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "frame_name": "argue.01",
+        "tweet_id": "1457055229468348420",
+        "text": "equity based education handled equity alliance minnesota know anything heard change anyone point focus changed equity outcome guaranteed inequity inequality notice explanation",
+        "frame_roles": {
+            "V": [
+                "argument"
+            ]
+        },
+        "topics": [
+            "people",
+            "inequality",
+            "effect",
+            "everywhere",
+            "also",
+            "tend",
+            "class",
+            "mostly",
+            "ethnicity",
+            "thomaschattwill"
+        ],
+        "results": {
+            "head": {
+                "link": [],
+                "vars": [
+                    "frame",
+                    "sameAs",
+                    "label"
+                ]
+            },
+            "results": {
+                "distinct": false,
+                "ordered": true,
+                "bindings": [
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Reasoning"
+                        },
+                        "sameAs": {
+                            "type": "uri",
+                            "value": "http://premon.fbk.eu/resource/fn17-reasoning"
+                        },
+                        "label": {
+                            "type": "literal",
+                            "value": "Reasoning"
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "frame_name": "make.01",
+        "tweet_id": "1457055229468348420",
+        "text": "equity based education handled equity alliance minnesota know anything heard change anyone point focus changed equity outcome guaranteed inequity inequality notice explanation",
+        "frame_roles": {
+            "V": [
+                "made"
+            ],
+            "arg0": [
+                "litupmagazine thomaschattwill nhannahjones well argument"
+            ],
+            "arg1": [
+                "people coming different background affect also mostly explain inequality better race"
+            ]
+        },
+        "topics": [
+            "people",
+            "inequality",
+            "effect",
+            "everywhere",
+            "also",
+            "tend",
+            "class",
+            "mostly",
+            "ethnicity",
+            "thomaschattwill"
+        ],
+        "results": {
+            "head": {
+                "link": [],
+                "vars": [
+                    "frame",
+                    "sameAs",
+                    "label"
+                ]
+            },
+            "results": {
+                "distinct": false,
+                "ordered": true,
+                "bindings": [
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Arriving"
+                        },
+                        "sameAs": {
+                            "type": "uri",
+                            "value": "http://premon.fbk.eu/resource/fn17-arriving"
+                        },
+                        "label": {
+                            "type": "literal",
+                            "value": "Arriving"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Building"
+                        },
+                        "sameAs": {
+                            "type": "uri",
+                            "value": "http://premon.fbk.eu/resource/fn17-building"
+                        },
+                        "label": {
+                            "type": "literal",
+                            "value": "Building"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Cause_change"
+                        },
+                        "sameAs": {
+                            "type": "uri",
+                            "value": "http://premon.fbk.eu/resource/fn17-cause_change"
+                        },
+                        "label": {
+                            "type": "literal",
+                            "value": "Cause_change"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Cooking_creation"
+                        },
+                        "sameAs": {
+                            "type": "uri",
+                            "value": "http://premon.fbk.eu/resource/fn17-cooking_creation"
+                        },
+                        "label": {
+                            "type": "literal",
+                            "value": "Cooking_creation"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Creating"
+                        },
+                        "sameAs": {
+                            "type": "uri",
+                            "value": "http://premon.fbk.eu/resource/fn17-creating"
+                        },
+                        "label": {
+                            "type": "literal",
+                            "value": "Creating"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Intentionally_create"
+                        },
+                        "sameAs": {
+                            "type": "uri",
+                            "value": "http://premon.fbk.eu/resource/fn17-intentionally_create"
+                        },
+                        "label": {
+                            "type": "literal",
+                            "value": "Intentionally_create"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Manufacturing"
+                        },
+                        "sameAs": {
+                            "type": "uri",
+                            "value": "http://premon.fbk.eu/resource/fn17-manufacturing"
+                        },
+                        "label": {
+                            "type": "literal",
+                            "value": "Manufacturing"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Self_motion"
+                        },
+                        "sameAs": {
+                            "type": "uri",
+                            "value": "http://premon.fbk.eu/resource/fn17-self_motion"
+                        },
+                        "label": {
+                            "type": "literal",
+                            "value": "Self_motion"
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "frame_name": "come.01",
+        "tweet_id": "1457055229468348420",
+        "text": "equity based education handled equity alliance minnesota know anything heard change anyone point focus changed equity outcome guaranteed inequity inequality notice explanation",
+        "frame_roles": {
+            "V": [
+                "coming"
+            ],
+            "arg1": [
+                "different background affect"
+            ]
+        },
+        "topics": [
+            "people",
+            "inequality",
+            "effect",
+            "everywhere",
+            "also",
+            "tend",
+            "class",
+            "mostly",
+            "ethnicity",
+            "thomaschattwill"
+        ],
+        "results": {
+            "head": {
+                "link": [],
+                "vars": [
+                    "frame",
+                    "sameAs",
+                    "label"
+                ]
+            },
+            "results": {
+                "distinct": false,
+                "ordered": true,
+                "bindings": [
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Arriving"
+                        },
+                        "sameAs": {
+                            "type": "uri",
+                            "value": "http://premon.fbk.eu/resource/fn17-arriving"
+                        },
+                        "label": {
+                            "type": "literal",
+                            "value": "Arriving"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Becoming"
+                        },
+                        "sameAs": {
+                            "type": "uri",
+                            "value": "http://premon.fbk.eu/resource/fn17-becoming"
+                        },
+                        "label": {
+                            "type": "literal",
+                            "value": "Becoming"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Getting"
+                        },
+                        "sameAs": {
+                            "type": "uri",
+                            "value": "http://premon.fbk.eu/resource/fn17-getting"
+                        },
+                        "label": {
+                            "type": "literal",
+                            "value": "Getting"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Motion"
+                        },
+                        "sameAs": {
+                            "type": "uri",
+                            "value": "http://premon.fbk.eu/resource/fn17-motion"
+                        },
+                        "label": {
+                            "type": "literal",
+                            "value": "Motion"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Reveal_secret"
+                        },
+                        "sameAs": {
+                            "type": "uri",
+                            "value": "http://premon.fbk.eu/resource/fn17-reveal_secret"
+                        },
+                        "label": {
+                            "type": "literal",
+                            "value": "Reveal_secret"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Travel"
+                        },
+                        "sameAs": {
+                            "type": "uri",
+                            "value": "http://premon.fbk.eu/resource/fn17-travel"
+                        },
+                        "label": {
+                            "type": "literal",
+                            "value": "Travel"
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "frame_name": "affect.01",
+        "tweet_id": "1457055229468348420",
+        "text": "equity based education handled equity alliance minnesota know anything heard change anyone point focus changed equity outcome guaranteed inequity inequality notice explanation",
+        "frame_roles": {
+            "V": [
+                "affect"
+            ],
+            "arg1": [
+                "background"
+            ],
+            "argmMnr": [
+                "different"
+            ]
+        },
+        "topics": [
+            "people",
+            "inequality",
+            "effect",
+            "everywhere",
+            "also",
+            "tend",
+            "class",
+            "mostly",
+            "ethnicity",
+            "thomaschattwill"
+        ],
+        "results": {
+            "head": {
+                "link": [],
+                "vars": [
+                    "frame",
+                    "sameAs",
+                    "label"
+                ]
+            },
+            "results": {
+                "distinct": false,
+                "ordered": true,
+                "bindings": [
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Objective_influence"
+                        },
+                        "sameAs": {
+                            "type": "uri",
+                            "value": "http://premon.fbk.eu/resource/fn17-objective_influence"
+                        },
+                        "label": {
+                            "type": "literal",
+                            "value": "Objective_influence"
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "frame_name": "explain.01",
+        "tweet_id": "1457055229468348420",
+        "text": "equity based education handled equity alliance minnesota know anything heard change anyone point focus changed equity outcome guaranteed inequity inequality notice explanation",
+        "frame_roles": {
+            "V": [
+                "explain"
+            ],
+            "arg1": [
+                "inequality better race"
+            ],
+            "arg0": [
+                "people coming different background affect"
+            ],
+            "argmDis": [
+                "also"
+            ],
+            "argmAdv": [
+                "mostly"
+            ]
+        },
+        "topics": [
+            "people",
+            "inequality",
+            "effect",
+            "everywhere",
+            "also",
+            "tend",
+            "class",
+            "mostly",
+            "ethnicity",
+            "thomaschattwill"
+        ],
+        "results": {
+            "head": {
+                "link": [],
+                "vars": [
+                    "frame",
+                    "sameAs",
+                    "label"
+                ]
+            },
+            "results": {
+                "distinct": false,
+                "ordered": true,
+                "bindings": [
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Explaining_the_facts"
+                        },
+                        "sameAs": {
+                            "type": "uri",
+                            "value": "http://premon.fbk.eu/resource/fn17-explaining_the_facts"
+                        },
+                        "label": {
+                            "type": "literal",
+                            "value": "Explaining_the_facts"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Justifying"
+                        },
+                        "sameAs": {
+                            "type": "uri",
+                            "value": "http://premon.fbk.eu/resource/fn17-justifying"
+                        },
+                        "label": {
+                            "type": "literal",
+                            "value": "Justifying"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Statement"
+                        },
+                        "sameAs": {
+                            "type": "uri",
+                            "value": "http://premon.fbk.eu/resource/fn17-statement"
+                        },
+                        "label": {
+                            "type": "literal",
+                            "value": "Statement"
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "frame_name": "race.02",
+        "tweet_id": "1457055229468348420",
+        "text": "equity based education handled equity alliance minnesota know anything heard change anyone point focus changed equity outcome guaranteed inequity inequality notice explanation",
+        "frame_roles": {
+            "V": [
+                "race"
+            ],
+            "argmAdv": [
+                "also"
+            ]
+        },
+        "topics": [
+            "people",
+            "inequality",
+            "effect",
+            "everywhere",
+            "also",
+            "tend",
+            "class",
+            "mostly",
+            "ethnicity",
+            "thomaschattwill"
+        ],
+        "results": {
+            "head": {
+                "link": [],
+                "vars": [
+                    "frame",
+                    "sameAs",
+                    "label"
+                ]
+            },
+            "results": {
+                "distinct": false,
+                "ordered": true,
+                "bindings": [
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Retaining"
+                        },
+                        "sameAs": {
+                            "type": "uri",
+                            "value": "http://premon.fbk.eu/resource/fn17-retaining"
+                        },
+                        "label": {
+                            "type": "literal",
+                            "value": "Retaining"
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    {
         "frame_name": "love.01",
         "tweet_id": "1457055203388280833",
+        "text": "equity based education handled equity alliance minnesota know anything heard change anyone point focus changed equity outcome guaranteed inequity inequality notice explanation",
         "frame_roles": {
             "V": [
                 "love"
             ],
             "arg0": [
-                "libs"
+                "nothing libs"
             ],
-            "argmAdv": [
-                "more"
+            "arg1": [
+                "talking"
             ]
         },
         "topics": [
@@ -73,12 +1226,16 @@
     {
         "frame_name": "talk.01",
         "tweet_id": "1457055203388280833",
+        "text": "equity based education handled equity alliance minnesota know anything heard change anyone point focus changed equity outcome guaranteed inequity inequality notice explanation",
         "frame_roles": {
             "V": [
                 "talking"
             ],
+            "arg0": [
+                "nothing libs"
+            ],
             "arg1": [
-                "about institutional problems"
+                "institutional problem parliament"
             ]
         },
         "topics": [
@@ -139,72 +1296,31 @@
         }
     },
     {
-        "frame_name": "have.lv",
-        "tweet_id": "1457055130914861057",
+        "frame_name": "base.02",
+        "tweet_id": "1457054652197920770",
+        "text": "equity based education handled equity alliance minnesota know anything heard change anyone point focus changed equity outcome guaranteed inequity inequality notice explanation",
         "frame_roles": {
             "V": [
-                "has"
+                "based"
             ],
-            "argmLoc": [
-                "everywhere"
+            "arg2": [
+                "equity"
             ],
-            "argmPrr": [
-                "effects"
+            "arg1": [
+                "education"
             ]
         },
         "topics": [
-            "people",
+            "equity",
             "inequality",
-            "effect",
-            "everywhere",
-            "also",
-            "tend",
-            "class",
-            "mostly",
-            "ethnicity",
-            "thomaschattwill"
-        ],
-        "results": {
-            "head": {
-                "link": [],
-                "vars": [
-                    "frame",
-                    "sameAs",
-                    "label"
-                ]
-            },
-            "results": {
-                "distinct": false,
-                "ordered": true,
-                "bindings": []
-            }
-        }
-    },
-    {
-        "frame_name": "effect.03",
-        "tweet_id": "1457055130914861057",
-        "frame_roles": {
-            "V": [
-                "effects"
-            ],
-            "arg0": [
-                "Inequality"
-            ],
-            "argmLvb": [
-                "has"
-            ]
-        },
-        "topics": [
-            "people",
-            "inequality",
-            "effect",
-            "everywhere",
-            "also",
-            "tend",
-            "class",
-            "mostly",
-            "ethnicity",
-            "thomaschattwill"
+            "set",
+            "problem",
+            "love",
+            "committee",
+            "way",
+            "community",
+            "handled",
+            "libs"
         ],
         "results": {
             "head": {
@@ -225,12 +1341,13 @@
     {
         "frame_name": "educate.01",
         "tweet_id": "1457054652197920770",
+        "text": "equity based education handled equity alliance minnesota know anything heard change anyone point focus changed equity outcome guaranteed inequity inequality notice explanation",
         "frame_roles": {
             "V": [
                 "education"
             ],
             "arg2": [
-                "equity'-based"
+                "equity based"
             ]
         },
         "topics": [

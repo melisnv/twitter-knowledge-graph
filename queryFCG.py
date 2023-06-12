@@ -2,6 +2,8 @@ import csv
 import rdflib
 import requests
 import json
+import codecs
+
 from SPARQLWrapper import SPARQLWrapper, JSON
 from rdflib import Graph, Namespace, URIRef, Literal, OWL
 from rdflib.namespace import RDF, RDFS, XSD
@@ -16,11 +18,11 @@ fcg_output_list = []
 output_dict = {}
 
 # open the data.csv file in read mode
-with open('data/sample_tweet_data.csv', 'r', encoding="utf8") as csvfile:
+with open('data/twitter_data.csv', 'r', encoding="utf8") as csvfile:
     reader = csv.DictReader(csvfile)
     for row in reader:
         # extract the text of the tweet from the 'text' column
-        tweet_text = row['text']
+        tweet_text = row['cleaned_text']
         tweet_id = row['id']
         tweet_topic = row['topic']
 
@@ -34,7 +36,14 @@ with open('data/sample_tweet_data.csv', 'r', encoding="utf8") as csvfile:
 
         # make the API call to extract frames for the tweet text
         response = requests.post(fcg_url, headers=headers, json=data)
-        fcg_output = json.loads(response.text)
+        print(response.status_code)  # Print the status code of the response
+        print(response.text)  # Print the response text
+
+        try:
+            fcg_output = json.loads(response.text)
+        except json.decoder.JSONDecodeError:
+            print("Error decoding JSON response. Skipping to the next utterance.")
+            continue
 
         # adding tweet ID to output
         fcg_output['id'] = tweet_id
@@ -51,5 +60,5 @@ with open('data/sample_tweet_data.csv', 'r', encoding="utf8") as csvfile:
         print(fcg_output)
 
 # write the list to a JSON file
-with open('data/fcg_output.json', 'w') as outfile:
+with open('data/twitterdata_fcg_output.json', 'w') as outfile:
     json.dump(fcg_output_list, outfile)
