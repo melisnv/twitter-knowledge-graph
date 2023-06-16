@@ -1,0 +1,1450 @@
+[
+    {
+        "frame_name": "save.01",
+        "tweet_id": "1457055231225778177",
+        "text": "equity based education handled equity alliance minnesota know anything heard change anyone point focus changed equity outcome guaranteed inequity inequality notice explanation",
+        "frame_roles": {
+            "V": [
+                "saving"
+            ],
+            "argmLvb": [
+                "pay"
+            ]
+        },
+        "topics": [
+            "good",
+            "worsens",
+            "inequality",
+            "chrisjo",
+            "priced",
+            "bubble",
+            "tax",
+            "rent",
+            "road",
+            "fed"
+        ],
+        "results": {
+            "head": {
+                "link": [],
+                "vars": [
+                    "frame",
+                    "role",
+                    "subsumedUnder"
+                ]
+            },
+            "results": {
+                "distinct": false,
+                "ordered": true,
+                "bindings": [
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbdata/save.01"
+                        },
+                        "role": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbdata/save.01__0"
+                        },
+                        "subsumedUnder": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbschema/ARG0"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbdata/save.01"
+                        },
+                        "role": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbdata/save.01__1"
+                        },
+                        "subsumedUnder": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbschema/ARG1"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbdata/save.01"
+                        },
+                        "role": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbdata/save.01__2"
+                        },
+                        "subsumedUnder": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbschema/ARG2"
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "frame_name": "pay.01",
+        "tweet_id": "1457055231225778177",
+        "text": "equity based education handled equity alliance minnesota know anything heard change anyone point focus changed equity outcome guaranteed inequity inequality notice explanation",
+        "frame_roles": {
+            "V": [
+                "pay"
+            ],
+            "arg0": [
+                "bubble good road etc"
+            ],
+            "arg1": [
+                "rent saving"
+            ]
+        },
+        "topics": [
+            "good",
+            "worsens",
+            "inequality",
+            "chrisjo",
+            "priced",
+            "bubble",
+            "tax",
+            "rent",
+            "road",
+            "fed"
+        ],
+        "results": {
+            "head": {
+                "link": [],
+                "vars": [
+                    "frame",
+                    "role",
+                    "subsumedUnder"
+                ]
+            },
+            "results": {
+                "distinct": false,
+                "ordered": true,
+                "bindings": [
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbdata/pay.01"
+                        },
+                        "role": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbdata/pay.01__0"
+                        },
+                        "subsumedUnder": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbschema/ARG0"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbdata/pay.01"
+                        },
+                        "role": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbdata/pay.01__1"
+                        },
+                        "subsumedUnder": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbschema/ARG1"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbdata/pay.01"
+                        },
+                        "role": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbdata/pay.01__2"
+                        },
+                        "subsumedUnder": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbschema/ARG2"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbdata/pay.01"
+                        },
+                        "role": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbdata/pay.01__3"
+                        },
+                        "subsumedUnder": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbschema/ARG3"
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "frame_name": "good.02",
+        "tweet_id": "1457055231225778177",
+        "text": "equity based education handled equity alliance minnesota know anything heard change anyone point focus changed equity outcome guaranteed inequity inequality notice explanation",
+        "frame_roles": {
+            "V": [
+                "good"
+            ]
+        },
+        "topics": [
+            "good",
+            "worsens",
+            "inequality",
+            "chrisjo",
+            "priced",
+            "bubble",
+            "tax",
+            "rent",
+            "road",
+            "fed"
+        ],
+        "results": {
+            "head": {
+                "link": [],
+                "vars": [
+                    "frame",
+                    "role",
+                    "subsumedUnder"
+                ]
+            },
+            "results": {
+                "distinct": false,
+                "ordered": true,
+                "bindings": []
+            }
+        }
+    },
+    {
+        "frame_name": "purchase.01",
+        "tweet_id": "1457055231225778177",
+        "text": "equity based education handled equity alliance minnesota know anything heard change anyone point focus changed equity outcome guaranteed inequity inequality notice explanation",
+        "frame_roles": {
+            "V": [
+                "purchasing"
+            ],
+            "argmMnr": [
+                "good"
+            ]
+        },
+        "topics": [
+            "good",
+            "worsens",
+            "inequality",
+            "chrisjo",
+            "priced",
+            "bubble",
+            "tax",
+            "rent",
+            "road",
+            "fed"
+        ],
+        "results": {
+            "head": {
+                "link": [],
+                "vars": [
+                    "frame",
+                    "role",
+                    "subsumedUnder"
+                ]
+            },
+            "results": {
+                "distinct": false,
+                "ordered": true,
+                "bindings": []
+            }
+        }
+    },
+    {
+        "frame_name": "good.02",
+        "tweet_id": "1457055231225778177",
+        "text": "equity based education handled equity alliance minnesota know anything heard change anyone point focus changed equity outcome guaranteed inequity inequality notice explanation",
+        "frame_roles": {
+            "V": [
+                "good"
+            ]
+        },
+        "topics": [
+            "good",
+            "worsens",
+            "inequality",
+            "chrisjo",
+            "priced",
+            "bubble",
+            "tax",
+            "rent",
+            "road",
+            "fed"
+        ],
+        "results": {
+            "head": {
+                "link": [],
+                "vars": [
+                    "frame",
+                    "role",
+                    "subsumedUnder"
+                ]
+            },
+            "results": {
+                "distinct": false,
+                "ordered": true,
+                "bindings": []
+            }
+        }
+    },
+    {
+        "frame_name": "worsen.01",
+        "tweet_id": "1457055231225778177",
+        "text": "equity based education handled equity alliance minnesota know anything heard change anyone point focus changed equity outcome guaranteed inequity inequality notice explanation",
+        "frame_roles": {
+            "V": [
+                "worsens"
+            ],
+            "arg1": [
+                "receive"
+            ]
+        },
+        "topics": [
+            "good",
+            "worsens",
+            "inequality",
+            "chrisjo",
+            "priced",
+            "bubble",
+            "tax",
+            "rent",
+            "road",
+            "fed"
+        ],
+        "results": {
+            "head": {
+                "link": [],
+                "vars": [
+                    "frame",
+                    "role",
+                    "subsumedUnder"
+                ]
+            },
+            "results": {
+                "distinct": false,
+                "ordered": true,
+                "bindings": [
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbdata/worsen.01"
+                        },
+                        "role": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbdata/worsen.01__2"
+                        },
+                        "subsumedUnder": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbschema/ARG2"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbdata/worsen.01"
+                        },
+                        "role": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbdata/worsen.01__0"
+                        },
+                        "subsumedUnder": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbschema/ARG0"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbdata/worsen.01"
+                        },
+                        "role": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbdata/worsen.01__1"
+                        },
+                        "subsumedUnder": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbschema/ARG1"
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "frame_name": "inflate.01",
+        "tweet_id": "1457055231225778177",
+        "text": "equity based education handled equity alliance minnesota know anything heard change anyone point focus changed equity outcome guaranteed inequity inequality notice explanation",
+        "frame_roles": {
+            "V": [
+                "inflation"
+            ]
+        },
+        "topics": [
+            "good",
+            "worsens",
+            "inequality",
+            "chrisjo",
+            "priced",
+            "bubble",
+            "tax",
+            "rent",
+            "road",
+            "fed"
+        ],
+        "results": {
+            "head": {
+                "link": [],
+                "vars": [
+                    "frame",
+                    "role",
+                    "subsumedUnder"
+                ]
+            },
+            "results": {
+                "distinct": false,
+                "ordered": true,
+                "bindings": [
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbdata/inflate.01"
+                        },
+                        "role": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbdata/inflate.01__0"
+                        },
+                        "subsumedUnder": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbschema/ARG0"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbdata/inflate.01"
+                        },
+                        "role": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbdata/inflate.01__1"
+                        },
+                        "subsumedUnder": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbschema/ARG1"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbdata/inflate.01"
+                        },
+                        "role": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbdata/inflate.01__MNR"
+                        },
+                        "subsumedUnder": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbschema/ARGM-MNR"
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "frame_name": "worsen.01",
+        "tweet_id": "1457055231225778177",
+        "text": "equity based education handled equity alliance minnesota know anything heard change anyone point focus changed equity outcome guaranteed inequity inequality notice explanation",
+        "frame_roles": {
+            "V": [
+                "worsens"
+            ],
+            "arg1": [
+                "inflation"
+            ]
+        },
+        "topics": [
+            "good",
+            "worsens",
+            "inequality",
+            "chrisjo",
+            "priced",
+            "bubble",
+            "tax",
+            "rent",
+            "road",
+            "fed"
+        ],
+        "results": {
+            "head": {
+                "link": [],
+                "vars": [
+                    "frame",
+                    "role",
+                    "subsumedUnder"
+                ]
+            },
+            "results": {
+                "distinct": false,
+                "ordered": true,
+                "bindings": [
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbdata/worsen.01"
+                        },
+                        "role": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbdata/worsen.01__2"
+                        },
+                        "subsumedUnder": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbschema/ARG2"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbdata/worsen.01"
+                        },
+                        "role": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbdata/worsen.01__0"
+                        },
+                        "subsumedUnder": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbschema/ARG0"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbdata/worsen.01"
+                        },
+                        "role": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbdata/worsen.01__1"
+                        },
+                        "subsumedUnder": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbschema/ARG1"
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "frame_name": "feed.01",
+        "tweet_id": "1457055231225778177",
+        "text": "equity based education handled equity alliance minnesota know anything heard change anyone point focus changed equity outcome guaranteed inequity inequality notice explanation",
+        "frame_roles": {
+            "V": [
+                "fed"
+            ]
+        },
+        "topics": [
+            "good",
+            "worsens",
+            "inequality",
+            "chrisjo",
+            "priced",
+            "bubble",
+            "tax",
+            "rent",
+            "road",
+            "fed"
+        ],
+        "results": {
+            "head": {
+                "link": [],
+                "vars": [
+                    "frame",
+                    "role",
+                    "subsumedUnder"
+                ]
+            },
+            "results": {
+                "distinct": false,
+                "ordered": true,
+                "bindings": [
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbdata/feed.01"
+                        },
+                        "role": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbdata/feed.01__0"
+                        },
+                        "subsumedUnder": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbschema/ARG0"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbdata/feed.01"
+                        },
+                        "role": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbdata/feed.01__1"
+                        },
+                        "subsumedUnder": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbschema/ARG1"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbdata/feed.01"
+                        },
+                        "role": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbdata/feed.01__2"
+                        },
+                        "subsumedUnder": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbschema/ARG2"
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "frame_name": "borrow.01",
+        "tweet_id": "1457055231225778177",
+        "text": "equity based education handled equity alliance minnesota know anything heard change anyone point focus changed equity outcome guaranteed inequity inequality notice explanation",
+        "frame_roles": {
+            "V": [
+                "borrow"
+            ]
+        },
+        "topics": [
+            "good",
+            "worsens",
+            "inequality",
+            "chrisjo",
+            "priced",
+            "bubble",
+            "tax",
+            "rent",
+            "road",
+            "fed"
+        ],
+        "results": {
+            "head": {
+                "link": [],
+                "vars": [
+                    "frame",
+                    "role",
+                    "subsumedUnder"
+                ]
+            },
+            "results": {
+                "distinct": false,
+                "ordered": true,
+                "bindings": [
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbdata/borrow.01"
+                        },
+                        "role": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbdata/borrow.01__2"
+                        },
+                        "subsumedUnder": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbschema/ARG2"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbdata/borrow.01"
+                        },
+                        "role": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbdata/borrow.01__0"
+                        },
+                        "subsumedUnder": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbschema/ARG0"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbdata/borrow.01"
+                        },
+                        "role": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbdata/borrow.01__1"
+                        },
+                        "subsumedUnder": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbschema/ARG1"
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "frame_name": "tax.01",
+        "tweet_id": "1457055231225778177",
+        "text": "equity based education handled equity alliance minnesota know anything heard change anyone point focus changed equity outcome guaranteed inequity inequality notice explanation",
+        "frame_roles": {
+            "V": [
+                "tax"
+            ]
+        },
+        "topics": [
+            "good",
+            "worsens",
+            "inequality",
+            "chrisjo",
+            "priced",
+            "bubble",
+            "tax",
+            "rent",
+            "road",
+            "fed"
+        ],
+        "results": {
+            "head": {
+                "link": [],
+                "vars": [
+                    "frame",
+                    "role",
+                    "subsumedUnder"
+                ]
+            },
+            "results": {
+                "distinct": false,
+                "ordered": true,
+                "bindings": [
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbdata/tax.01"
+                        },
+                        "role": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbdata/tax.01__0"
+                        },
+                        "subsumedUnder": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbschema/ARG0"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbdata/tax.01"
+                        },
+                        "role": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbdata/tax.01__1"
+                        },
+                        "subsumedUnder": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbschema/ARG1"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbdata/tax.01"
+                        },
+                        "role": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbdata/tax.01__2"
+                        },
+                        "subsumedUnder": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbschema/ARG2"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbdata/tax.01"
+                        },
+                        "role": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbdata/tax.01__LOC"
+                        },
+                        "subsumedUnder": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbschema/ARGM-LOC"
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "frame_name": "argue.01",
+        "tweet_id": "1457055229468348420",
+        "text": "equity based education handled equity alliance minnesota know anything heard change anyone point focus changed equity outcome guaranteed inequity inequality notice explanation",
+        "frame_roles": {
+            "V": [
+                "argument"
+            ]
+        },
+        "topics": [
+            "people",
+            "inequality",
+            "effect",
+            "everywhere",
+            "also",
+            "tend",
+            "class",
+            "mostly",
+            "ethnicity",
+            "thomaschattwill"
+        ],
+        "results": {
+            "head": {
+                "link": [],
+                "vars": [
+                    "frame",
+                    "role",
+                    "subsumedUnder"
+                ]
+            },
+            "results": {
+                "distinct": false,
+                "ordered": true,
+                "bindings": []
+            }
+        }
+    },
+    {
+        "frame_name": "make.02",
+        "tweet_id": "1457055229468348420",
+        "text": "equity based education handled equity alliance minnesota know anything heard change anyone point focus changed equity outcome guaranteed inequity inequality notice explanation",
+        "frame_roles": {
+            "V": [
+                "made"
+            ],
+            "arg0": [
+                "litupmagazine thomaschattwill nhannahjones well argument"
+            ],
+            "arg1": [
+                "people coming different background affect also mostly explain inequality better race"
+            ]
+        },
+        "topics": [
+            "people",
+            "inequality",
+            "effect",
+            "everywhere",
+            "also",
+            "tend",
+            "class",
+            "mostly",
+            "ethnicity",
+            "thomaschattwill"
+        ],
+        "results": {
+            "head": {
+                "link": [],
+                "vars": [
+                    "frame",
+                    "role",
+                    "subsumedUnder"
+                ]
+            },
+            "results": {
+                "distinct": false,
+                "ordered": true,
+                "bindings": [
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbdata/make.02"
+                        },
+                        "role": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbdata/make.02__0"
+                        },
+                        "subsumedUnder": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbschema/ARG0"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbdata/make.02"
+                        },
+                        "role": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbdata/make.02__1"
+                        },
+                        "subsumedUnder": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbschema/ARG1"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbdata/make.02"
+                        },
+                        "role": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbdata/make.02__2"
+                        },
+                        "subsumedUnder": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbschema/ARG2"
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "frame_name": "come.01",
+        "tweet_id": "1457055229468348420",
+        "text": "equity based education handled equity alliance minnesota know anything heard change anyone point focus changed equity outcome guaranteed inequity inequality notice explanation",
+        "frame_roles": {
+            "V": [
+                "coming"
+            ],
+            "arg1": [
+                "different background affect"
+            ]
+        },
+        "topics": [
+            "people",
+            "inequality",
+            "effect",
+            "everywhere",
+            "also",
+            "tend",
+            "class",
+            "mostly",
+            "ethnicity",
+            "thomaschattwill"
+        ],
+        "results": {
+            "head": {
+                "link": [],
+                "vars": [
+                    "frame",
+                    "role",
+                    "subsumedUnder"
+                ]
+            },
+            "results": {
+                "distinct": false,
+                "ordered": true,
+                "bindings": []
+            }
+        }
+    },
+    {
+        "frame_name": "affect.01",
+        "tweet_id": "1457055229468348420",
+        "text": "equity based education handled equity alliance minnesota know anything heard change anyone point focus changed equity outcome guaranteed inequity inequality notice explanation",
+        "frame_roles": {
+            "V": [
+                "affect"
+            ],
+            "arg1": [
+                "background"
+            ],
+            "argmMnr": [
+                "different"
+            ]
+        },
+        "topics": [
+            "people",
+            "inequality",
+            "effect",
+            "everywhere",
+            "also",
+            "tend",
+            "class",
+            "mostly",
+            "ethnicity",
+            "thomaschattwill"
+        ],
+        "results": {
+            "head": {
+                "link": [],
+                "vars": [
+                    "frame",
+                    "role",
+                    "subsumedUnder"
+                ]
+            },
+            "results": {
+                "distinct": false,
+                "ordered": true,
+                "bindings": [
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbdata/affect.01"
+                        },
+                        "role": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbdata/affect.01__0"
+                        },
+                        "subsumedUnder": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbschema/ARG0"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbdata/affect.01"
+                        },
+                        "role": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbdata/affect.01__1"
+                        },
+                        "subsumedUnder": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbschema/ARG1"
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "frame_name": "explain.01",
+        "tweet_id": "1457055229468348420",
+        "text": "equity based education handled equity alliance minnesota know anything heard change anyone point focus changed equity outcome guaranteed inequity inequality notice explanation",
+        "frame_roles": {
+            "V": [
+                "explain"
+            ],
+            "arg1": [
+                "inequality better race"
+            ],
+            "arg0": [
+                "people coming different background affect"
+            ],
+            "argmDis": [
+                "also"
+            ],
+            "argmAdv": [
+                "mostly"
+            ]
+        },
+        "topics": [
+            "people",
+            "inequality",
+            "effect",
+            "everywhere",
+            "also",
+            "tend",
+            "class",
+            "mostly",
+            "ethnicity",
+            "thomaschattwill"
+        ],
+        "results": {
+            "head": {
+                "link": [],
+                "vars": [
+                    "frame",
+                    "role",
+                    "subsumedUnder"
+                ]
+            },
+            "results": {
+                "distinct": false,
+                "ordered": true,
+                "bindings": [
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbdata/explain.01"
+                        },
+                        "role": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbdata/explain.01__0"
+                        },
+                        "subsumedUnder": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbschema/ARG0"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbdata/explain.01"
+                        },
+                        "role": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbdata/explain.01__1"
+                        },
+                        "subsumedUnder": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbschema/ARG1"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbdata/explain.01"
+                        },
+                        "role": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbdata/explain.01__2"
+                        },
+                        "subsumedUnder": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbschema/ARG2"
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "frame_name": "race.02",
+        "tweet_id": "1457055229468348420",
+        "text": "equity based education handled equity alliance minnesota know anything heard change anyone point focus changed equity outcome guaranteed inequity inequality notice explanation",
+        "frame_roles": {
+            "V": [
+                "race"
+            ],
+            "argmAdv": [
+                "also"
+            ]
+        },
+        "topics": [
+            "people",
+            "inequality",
+            "effect",
+            "everywhere",
+            "also",
+            "tend",
+            "class",
+            "mostly",
+            "ethnicity",
+            "thomaschattwill"
+        ],
+        "results": {
+            "head": {
+                "link": [],
+                "vars": [
+                    "frame",
+                    "role",
+                    "subsumedUnder"
+                ]
+            },
+            "results": {
+                "distinct": false,
+                "ordered": true,
+                "bindings": []
+            }
+        }
+    },
+    {
+        "frame_name": "love.01",
+        "tweet_id": "1457055203388280833",
+        "text": "equity based education handled equity alliance minnesota know anything heard change anyone point focus changed equity outcome guaranteed inequity inequality notice explanation",
+        "frame_roles": {
+            "V": [
+                "love"
+            ],
+            "arg0": [
+                "nothing libs"
+            ],
+            "arg1": [
+                "talking institutional problem parliament"
+            ]
+        },
+        "topics": [
+            "equity",
+            "inequality",
+            "set",
+            "problem",
+            "love",
+            "committee",
+            "way",
+            "community",
+            "handled",
+            "libs"
+        ],
+        "results": {
+            "head": {
+                "link": [],
+                "vars": [
+                    "frame",
+                    "role",
+                    "subsumedUnder"
+                ]
+            },
+            "results": {
+                "distinct": false,
+                "ordered": true,
+                "bindings": [
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbdata/love.01"
+                        },
+                        "role": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbdata/love.01__0"
+                        },
+                        "subsumedUnder": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbschema/ARG0"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbdata/love.01"
+                        },
+                        "role": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbdata/love.01__1"
+                        },
+                        "subsumedUnder": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbschema/ARG1"
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "frame_name": "talk.01",
+        "tweet_id": "1457055203388280833",
+        "text": "equity based education handled equity alliance minnesota know anything heard change anyone point focus changed equity outcome guaranteed inequity inequality notice explanation",
+        "frame_roles": {
+            "V": [
+                "talking"
+            ],
+            "arg0": [
+                "nothing libs"
+            ],
+            "arg1": [
+                "institutional problem parliament"
+            ]
+        },
+        "topics": [
+            "equity",
+            "inequality",
+            "set",
+            "problem",
+            "love",
+            "committee",
+            "way",
+            "community",
+            "handled",
+            "libs"
+        ],
+        "results": {
+            "head": {
+                "link": [],
+                "vars": [
+                    "frame",
+                    "role",
+                    "subsumedUnder"
+                ]
+            },
+            "results": {
+                "distinct": false,
+                "ordered": true,
+                "bindings": [
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbdata/talk.01"
+                        },
+                        "role": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbdata/talk.01__0"
+                        },
+                        "subsumedUnder": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbschema/ARG0"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbdata/talk.01"
+                        },
+                        "role": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbdata/talk.01__1"
+                        },
+                        "subsumedUnder": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbschema/ARG1"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbdata/talk.01"
+                        },
+                        "role": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbdata/talk.01__2"
+                        },
+                        "subsumedUnder": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbschema/ARG2"
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "frame_name": "base.02",
+        "tweet_id": "1457054652197920770",
+        "text": "equity based education handled equity alliance minnesota know anything heard change anyone point focus changed equity outcome guaranteed inequity inequality notice explanation",
+        "frame_roles": {
+            "V": [
+                "based"
+            ],
+            "arg2": [
+                "equity"
+            ],
+            "arg1": [
+                "education"
+            ]
+        },
+        "topics": [
+            "equity",
+            "inequality",
+            "set",
+            "problem",
+            "love",
+            "committee",
+            "way",
+            "community",
+            "handled",
+            "libs"
+        ],
+        "results": {
+            "head": {
+                "link": [],
+                "vars": [
+                    "frame",
+                    "role",
+                    "subsumedUnder"
+                ]
+            },
+            "results": {
+                "distinct": false,
+                "ordered": true,
+                "bindings": [
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbdata/base.02"
+                        },
+                        "role": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbdata/base.02__2"
+                        },
+                        "subsumedUnder": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbschema/ARG2"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbdata/base.02"
+                        },
+                        "role": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbdata/base.02__0"
+                        },
+                        "subsumedUnder": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbschema/ARG0"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbdata/base.02"
+                        },
+                        "role": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbdata/base.02__1"
+                        },
+                        "subsumedUnder": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/pb/pbschema/ARG1"
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "frame_name": "educate.01",
+        "tweet_id": "1457054652197920770",
+        "text": "equity based education handled equity alliance minnesota know anything heard change anyone point focus changed equity outcome guaranteed inequity inequality notice explanation",
+        "frame_roles": {
+            "V": [
+                "education"
+            ],
+            "arg2": [
+                "equity based"
+            ]
+        },
+        "topics": [
+            "equity",
+            "inequality",
+            "set",
+            "problem",
+            "love",
+            "committee",
+            "way",
+            "community",
+            "handled",
+            "libs"
+        ],
+        "results": {
+            "head": {
+                "link": [],
+                "vars": [
+                    "frame",
+                    "role",
+                    "subsumedUnder"
+                ]
+            },
+            "results": {
+                "distinct": false,
+                "ordered": true,
+                "bindings": []
+            }
+        }
+    }
+]

@@ -115,6 +115,11 @@ for output in fcg_output_list:
 
             sparql_query = sparql_template.format(frame_name=frame_name, sent_number=1)
             sparql = SPARQLWrapper("http://etna.istc.cnr.it/framester2/sparql")
+
+            # TODO: Try agent
+            # sparql = SPARQLWrapper(sparql_endpoint, agent=agent)
+
+
             sparql.setTimeout(300)
             sparql.setQuery(sparql_query)
             sparql.setReturnFormat(JSON)

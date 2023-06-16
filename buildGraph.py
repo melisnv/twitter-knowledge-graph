@@ -65,8 +65,8 @@ for entry in merged_data:
             role_arg = rdflib.URIRef(role)
             role_capitalize = role.capitalize()
 
-            g_all_tweets.add((frame_FCG, URIRef(f'http://example.com/has{role}'), role_arg))
-            g_all_tweets.add((role_arg, URIRef(f'http://example.com/{role}Of'), frame_FCG))
+            g_all_tweets.add((frame_number_node, URIRef(f'http://example.com/has{role}'), role_arg))
+            g_all_tweets.add((role_arg, URIRef(f'http://example.com/{role}Of'), frame_number_node))
             g_all_tweets.add((role_arg, URIRef(f'http://example.com/hasValue'), role_string))
 
     # adding topic triples
@@ -74,13 +74,14 @@ for entry in merged_data:
         topic_uri = topicspace[topic]
         g_all_tweets.add((topic_uri, RDF.type, URIRef('http://example.com/Topic/')))
         g_all_tweets.add((topic_uri, RDFS.label, Literal(topic)))
-        g_all_tweets.add((tweet_uri, URIRef('http://example.com/isAbout'), topic_uri))
-        g_all_tweets.add((topic_uri, URIRef('http://example.com/topicOf'), tweet_uri))
+        g_all_tweets.add((frame_number_node, URIRef('http://example.com/isAbout'), topic_uri))
+        g_all_tweets.add((topic_uri, URIRef('http://example.com/topicOf'), frame_number_node))
 
     # processing frame-related results
     hasFrame_results = results['hasFrame']
     closeMatch_results = results['closeMatch']
     sameAs_results = results["sameAs"]
+    hasRole_results = results["hasRole"]
     inheritsFrom_results = results["inheritsFrom"]
 
     for result in hasFrame_results:
@@ -116,19 +117,41 @@ for entry in merged_data:
         g_all_tweets.add((frame_uri, URIRef('http://example.com/sameAs'), sameAsFrame_uri))
         g_all_tweets.add((sameAsFrame_uri, URIRef('http://example.com/similarConceptOf'), frame_uri))
 
-        for result in inheritsFrom_results:
-            frame_uri = rdflib.URIRef(result['frame']['value'])
-            frameName = result['frame']['value'].split("/")[-1]
+    for result in hasRole_results:
+        frame_uri = rdflib.URIRef(result['frame']['value'])
+        frameName = result['frame']['value'].split("/")[-1]
 
-            inheritsFrom_uri = rdflib.URIRef(result['inheritsFromFrame']['value'])
-            inheritsFromName = result['inheritsFromFrame']['value'].split("/")[-1]
+        role_uri = rdflib.URIRef(result['role']['value'])
+        roleName = result['role']['value'].split("/")[-1]
 
-            # adding sameAs
-            g_all_tweets.add((inheritsFrom_uri, RDF.type, URIRef('http://example.com/ObjectProperty')))
-            g_all_tweets.add((inheritsFrom_uri, RDFS.label, Literal(inheritsFromName)))
+        hasRole_uri = rdflib.URIRef(result['subsumedUnder']['value'])
+        hasRoleName = result['subsumedUnder']['value'].split("/")[-1]
 
-            g_all_tweets.add((frame_uri, URIRef('http://example.com/inheritsFrom'), inheritsFrom_uri))
-            g_all_tweets.add((inheritsFrom_uri, URIRef('http://example.com/inheritedBy'), frame_uri))
+        g_all_tweets.add((role_uri, RDF.type, URIRef('https://w3id.org/framester/pb/pbschema/RoleSet')))
+        g_all_tweets.add((role_uri, RDFS.label, Literal(roleName)))
+
+        g_all_tweets.add((hasRole_uri, RDF.type, URIRef('https://w3id.org/framester/pb/pbschema/Role')))
+        g_all_tweets.add((hasRole_uri, RDFS.label, Literal(hasRoleName)))
+
+        g_all_tweets.add((frame_FCG, URIRef('http://example.com/hasRoleSet'), role_uri))
+        g_all_tweets.add((role_uri, URIRef('http://example.com/roleOf'), frame_FCG))
+
+        g_all_tweets.add((role_uri, URIRef('http://example.com/subsumedUnder'), hasRole_uri))
+        g_all_tweets.add((hasRole_uri, URIRef('http://example.com/transitivePropertyOf'), role_uri))
+
+    #for result in inheritsFrom_results:
+    #    frame_uri = rdflib.URIRef(result['frame']['value'])
+    #    frameName = result['frame']['value'].split("/")[-1]
+    #
+    #    inheritsFrom_uri = rdflib.URIRef(result['inheritsFromFrame']['value'])
+    #    inheritsFromName = result['inheritsFromFrame']['value'].split("/")[-1]
+    #
+    #    # adding sameAs
+    #    g_all_tweets.add((inheritsFrom_uri, RDF.type, URIRef('http://example.com/ObjectProperty')))
+    #    g_all_tweets.add((inheritsFrom_uri, RDFS.label, Literal(inheritsFromName)))
+    #
+    #    g_all_tweets.add((frame_uri, URIRef('http://example.com/inheritsFrom'), inheritsFrom_uri))
+    #    g_all_tweets.add((inheritsFrom_uri, URIRef('http://example.com/inheritedBy'), frame_uri))
 
     for result in closeMatch_results:
         matchedFrames_uri = rdflib.URIRef(result['matchedFrames']['value'])
@@ -142,10 +165,10 @@ for entry in merged_data:
         g_all_tweets.add((matchedFrames_uri, URIRef('http://example.com/synonymOf'), frame_uri))
 
 # Serialize the RDF graph and save it to a file
-with open("graphs/12thJuneInherited.ttl", 'wb') as f:
+with open("graphs/15thJune3.ttl", 'wb') as f:
     f.write(g_all_tweets.serialize(format="turtle").encode())
 
-print(f"RDF graph saved to 12thJuneInherited.ttl file.")
+print(f"RDF graph saved to 15thJune3.ttl file.")
 
 # Increment the frame number for the next tweet
 frame_counter += 1
