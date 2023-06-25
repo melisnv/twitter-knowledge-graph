@@ -1,0 +1,542 @@
+[
+    {
+        "frame_name": "come.01",
+        "tweet_id": "1457055229468348420",
+        "text": "equity based education handled equity alliance minnesota know anything heard change anyone point focus changed equity outcome guaranteed inequity inequality notice explanation",
+        "frame_roles": {
+            "V": [
+                "coming"
+            ],
+            "arg1": [
+                "different background affect"
+            ]
+        },
+        "topics": [
+            "people",
+            "inequality",
+            "effect",
+            "everywhere",
+            "also",
+            "tend",
+            "class",
+            "mostly",
+            "ethnicity",
+            "thomaschattwill"
+        ],
+        "results": {
+            "head": {
+                "link": [],
+                "vars": [
+                    "frame",
+                    "hasFrameElement"
+                ]
+            },
+            "results": {
+                "distinct": false,
+                "ordered": true,
+                "bindings": [
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Arriving"
+                        },
+                        "hasFrameElement": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/fe/Circumstances.arriving"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Arriving"
+                        },
+                        "hasFrameElement": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/fe/Goal.arriving"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Arriving"
+                        },
+                        "hasFrameElement": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/fe/Means.arriving"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Arriving"
+                        },
+                        "hasFrameElement": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/fe/Event_description.arriving"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Arriving"
+                        },
+                        "hasFrameElement": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/fe/Period_of_iterations.arriving"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Arriving"
+                        },
+                        "hasFrameElement": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/fe/Manner.arriving"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Arriving"
+                        },
+                        "hasFrameElement": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/fe/Purpose.arriving"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Arriving"
+                        },
+                        "hasFrameElement": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/fe/Time.arriving"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Arriving"
+                        },
+                        "hasFrameElement": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/fe/Place.arriving"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Arriving"
+                        },
+                        "hasFrameElement": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/fe/Cotheme.arriving"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Arriving"
+                        },
+                        "hasFrameElement": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/fe/Theme.arriving"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Arriving"
+                        },
+                        "hasFrameElement": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/fe/Depictive.arriving"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Arriving"
+                        },
+                        "hasFrameElement": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/fe/Mode_of_transportation.arriving"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Arriving"
+                        },
+                        "hasFrameElement": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/fe/Degree.arriving"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Arriving"
+                        },
+                        "hasFrameElement": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/fe/Path.arriving"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Arriving"
+                        },
+                        "hasFrameElement": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/fe/Frequency.arriving"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Arriving"
+                        },
+                        "hasFrameElement": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/fe/Goal_conditions.arriving"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Arriving"
+                        },
+                        "hasFrameElement": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/fe/Source.arriving"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Arriving"
+                        },
+                        "hasFrameElement": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/fe/New_situation.arriving"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Arriving"
+                        },
+                        "hasFrameElement": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/fe/Re_encoding.arriving"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Arriving"
+                        },
+                        "hasFrameElement": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/fe/Re-encoding.arriving"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Becoming"
+                        },
+                        "hasFrameElement": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/fe/Duration_of_final_state.becoming"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Becoming"
+                        },
+                        "hasFrameElement": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/fe/Place.becoming"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Becoming"
+                        },
+                        "hasFrameElement": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/fe/Final_category.becoming"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Becoming"
+                        },
+                        "hasFrameElement": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/fe/Group.becoming"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Becoming"
+                        },
+                        "hasFrameElement": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/fe/Transitional_period.becoming"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Becoming"
+                        },
+                        "hasFrameElement": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/fe/Final_quality.becoming"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Becoming"
+                        },
+                        "hasFrameElement": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/fe/Time.becoming"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Becoming"
+                        },
+                        "hasFrameElement": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/fe/Entity.becoming"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Becoming"
+                        },
+                        "hasFrameElement": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/fe/Circumstances.becoming"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Becoming"
+                        },
+                        "hasFrameElement": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/fe/Explanation.becoming"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Becoming"
+                        },
+                        "hasFrameElement": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/fe/Manner.becoming"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Becoming"
+                        },
+                        "hasFrameElement": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/fe/Initial_category.becoming"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Becoming"
+                        },
+                        "hasFrameElement": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/fe/Reason.becoming"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Becoming"
+                        },
+                        "hasFrameElement": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/fe/Initial_state.becoming"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Becoming"
+                        },
+                        "hasFrameElement": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/fe/Cause.becoming"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Becoming"
+                        },
+                        "hasFrameElement": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/fe/Final_state.becoming"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Getting"
+                        },
+                        "hasFrameElement": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/fe/Beneficiary.getting"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Getting"
+                        },
+                        "hasFrameElement": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/fe/Means.getting"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Getting"
+                        },
+                        "hasFrameElement": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/fe/Place.getting"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Getting"
+                        },
+                        "hasFrameElement": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/fe/Reason.getting"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Getting"
+                        },
+                        "hasFrameElement": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/fe/Result.getting"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Getting"
+                        },
+                        "hasFrameElement": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/fe/Purpose.getting"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Getting"
+                        },
+                        "hasFrameElement": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/fe/Source.getting"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Getting"
+                        },
+                        "hasFrameElement": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/fe/Recipient.getting"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Getting"
+                        },
+                        "hasFrameElement": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/fe/Concessive.getting"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Getting"
+                        },
+                        "hasFrameElement": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/fe/Time.getting"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Getting"
+                        },
+                        "hasFrameElement": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/fe/Theme.getting"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Getting"
+                        },
+                        "hasFrameElement": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/fe/Explanation.getting"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Getting"
+                        },
+                        "hasFrameElement": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/fe/Manner.getting"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]
