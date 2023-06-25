@@ -4,7 +4,7 @@ import json
 with open('data/hasFrameRelation/hasFrameRelation.json') as file:
     hasFrame_data = json.load(file)
 
-with open('data/closeMatch/closeMatch.json') as file:
+with open('data/closeMatch/shouldDeletecloseMatch.json') as file:
     closeMatch_data = json.load(file)
 
 with open('data/sameAs/sameAs.json') as file:

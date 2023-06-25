@@ -35,7 +35,6 @@ with open('data/sample_tweet_data.csv', 'r', encoding="utf8") as csvfile:
 
         # make the API call to extract frames for the tweet text
         response = requests.post(fcg_url, headers=headers, json=data)
-        fcg_output = json.loads(response.text)
 
         print(response.status_code)  # Print the status code of the response
         print(response.text)  # Print the response text
@@ -54,6 +53,10 @@ with open('data/sample_tweet_data.csv', 'r', encoding="utf8") as csvfile:
         fcg_output['topic'] = tweet_topic
         output_dict[tweet_topic] = fcg_output
 
+        # adding tweet text to output
+        fcg_output['text'] = tweet_text
+        output_dict[tweet_text] = fcg_output
+
         # appending the fcg_output to the list
         fcg_output_list.append(fcg_output)
 
@@ -70,6 +73,7 @@ for output in fcg_output_list:
     if output.get("frameSet") is not None and output["frameSet"] is not None:
         frame_set = output["frameSet"]
         tweet_id = output["id"]
+        tweet_text = output["text"]
         topic_list = output['topic'].split(', ')  # make topics list
         tweet_frames = {}
 
@@ -91,12 +95,8 @@ for output in fcg_output_list:
                     frame_roles[role_name] = [role_string]
 
                 print(
-                    f"Tweet ID: {tweet_id}, Frame: {frame_name}, Role: {role_name}, String: {role_string}, Topic: {topic_list}")
+                    f"Tweet ID: {tweet_id}, Tweet : {tweet_text}, Frame: {frame_name}, Role: {role_name}, String: {role_string}, Topic: {topic_list}")
 
-            #tweet_frames[frame_name] = frame_roles
-
-            # TODO: Add an agent
-            # SPARQLWrapper(sparql_endpoint, agent=agent)
 
             # the SPARQL query to retrieve information about the frame from Framester
             sparql_template = r'''
@@ -122,7 +122,6 @@ for output in fcg_output_list:
                                 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36')
             results = sparql.query().convert()
 
-            # print("RESULTS:", results)
             results_with_frame_name = {
                 "frame_name": frame_name,
                 "tweet_id": tweet_id,

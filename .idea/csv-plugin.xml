@@ -10,14 +10,14 @@
             </Attribute>
           </value>
         </entry>
-        <entry key="\data\twitter_data.csv">
+        <entry key="\data\sample_tweet_data2.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="\event_data.csv">
+        <entry key="\data\twitter_data.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />

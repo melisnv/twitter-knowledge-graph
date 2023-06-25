@@ -1,27 +1,27 @@
 [
     {
-        "frame_name": "come.01",
-        "tweet_id": "1457055229468348420",
-        "text": "equity based education handled equity alliance minnesota know anything heard change anyone point focus changed equity outcome guaranteed inequity inequality notice explanation",
+        "frame_name": "save.01",
+        "tweet_id": "1457055231225778177",
+        "text": "peanut pitbull chrisjo therealearns marinamedvin government money spend receive via tax borrow fed worsens inflation worsens wealth inequality inflates bubble good road etc priced purchasing good unable pay rent saving",
         "frame_roles": {
             "V": [
-                "coming"
+                "saving"
             ],
-            "arg1": [
-                "different background affect"
+            "argmLvb": [
+                "pay"
             ]
         },
         "topics": [
-            "people",
+            "good",
+            "worsens",
             "inequality",
-            "effect",
-            "everywhere",
-            "also",
-            "tend",
-            "class",
-            "mostly",
-            "ethnicity",
-            "thomaschattwill"
+            "chrisjo",
+            "priced",
+            "bubble",
+            "tax",
+            "rent",
+            "road",
+            "fed"
         ],
         "results": {
             "head": {
@@ -38,501 +38,384 @@
                     {
                         "frame": {
                             "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Arriving"
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Motion"
                         },
                         "hasFrameElement": {
                             "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/fe/Circumstances.arriving"
+                            "value": "https://w3id.org/framester/framenet/abox/fe/Area.motion"
                         }
                     },
                     {
                         "frame": {
                             "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Arriving"
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Motion"
                         },
                         "hasFrameElement": {
                             "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/fe/Goal.arriving"
+                            "value": "https://w3id.org/framester/framenet/abox/fe/Carrier.motion"
                         }
                     },
                     {
                         "frame": {
                             "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Arriving"
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Motion"
                         },
                         "hasFrameElement": {
                             "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/fe/Means.arriving"
+                            "value": "https://w3id.org/framester/framenet/abox/fe/Containing_event.motion"
                         }
                     },
                     {
                         "frame": {
                             "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Arriving"
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Motion"
                         },
                         "hasFrameElement": {
                             "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/fe/Event_description.arriving"
+                            "value": "https://w3id.org/framester/framenet/abox/fe/Degree.motion"
                         }
                     },
                     {
                         "frame": {
                             "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Arriving"
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Motion"
                         },
                         "hasFrameElement": {
                             "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/fe/Period_of_iterations.arriving"
+                            "value": "https://w3id.org/framester/framenet/abox/fe/Depictive.motion"
                         }
                     },
                     {
                         "frame": {
                             "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Arriving"
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Motion"
                         },
                         "hasFrameElement": {
                             "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/fe/Manner.arriving"
+                            "value": "https://w3id.org/framester/framenet/abox/fe/Direction.motion"
                         }
                     },
                     {
                         "frame": {
                             "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Arriving"
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Motion"
                         },
                         "hasFrameElement": {
                             "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/fe/Purpose.arriving"
+                            "value": "https://w3id.org/framester/framenet/abox/fe/Distance.motion"
                         }
                     },
                     {
                         "frame": {
                             "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Arriving"
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Motion"
                         },
                         "hasFrameElement": {
                             "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/fe/Time.arriving"
+                            "value": "https://w3id.org/framester/framenet/abox/fe/Duration.motion"
                         }
                     },
                     {
                         "frame": {
                             "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Arriving"
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Motion"
                         },
                         "hasFrameElement": {
                             "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/fe/Place.arriving"
+                            "value": "https://w3id.org/framester/framenet/abox/fe/Frequency.motion"
                         }
                     },
                     {
                         "frame": {
                             "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Arriving"
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Motion"
                         },
                         "hasFrameElement": {
                             "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/fe/Cotheme.arriving"
+                            "value": "https://w3id.org/framester/framenet/abox/fe/Goal.motion"
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "frame_name": "pay.01",
+        "tweet_id": "1457055231225778177",
+        "text": "peanut pitbull chrisjo therealearns marinamedvin government money spend receive via tax borrow fed worsens inflation worsens wealth inequality inflates bubble good road etc priced purchasing good unable pay rent saving",
+        "frame_roles": {
+            "V": [
+                "pay"
+            ],
+            "arg0": [
+                "bubble good road etc"
+            ],
+            "arg1": [
+                "rent saving"
+            ]
+        },
+        "topics": [
+            "good",
+            "worsens",
+            "inequality",
+            "chrisjo",
+            "priced",
+            "bubble",
+            "tax",
+            "rent",
+            "road",
+            "fed"
+        ],
+        "results": {
+            "head": {
+                "link": [],
+                "vars": [
+                    "frame",
+                    "hasFrameElement"
+                ]
+            },
+            "results": {
+                "distinct": false,
+                "ordered": true,
+                "bindings": [
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Commerce_collect"
+                        },
+                        "hasFrameElement": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/fe/Manner.commerce_collect"
                         }
                     },
                     {
                         "frame": {
                             "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Arriving"
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Commerce_collect"
                         },
                         "hasFrameElement": {
                             "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/fe/Theme.arriving"
+                            "value": "https://w3id.org/framester/framenet/abox/fe/Money.commerce_collect"
                         }
                     },
                     {
                         "frame": {
                             "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Arriving"
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Commerce_collect"
                         },
                         "hasFrameElement": {
                             "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/fe/Depictive.arriving"
+                            "value": "https://w3id.org/framester/framenet/abox/fe/Reason.commerce_collect"
                         }
                     },
                     {
                         "frame": {
                             "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Arriving"
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Commerce_collect"
                         },
                         "hasFrameElement": {
                             "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/fe/Mode_of_transportation.arriving"
+                            "value": "https://w3id.org/framester/framenet/abox/fe/Time.commerce_collect"
                         }
                     },
                     {
                         "frame": {
                             "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Arriving"
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Commerce_collect"
                         },
                         "hasFrameElement": {
                             "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/fe/Degree.arriving"
+                            "value": "https://w3id.org/framester/framenet/abox/fe/Unit.commerce_collect"
                         }
                     },
                     {
                         "frame": {
                             "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Arriving"
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Commerce_collect"
                         },
                         "hasFrameElement": {
                             "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/fe/Path.arriving"
+                            "value": "https://w3id.org/framester/framenet/abox/fe/Buyer.commerce_collect"
                         }
                     },
                     {
                         "frame": {
                             "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Arriving"
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Commerce_collect"
                         },
                         "hasFrameElement": {
                             "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/fe/Frequency.arriving"
+                            "value": "https://w3id.org/framester/framenet/abox/fe/Goods.commerce_collect"
                         }
                     },
                     {
                         "frame": {
                             "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Arriving"
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Commerce_collect"
                         },
                         "hasFrameElement": {
                             "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/fe/Goal_conditions.arriving"
+                            "value": "https://w3id.org/framester/framenet/abox/fe/Means.commerce_collect"
                         }
                     },
                     {
                         "frame": {
                             "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Arriving"
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Commerce_collect"
                         },
                         "hasFrameElement": {
                             "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/fe/Source.arriving"
+                            "value": "https://w3id.org/framester/framenet/abox/fe/Place.commerce_collect"
                         }
                     },
                     {
                         "frame": {
                             "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Arriving"
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Commerce_collect"
                         },
                         "hasFrameElement": {
                             "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/fe/New_situation.arriving"
+                            "value": "https://w3id.org/framester/framenet/abox/fe/Purpose.commerce_collect"
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "frame_name": "purchase.01",
+        "tweet_id": "1457055231225778177",
+        "text": "peanut pitbull chrisjo therealearns marinamedvin government money spend receive via tax borrow fed worsens inflation worsens wealth inequality inflates bubble good road etc priced purchasing good unable pay rent saving",
+        "frame_roles": {
+            "V": [
+                "purchasing"
+            ],
+            "argmMnr": [
+                "good"
+            ]
+        },
+        "topics": [
+            "good",
+            "worsens",
+            "inequality",
+            "chrisjo",
+            "priced",
+            "bubble",
+            "tax",
+            "rent",
+            "road",
+            "fed"
+        ],
+        "results": {
+            "head": {
+                "link": [],
+                "vars": [
+                    "frame",
+                    "hasFrameElement"
+                ]
+            },
+            "results": {
+                "distinct": false,
+                "ordered": true,
+                "bindings": [
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Commerce_buy"
+                        },
+                        "hasFrameElement": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/fe/Means.commerce_buy"
                         }
                     },
                     {
                         "frame": {
                             "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Arriving"
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Commerce_buy"
                         },
                         "hasFrameElement": {
                             "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/fe/Re_encoding.arriving"
+                            "value": "https://w3id.org/framester/framenet/abox/fe/Goods.commerce_buy"
                         }
                     },
                     {
                         "frame": {
                             "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Arriving"
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Commerce_buy"
                         },
                         "hasFrameElement": {
                             "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/fe/Re-encoding.arriving"
+                            "value": "https://w3id.org/framester/framenet/abox/fe/Purpose.commerce_buy"
                         }
                     },
                     {
                         "frame": {
                             "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Becoming"
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Commerce_buy"
                         },
                         "hasFrameElement": {
                             "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/fe/Duration_of_final_state.becoming"
+                            "value": "https://w3id.org/framester/framenet/abox/fe/Buyer.commerce_buy"
                         }
                     },
                     {
                         "frame": {
                             "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Becoming"
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Commerce_buy"
                         },
                         "hasFrameElement": {
                             "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/fe/Place.becoming"
+                            "value": "https://w3id.org/framester/framenet/abox/fe/Money.commerce_buy"
                         }
                     },
                     {
                         "frame": {
                             "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Becoming"
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Commerce_buy"
                         },
                         "hasFrameElement": {
                             "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/fe/Final_category.becoming"
+                            "value": "https://w3id.org/framester/framenet/abox/fe/Rate.commerce_buy"
                         }
                     },
                     {
                         "frame": {
                             "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Becoming"
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Commerce_buy"
                         },
                         "hasFrameElement": {
                             "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/fe/Group.becoming"
+                            "value": "https://w3id.org/framester/framenet/abox/fe/Manner.commerce_buy"
                         }
                     },
                     {
                         "frame": {
                             "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Becoming"
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Commerce_buy"
                         },
                         "hasFrameElement": {
                             "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/fe/Transitional_period.becoming"
+                            "value": "https://w3id.org/framester/framenet/abox/fe/Period_of_iteration.commerce_buy"
                         }
                     },
                     {
                         "frame": {
                             "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Becoming"
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Commerce_buy"
                         },
                         "hasFrameElement": {
                             "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/fe/Final_quality.becoming"
+                            "value": "https://w3id.org/framester/framenet/abox/fe/Place.commerce_buy"
                         }
                     },
                     {
                         "frame": {
                             "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Becoming"
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Commerce_buy"
                         },
                         "hasFrameElement": {
                             "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/fe/Time.becoming"
-                        }
-                    },
-                    {
-                        "frame": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Becoming"
-                        },
-                        "hasFrameElement": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/fe/Entity.becoming"
-                        }
-                    },
-                    {
-                        "frame": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Becoming"
-                        },
-                        "hasFrameElement": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/fe/Circumstances.becoming"
-                        }
-                    },
-                    {
-                        "frame": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Becoming"
-                        },
-                        "hasFrameElement": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/fe/Explanation.becoming"
-                        }
-                    },
-                    {
-                        "frame": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Becoming"
-                        },
-                        "hasFrameElement": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/fe/Manner.becoming"
-                        }
-                    },
-                    {
-                        "frame": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Becoming"
-                        },
-                        "hasFrameElement": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/fe/Initial_category.becoming"
-                        }
-                    },
-                    {
-                        "frame": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Becoming"
-                        },
-                        "hasFrameElement": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/fe/Reason.becoming"
-                        }
-                    },
-                    {
-                        "frame": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Becoming"
-                        },
-                        "hasFrameElement": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/fe/Initial_state.becoming"
-                        }
-                    },
-                    {
-                        "frame": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Becoming"
-                        },
-                        "hasFrameElement": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/fe/Cause.becoming"
-                        }
-                    },
-                    {
-                        "frame": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Becoming"
-                        },
-                        "hasFrameElement": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/fe/Final_state.becoming"
-                        }
-                    },
-                    {
-                        "frame": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Getting"
-                        },
-                        "hasFrameElement": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/fe/Beneficiary.getting"
-                        }
-                    },
-                    {
-                        "frame": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Getting"
-                        },
-                        "hasFrameElement": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/fe/Means.getting"
-                        }
-                    },
-                    {
-                        "frame": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Getting"
-                        },
-                        "hasFrameElement": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/fe/Place.getting"
-                        }
-                    },
-                    {
-                        "frame": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Getting"
-                        },
-                        "hasFrameElement": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/fe/Reason.getting"
-                        }
-                    },
-                    {
-                        "frame": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Getting"
-                        },
-                        "hasFrameElement": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/fe/Result.getting"
-                        }
-                    },
-                    {
-                        "frame": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Getting"
-                        },
-                        "hasFrameElement": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/fe/Purpose.getting"
-                        }
-                    },
-                    {
-                        "frame": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Getting"
-                        },
-                        "hasFrameElement": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/fe/Source.getting"
-                        }
-                    },
-                    {
-                        "frame": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Getting"
-                        },
-                        "hasFrameElement": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/fe/Recipient.getting"
-                        }
-                    },
-                    {
-                        "frame": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Getting"
-                        },
-                        "hasFrameElement": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/fe/Concessive.getting"
-                        }
-                    },
-                    {
-                        "frame": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Getting"
-                        },
-                        "hasFrameElement": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/fe/Time.getting"
-                        }
-                    },
-                    {
-                        "frame": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Getting"
-                        },
-                        "hasFrameElement": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/fe/Theme.getting"
-                        }
-                    },
-                    {
-                        "frame": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Getting"
-                        },
-                        "hasFrameElement": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/fe/Explanation.getting"
-                        }
-                    },
-                    {
-                        "frame": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Getting"
-                        },
-                        "hasFrameElement": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/fe/Manner.getting"
+                            "value": "https://w3id.org/framester/framenet/abox/fe/Time.commerce_buy"
                         }
                     }
                 ]

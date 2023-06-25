@@ -9,34 +9,37 @@ pd.set_option('display.width', None)        # Auto-adjust width
 g = Graph()
 g.parse("graphs/15thJune3.ttl", format="ttl")
 
-# the namespaces used in the TTL file
+# defining the namespaces used in the TTL file
 ns1 = Namespace("http://example.com/")
 rdfs = Namespace("http://www.w3.org/2000/01/rdf-schema#")
 
-# the SPARQL query
+# defining the SPARQL query
+# retriving all frames and their labels.
 query = """
     PREFIX ns1: <http://example.com/>
     PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
-    SELECT ?frame ?closeMatch
+    SELECT ?frame ?label
     WHERE {
         ?frame a ns1:Frame ;
-               ns1:closeMatchOf ?closeMatch .
+        rdfs:label ?label .
     }
-"""
+    """
 
 # executing the query and retrieve the results
 results = g.query(query, initNs={"ns1": ns1, "rdfs": rdfs})
 
+# a list to store the query results
 query_results = []
 
 for row in results:
     frame = str(row["frame"])
-    closeMatch = str(row["closeMatch"])
-    query_results.append({"Frame": frame, "closeMatch": closeMatch})
+    label = str(row["label"])
+    query_results.append({"Frame": frame, "Label": label})
 
 df = pd.DataFrame(query_results)
 df_str = df.to_string(max_colwidth=100)
+
 
 print(df_str)
 

@@ -2,7 +2,7 @@
     {
         "frame_name": "argue.01",
         "tweet_id": "1457055229468348420",
-        "text": "equity based education handled equity alliance minnesota know anything heard change anyone point focus changed equity outcome guaranteed inequity inequality notice explanation",
+        "text": "litupmagazine thomaschattwill nhannahjones well argument made people coming different background affect also mostly explain inequality better race poor people tend worse middle class rich people ethnicity tends poorer others",
         "frame_roles": {
             "V": [
                 "argument"
@@ -47,9 +47,9 @@
         }
     },
     {
-        "frame_name": "make.01",
+        "frame_name": "make.02",
         "tweet_id": "1457055229468348420",
-        "text": "equity based education handled equity alliance minnesota know anything heard change anyone point focus changed equity outcome guaranteed inequity inequality notice explanation",
+        "text": "litupmagazine thomaschattwill nhannahjones well argument made people coming different background affect also mostly explain inequality better race poor people tend worse middle class rich people ethnicity tends poorer others",
         "frame_roles": {
             "V": [
                 "made"
@@ -88,17 +88,37 @@
                     {
                         "frame": {
                             "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Arriving"
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Causation"
                         },
                         "related": {
                             "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Visiting_scenario_arrival"
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Level_of_force_exertion"
                         }
                     },
                     {
                         "frame": {
                             "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Arriving"
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Causation"
+                        },
+                        "related": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Cause_to_start"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Causation"
+                        },
+                        "related": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Means"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Causation"
                         },
                         "related": {
                             "type": "uri",
@@ -108,51 +128,11 @@
                     {
                         "frame": {
                             "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Arriving"
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Causation"
                         },
                         "related": {
                             "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Vehicle_landing"
-                        }
-                    },
-                    {
-                        "frame": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Arriving"
-                        },
-                        "related": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Having_or_lacking_access"
-                        }
-                    },
-                    {
-                        "frame": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Arriving"
-                        },
-                        "related": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Departing"
-                        }
-                    },
-                    {
-                        "frame": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Arriving"
-                        },
-                        "related": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Traversing"
-                        }
-                    },
-                    {
-                        "frame": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Building"
-                        },
-                        "related": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Intentionally_create"
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Causation_scenario"
                         }
                     },
                     {
@@ -224,266 +204,6 @@
                             "type": "uri",
                             "value": "https://w3id.org/framester/framenet/abox/frame/Exchange_currency"
                         }
-                    },
-                    {
-                        "frame": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Cooking_creation"
-                        },
-                        "related": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Apply_heat"
-                        }
-                    },
-                    {
-                        "frame": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Cooking_creation"
-                        },
-                        "related": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Intentionally_create"
-                        }
-                    },
-                    {
-                        "frame": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Creating"
-                        },
-                        "related": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Intentionally_create"
-                        }
-                    },
-                    {
-                        "frame": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Creating"
-                        },
-                        "related": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Ingredients"
-                        }
-                    },
-                    {
-                        "frame": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Creating"
-                        },
-                        "related": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Transitive_action"
-                        }
-                    },
-                    {
-                        "frame": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Intentionally_create"
-                        },
-                        "related": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Building"
-                        }
-                    },
-                    {
-                        "frame": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Intentionally_create"
-                        },
-                        "related": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Achieving_first"
-                        }
-                    },
-                    {
-                        "frame": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Intentionally_create"
-                        },
-                        "related": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Cooking_creation"
-                        }
-                    },
-                    {
-                        "frame": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Intentionally_create"
-                        },
-                        "related": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Create_physical_artwork"
-                        }
-                    },
-                    {
-                        "frame": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Intentionally_create"
-                        },
-                        "related": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Creating"
-                        }
-                    },
-                    {
-                        "frame": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Intentionally_create"
-                        },
-                        "related": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Intentionally_act"
-                        }
-                    },
-                    {
-                        "frame": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Intentionally_create"
-                        },
-                        "related": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Duplication"
-                        }
-                    },
-                    {
-                        "frame": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Intentionally_create"
-                        },
-                        "related": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Knot_creation"
-                        }
-                    },
-                    {
-                        "frame": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Intentionally_create"
-                        },
-                        "related": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Text_creation"
-                        }
-                    },
-                    {
-                        "frame": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Intentionally_create"
-                        },
-                        "related": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Manufacturing"
-                        }
-                    },
-                    {
-                        "frame": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Intentionally_create"
-                        },
-                        "related": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Translating"
-                        }
-                    },
-                    {
-                        "frame": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Manufacturing"
-                        },
-                        "related": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Intentionally_create"
-                        }
-                    },
-                    {
-                        "frame": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Manufacturing"
-                        },
-                        "related": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Product_development"
-                        }
-                    },
-                    {
-                        "frame": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Manufacturing"
-                        },
-                        "related": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Product_development_scenario"
-                        }
-                    },
-                    {
-                        "frame": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Self_motion"
-                        },
-                        "related": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Fleeing"
-                        }
-                    },
-                    {
-                        "frame": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Self_motion"
-                        },
-                        "related": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Cotheme"
-                        }
-                    },
-                    {
-                        "frame": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Self_motion"
-                        },
-                        "related": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Intentional_traversing"
-                        }
-                    },
-                    {
-                        "frame": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Self_motion"
-                        },
-                        "related": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Motion"
-                        }
-                    },
-                    {
-                        "frame": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Self_motion"
-                        },
-                        "related": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Travel"
-                        }
-                    },
-                    {
-                        "frame": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Self_motion"
-                        },
-                        "related": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Intentionally_act"
-                        }
-                    },
-                    {
-                        "frame": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Self_motion"
-                        },
-                        "related": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Quitting_a_place"
-                        }
                     }
                 ]
             }
@@ -492,7 +212,7 @@
     {
         "frame_name": "come.01",
         "tweet_id": "1457055229468348420",
-        "text": "equity based education handled equity alliance minnesota know anything heard change anyone point focus changed equity outcome guaranteed inequity inequality notice explanation",
+        "text": "litupmagazine thomaschattwill nhannahjones well argument made people coming different background affect also mostly explain inequality better race poor people tend worse middle class rich people ethnicity tends poorer others",
         "frame_roles": {
             "V": [
                 "coming"
@@ -1002,7 +722,7 @@
     {
         "frame_name": "affect.01",
         "tweet_id": "1457055229468348420",
-        "text": "equity based education handled equity alliance minnesota know anything heard change anyone point focus changed equity outcome guaranteed inequity inequality notice explanation",
+        "text": "litupmagazine thomaschattwill nhannahjones well argument made people coming different background affect also mostly explain inequality better race poor people tend worse middle class rich people ethnicity tends poorer others",
         "frame_roles": {
             "V": [
                 "affect"
@@ -1085,7 +805,7 @@
     {
         "frame_name": "explain.01",
         "tweet_id": "1457055229468348420",
-        "text": "equity based education handled equity alliance minnesota know anything heard change anyone point focus changed equity outcome guaranteed inequity inequality notice explanation",
+        "text": "litupmagazine thomaschattwill nhannahjones well argument made people coming different background affect also mostly explain inequality better race poor people tend worse middle class rich people ethnicity tends poorer others",
         "frame_roles": {
             "V": [
                 "explain"
@@ -1294,7 +1014,7 @@
     {
         "frame_name": "race.02",
         "tweet_id": "1457055229468348420",
-        "text": "equity based education handled equity alliance minnesota know anything heard change anyone point focus changed equity outcome guaranteed inequity inequality notice explanation",
+        "text": "litupmagazine thomaschattwill nhannahjones well argument made people coming different background affect also mostly explain inequality better race poor people tend worse middle class rich people ethnicity tends poorer others",
         "frame_roles": {
             "V": [
                 "race"
@@ -1354,7 +1074,7 @@
     {
         "frame_name": "love.01",
         "tweet_id": "1457055203388280833",
-        "text": "equity based education handled equity alliance minnesota know anything heard change anyone point focus changed equity outcome guaranteed inequity inequality notice explanation",
+        "text": "nothing libs love talking institutional problem parliament one set sort investigative committee set proposal great way actually address economic inequality faced black community",
         "frame_roles": {
             "V": [
                 "love"
@@ -1477,7 +1197,7 @@
     {
         "frame_name": "talk.01",
         "tweet_id": "1457055203388280833",
-        "text": "equity based education handled equity alliance minnesota know anything heard change anyone point focus changed equity outcome guaranteed inequity inequality notice explanation",
+        "text": "nothing libs love talking institutional problem parliament one set sort investigative committee set proposal great way actually address economic inequality faced black community",
         "frame_roles": {
             "V": [
                 "talking"
