@@ -19,11 +19,15 @@ output_dict = {}
 with open('data/sample_tweet_data.csv', 'r', encoding="utf8") as csvfile:
     reader = csv.DictReader(csvfile)
     for row in reader:
-        # TODO: Check row['cleaned_text'] condition and the results.
+
         # extract the text of the tweet from the 'text' column
         tweet_text = row['cleaned_text']
         tweet_id = row['id']
+        tweet_date = row['created_at']
         tweet_topic = row['topic']
+        tweet_subjectivity = row['Subjectivity']
+        tweet_polarity = row['Polarity']
+        tweet_analysis = row['Analysis']
 
         # create the data dictionary for the API call
         data = {
@@ -58,6 +62,22 @@ with open('data/sample_tweet_data.csv', 'r', encoding="utf8") as csvfile:
         fcg_output['text'] = tweet_text
         output_dict[tweet_text] = fcg_output
 
+        # adding tweet date to output
+        fcg_output['date'] = tweet_date
+        output_dict[tweet_date] = fcg_output
+
+        # adding tweet subjectivity to output
+        fcg_output['subjectivity'] = tweet_subjectivity
+        output_dict[tweet_subjectivity] = fcg_output
+
+        # adding tweet polarity to output
+        fcg_output['polarity'] = tweet_polarity
+        output_dict[tweet_polarity] = fcg_output
+
+        # adding tweet analysis to output
+        fcg_output['analysis'] = tweet_analysis
+        output_dict[tweet_analysis] = fcg_output
+
         # append the fcg_output to the list
         fcg_output_list.append(fcg_output)
 
@@ -77,6 +97,10 @@ for output in fcg_output_list:
         frame_set = output["frameSet"]
         tweet_id = output["id"]
         tweet_text = output["text"]
+        tweet_date = output["date"]
+        tweet_polarity = output["polarity"]
+        tweet_analysis = output["analysis"]
+        tweet_subjectivity = output["subjectivity"]
         topic_list = output['topic'].split(', ')  # make topics list
         tweet_frames = {}
 
@@ -98,9 +122,10 @@ for output in fcg_output_list:
                     frame_roles[role_name] = [role_string]
 
                 print(
-                    f"Tweet ID: {tweet_id}, Tweet : {tweet_text}, Frame: {frame_name}, Role: {role_name}, String: {role_string}, Topic: {topic_list}")
+                    f"Date: {tweet_date}, Tweet ID: {tweet_id}, Tweet : {tweet_text},"
+                    f" Frame: {frame_name}, Role: {role_name}, String: {role_string}, Topic: {topic_list},"
+                    f"Subjectivity : {tweet_subjectivity}, Polarity : {tweet_polarity}, Analysis : {tweet_analysis}")
 
-            #tweet_frames[frame_name] = frame_roles
 
             # the SPARQL query to retrieve information about the frame from Framester
             sparql_template = r'''
@@ -133,6 +158,10 @@ for output in fcg_output_list:
                 "frame_name": frame_name,
                 "tweet_id": tweet_id,
                 "text": tweet_text,
+                "date": tweet_date,
+                "subjectivity": tweet_subjectivity,
+                "polarity": tweet_polarity,
+                "analysis": tweet_analysis,
                 "frame_roles": frame_roles,
                 "topics": topic_list,
                 "results": results

@@ -3,6 +3,10 @@
         "frame_name": "save.01",
         "tweet_id": "1457055231225778177",
         "text": "peanut pitbull chrisjo therealearns marinamedvin government money spend receive via tax borrow fed worsens inflation worsens wealth inequality inflates bubble good road etc priced purchasing good unable pay rent saving",
+        "date": "2021-11-06T18:40:12.000Z",
+        "subjectivity": "0.5666666666666668",
+        "polarity": "0.3",
+        "analysis": "Positive",
         "frame_roles": {
             "V": [
                 "saving"
@@ -12,16 +16,16 @@
             ]
         },
         "topics": [
-            "good",
-            "worsens",
             "inequality",
-            "chrisjo",
-            "priced",
-            "bubble",
-            "tax",
-            "rent",
-            "road",
-            "fed"
+            "amp",
+            "world",
+            "work",
+            "wealth",
+            "u",
+            "gender",
+            "social",
+            "like",
+            "income"
         ],
         "results": {
             "head": {
@@ -143,6 +147,10 @@
         "frame_name": "pay.01",
         "tweet_id": "1457055231225778177",
         "text": "peanut pitbull chrisjo therealearns marinamedvin government money spend receive via tax borrow fed worsens inflation worsens wealth inequality inflates bubble good road etc priced purchasing good unable pay rent saving",
+        "date": "2021-11-06T18:40:12.000Z",
+        "subjectivity": "0.5666666666666668",
+        "polarity": "0.3",
+        "analysis": "Positive",
         "frame_roles": {
             "V": [
                 "pay"
@@ -155,16 +163,16 @@
             ]
         },
         "topics": [
-            "good",
-            "worsens",
             "inequality",
-            "chrisjo",
-            "priced",
-            "bubble",
-            "tax",
-            "rent",
-            "road",
-            "fed"
+            "amp",
+            "world",
+            "work",
+            "wealth",
+            "u",
+            "gender",
+            "social",
+            "like",
+            "income"
         ],
         "results": {
             "head": {
@@ -286,6 +294,10 @@
         "frame_name": "purchase.01",
         "tweet_id": "1457055231225778177",
         "text": "peanut pitbull chrisjo therealearns marinamedvin government money spend receive via tax borrow fed worsens inflation worsens wealth inequality inflates bubble good road etc priced purchasing good unable pay rent saving",
+        "date": "2021-11-06T18:40:12.000Z",
+        "subjectivity": "0.5666666666666668",
+        "polarity": "0.3",
+        "analysis": "Positive",
         "frame_roles": {
             "V": [
                 "purchasing"
@@ -295,16 +307,16 @@
             ]
         },
         "topics": [
-            "good",
-            "worsens",
             "inequality",
-            "chrisjo",
-            "priced",
-            "bubble",
-            "tax",
-            "rent",
-            "road",
-            "fed"
+            "amp",
+            "world",
+            "work",
+            "wealth",
+            "u",
+            "gender",
+            "social",
+            "like",
+            "income"
         ],
         "results": {
             "head": {
@@ -416,6 +428,147 @@
                         "hasFrameElement": {
                             "type": "uri",
                             "value": "https://w3id.org/framester/framenet/abox/fe/Time.commerce_buy"
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "frame_name": "inflate.01",
+        "tweet_id": "1457055231225778177",
+        "text": "peanut pitbull chrisjo therealearns marinamedvin government money spend receive via tax borrow fed worsens inflation worsens wealth inequality inflates bubble good road etc priced purchasing good unable pay rent saving",
+        "date": "2021-11-06T18:40:12.000Z",
+        "subjectivity": "0.5666666666666668",
+        "polarity": "0.3",
+        "analysis": "Positive",
+        "frame_roles": {
+            "V": [
+                "inflation"
+            ]
+        },
+        "topics": [
+            "inequality",
+            "amp",
+            "world",
+            "work",
+            "wealth",
+            "u",
+            "gender",
+            "social",
+            "like",
+            "income"
+        ],
+        "results": {
+            "head": {
+                "link": [],
+                "vars": [
+                    "frame",
+                    "hasFrameElement"
+                ]
+            },
+            "results": {
+                "distinct": false,
+                "ordered": true,
+                "bindings": [
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Cause_change_of_position_on_a_scale"
+                        },
+                        "hasFrameElement": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/fe/Agent.cause_change_of_position_on_a_scale"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Cause_change_of_position_on_a_scale"
+                        },
+                        "hasFrameElement": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/fe/Attribute.cause_change_of_position_on_a_scale"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Cause_change_of_position_on_a_scale"
+                        },
+                        "hasFrameElement": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/fe/Co_Variable.cause_change_of_position_on_a_scale"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Cause_change_of_position_on_a_scale"
+                        },
+                        "hasFrameElement": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/fe/Cause.cause_change_of_position_on_a_scale"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Cause_change_of_position_on_a_scale"
+                        },
+                        "hasFrameElement": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/fe/Difference.cause_change_of_position_on_a_scale"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Cause_change_of_position_on_a_scale"
+                        },
+                        "hasFrameElement": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/fe/Item.cause_change_of_position_on_a_scale"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Cause_change_of_position_on_a_scale"
+                        },
+                        "hasFrameElement": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/fe/Means.cause_change_of_position_on_a_scale"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Cause_change_of_position_on_a_scale"
+                        },
+                        "hasFrameElement": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/fe/Manner.cause_change_of_position_on_a_scale"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Cause_change_of_position_on_a_scale"
+                        },
+                        "hasFrameElement": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/fe/Path.cause_change_of_position_on_a_scale"
+                        }
+                    },
+                    {
+                        "frame": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/frame/Cause_change_of_position_on_a_scale"
+                        },
+                        "hasFrameElement": {
+                            "type": "uri",
+                            "value": "https://w3id.org/framester/framenet/abox/fe/Speed.cause_change_of_position_on_a_scale"
                         }
                     }
                 ]

@@ -14,6 +14,7 @@ fv = Namespace('https://w3id.org/framester/ontology/')
 framespace = Namespace('https://example.org/')
 topicspace = Namespace('https://example.org/Topic/')
 twt = Namespace('https://example.org/')
+twtcontent = Namespace('https://example.org/Content/')
 vowl = Namespace('http://www.w3.org/2002/07/owl#')
 FRAME = Namespace('https://w3id.org/framester/framenet/tbox/')
 
@@ -30,28 +31,62 @@ for entry in merged_data:
     frame_roles = entry['frame_roles']
     topics = entry['topics']
     results = entry['results']
+    date = entry['date']
+    text = entry['text']
+    subjectivity = entry['subjectivity']
+    polarity = entry['polarity']
+    analysis = entry['analysis']
 
     # creating tweet URI and frameURI
     frame_FCG = framespace[frame_name]
     tweet_uri = twt[tweet_id]
+    tweet_date = twt[date]
+    tweet_text = twtcontent[tweet_id] # to have unique
+    tweet_subjectivity = twt[subjectivity]
+    tweet_polarity = twt[polarity]
+    tweet_analysis = twt[analysis]
 
     # adding tweet triples and frame triple
     g_all_tweets.add((tweet_uri, RDF.type, URIRef('http://example.com/Tweet')))
     g_all_tweets.add((tweet_uri, RDFS.label, Literal(tweet_id)))
 
+    # adding tweet date
+    g_all_tweets.add((tweet_date, RDF.type, URIRef('http://example.com/Date')))
+    g_all_tweets.add((tweet_date, RDFS.label, Literal(date)))
+    g_all_tweets.add((tweet_uri, URIRef('http://example.com/createdAt'), tweet_date))
+
+    # adding tweet text
+    g_all_tweets.add((tweet_text, RDF.type, URIRef('http://example.com/Content')))
+    g_all_tweets.add((tweet_text, RDFS.label, Literal(text)))
+    g_all_tweets.add((tweet_uri, URIRef('http://example.com/hasContent'), tweet_text))
+
+    # adding tweet subjectivity
+    g_all_tweets.add((tweet_subjectivity, RDF.type, URIRef('http://example.com/Subjectivity')))
+    g_all_tweets.add((tweet_subjectivity, RDFS.label, Literal(subjectivity)))
+    g_all_tweets.add((tweet_uri, URIRef('http://example.com/hasSubjectivityScore'), tweet_subjectivity))
+
+    # adding tweet subjectivity
+    g_all_tweets.add((tweet_polarity, RDF.type, URIRef('http://example.com/Polarity')))
+    g_all_tweets.add((tweet_polarity, RDFS.label, Literal(polarity)))
+    g_all_tweets.add((tweet_uri, URIRef('http://example.com/hasPolarityScore'), tweet_polarity))
+
+    # adding tweet analysis
+    g_all_tweets.add((tweet_analysis, RDF.type, URIRef('http://example.com/Analysis')))
+    g_all_tweets.add((tweet_analysis, RDFS.label, Literal(analysis)))
+    g_all_tweets.add((tweet_uri, URIRef('http://example.com/hasAnalysis'), tweet_analysis))
 
     # adding frame number
     frame_number_node = URIRef(f"http://example.org/FrameNumber/{tweet_id}/{frame_counter}")
     g_all_tweets.add((frame_number_node, RDFS.label, Literal(str(frame_counter))))
-    g_all_tweets.add((tweet_uri, URIRef('http://example.com/hasFrameNumber'), frame_number_node))
-    g_all_tweets.add((frame_number_node, URIRef('http://example.com/numberOfFrame'), tweet_uri))
+    g_all_tweets.add((tweet_uri, URIRef('http://example.com/hasInstantiatedFrame'), frame_number_node))
+    g_all_tweets.add((frame_number_node, URIRef('http://example.com/instantiatedFrameOf'), tweet_uri))
 
     g_all_tweets.add((frame_FCG, RDF.type, URIRef('http://example.com/Frame')))
     g_all_tweets.add((frame_FCG, RDFS.label, Literal(frame_name)))
     g_all_tweets.add((frame_FCG, URIRef('http://example.com/frameOf'), frame_number_node))
-    g_all_tweets.add((frame_number_node, URIRef('http://example.com/hasFrame'), frame_FCG))
+    g_all_tweets.add((frame_number_node, URIRef('http://example.com/hasFrameType'), frame_FCG))
 
-    # Increment frame counter
+    # incrementing frame counter
     frame_counter += 1
 
     # adding frame roles
@@ -78,13 +113,13 @@ for entry in merged_data:
         g_all_tweets.add((topic_uri, URIRef('http://example.com/topicOf'), frame_number_node))
 
     # processing frame-related results
-    hasFrame_results = results['hasFrame']
+    hasFrameRelation_results = results['hasFrameRelation']
     closeMatch_results = results['closeMatch']
     sameAs_results = results["sameAs"]
     hasRole_results = results["hasRole"]
     inheritsFrom_results = results["inheritsFrom"]
 
-    for result in hasFrame_results:
+    for result in hasFrameRelation_results:
         frame_uri = rdflib.URIRef(result['frame']['value'])
         frameName = result['frame']['value'].split("/")[-1]
 
@@ -165,10 +200,10 @@ for entry in merged_data:
         g_all_tweets.add((matchedFrames_uri, URIRef('http://example.com/synonymOf'), frame_uri))
 
 # Serialize the RDF graph and save it to a file
-with open("graphs/15thJune3.ttl", 'wb') as f:
+with open("graphs/26thJunedeneme.ttl", 'wb') as f:
     f.write(g_all_tweets.serialize(format="turtle").encode())
 
-print(f"RDF graph saved to 15thJune3.ttl file.")
+print(f"RDF graph saved to 26thJunedeneme.ttl file.")
 
 # Increment the frame number for the next tweet
 frame_counter += 1

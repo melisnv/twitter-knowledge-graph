@@ -1,595 +1,28 @@
 [
     {
-        "frame_name": "save.01",
-        "tweet_id": "1457055231225778177",
-        "text": "peanut pitbull chrisjo therealearns marinamedvin government money spend receive via tax borrow fed worsens inflation worsens wealth inequality inflates bubble good road etc priced purchasing good unable pay rent saving",
-        "frame_roles": {
-            "V": [
-                "saving"
-            ],
-            "argmLvb": [
-                "pay"
-            ]
-        },
-        "topics": [
-            "good",
-            "worsens",
-            "inequality",
-            "chrisjo",
-            "priced",
-            "bubble",
-            "tax",
-            "rent",
-            "road",
-            "fed"
-        ],
-        "results": {
-            "head": {
-                "link": [],
-                "vars": [
-                    "frame",
-                    "inheritsFromFrame"
-                ]
-            },
-            "results": {
-                "distinct": false,
-                "ordered": true,
-                "bindings": [
-                    {
-                        "frame": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Motion"
-                        },
-                        "inheritsFromFrame": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Event"
-                        }
-                    }
-                ]
-            }
-        }
-    },
-    {
-        "frame_name": "pay.01",
-        "tweet_id": "1457055231225778177",
-        "text": "peanut pitbull chrisjo therealearns marinamedvin government money spend receive via tax borrow fed worsens inflation worsens wealth inequality inflates bubble good road etc priced purchasing good unable pay rent saving",
-        "frame_roles": {
-            "V": [
-                "pay"
-            ],
-            "arg0": [
-                "bubble good road etc"
-            ],
-            "arg1": [
-                "rent saving"
-            ]
-        },
-        "topics": [
-            "good",
-            "worsens",
-            "inequality",
-            "chrisjo",
-            "priced",
-            "bubble",
-            "tax",
-            "rent",
-            "road",
-            "fed"
-        ],
-        "results": {
-            "head": {
-                "link": [],
-                "vars": [
-                    "frame",
-                    "inheritsFromFrame"
-                ]
-            },
-            "results": {
-                "distinct": false,
-                "ordered": true,
-                "bindings": [
-                    {
-                        "frame": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Commerce_collect"
-                        },
-                        "inheritsFromFrame": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Getting"
-                        }
-                    },
-                    {
-                        "frame": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Commerce_pay"
-                        },
-                        "inheritsFromFrame": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Giving"
-                        }
-                    },
-                    {
-                        "frame": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Giving"
-                        },
-                        "inheritsFromFrame": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Lose_possession"
-                        }
-                    },
-                    {
-                        "frame": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Giving"
-                        },
-                        "inheritsFromFrame": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Intentionally_act"
-                        }
-                    }
-                ]
-            }
-        }
-    },
-    {
-        "frame_name": "good.02",
-        "tweet_id": "1457055231225778177",
-        "text": "peanut pitbull chrisjo therealearns marinamedvin government money spend receive via tax borrow fed worsens inflation worsens wealth inequality inflates bubble good road etc priced purchasing good unable pay rent saving",
-        "frame_roles": {
-            "V": [
-                "good"
-            ]
-        },
-        "topics": [
-            "good",
-            "worsens",
-            "inequality",
-            "chrisjo",
-            "priced",
-            "bubble",
-            "tax",
-            "rent",
-            "road",
-            "fed"
-        ],
-        "results": {
-            "head": {
-                "link": [],
-                "vars": [
-                    "frame",
-                    "inheritsFromFrame"
-                ]
-            },
-            "results": {
-                "distinct": false,
-                "ordered": true,
-                "bindings": []
-            }
-        }
-    },
-    {
-        "frame_name": "purchase.01",
-        "tweet_id": "1457055231225778177",
-        "text": "peanut pitbull chrisjo therealearns marinamedvin government money spend receive via tax borrow fed worsens inflation worsens wealth inequality inflates bubble good road etc priced purchasing good unable pay rent saving",
-        "frame_roles": {
-            "V": [
-                "purchasing"
-            ],
-            "argmMnr": [
-                "good"
-            ]
-        },
-        "topics": [
-            "good",
-            "worsens",
-            "inequality",
-            "chrisjo",
-            "priced",
-            "bubble",
-            "tax",
-            "rent",
-            "road",
-            "fed"
-        ],
-        "results": {
-            "head": {
-                "link": [],
-                "vars": [
-                    "frame",
-                    "inheritsFromFrame"
-                ]
-            },
-            "results": {
-                "distinct": false,
-                "ordered": true,
-                "bindings": [
-                    {
-                        "frame": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Commerce_buy"
-                        },
-                        "inheritsFromFrame": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Getting"
-                        }
-                    }
-                ]
-            }
-        }
-    },
-    {
-        "frame_name": "good.02",
-        "tweet_id": "1457055231225778177",
-        "text": "peanut pitbull chrisjo therealearns marinamedvin government money spend receive via tax borrow fed worsens inflation worsens wealth inequality inflates bubble good road etc priced purchasing good unable pay rent saving",
-        "frame_roles": {
-            "V": [
-                "good"
-            ]
-        },
-        "topics": [
-            "good",
-            "worsens",
-            "inequality",
-            "chrisjo",
-            "priced",
-            "bubble",
-            "tax",
-            "rent",
-            "road",
-            "fed"
-        ],
-        "results": {
-            "head": {
-                "link": [],
-                "vars": [
-                    "frame",
-                    "inheritsFromFrame"
-                ]
-            },
-            "results": {
-                "distinct": false,
-                "ordered": true,
-                "bindings": []
-            }
-        }
-    },
-    {
-        "frame_name": "worsen.01",
-        "tweet_id": "1457055231225778177",
-        "text": "peanut pitbull chrisjo therealearns marinamedvin government money spend receive via tax borrow fed worsens inflation worsens wealth inequality inflates bubble good road etc priced purchasing good unable pay rent saving",
-        "frame_roles": {
-            "V": [
-                "worsens"
-            ],
-            "arg1": [
-                "peanut"
-            ]
-        },
-        "topics": [
-            "good",
-            "worsens",
-            "inequality",
-            "chrisjo",
-            "priced",
-            "bubble",
-            "tax",
-            "rent",
-            "road",
-            "fed"
-        ],
-        "results": {
-            "head": {
-                "link": [],
-                "vars": [
-                    "frame",
-                    "inheritsFromFrame"
-                ]
-            },
-            "results": {
-                "distinct": false,
-                "ordered": true,
-                "bindings": []
-            }
-        }
-    },
-    {
-        "frame_name": "inflate.01",
-        "tweet_id": "1457055231225778177",
-        "text": "peanut pitbull chrisjo therealearns marinamedvin government money spend receive via tax borrow fed worsens inflation worsens wealth inequality inflates bubble good road etc priced purchasing good unable pay rent saving",
-        "frame_roles": {
-            "V": [
-                "inflation"
-            ]
-        },
-        "topics": [
-            "good",
-            "worsens",
-            "inequality",
-            "chrisjo",
-            "priced",
-            "bubble",
-            "tax",
-            "rent",
-            "road",
-            "fed"
-        ],
-        "results": {
-            "head": {
-                "link": [],
-                "vars": [
-                    "frame",
-                    "inheritsFromFrame"
-                ]
-            },
-            "results": {
-                "distinct": false,
-                "ordered": true,
-                "bindings": [
-                    {
-                        "frame": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Cause_change_of_position_on_a_scale"
-                        },
-                        "inheritsFromFrame": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Transitive_action"
-                        }
-                    },
-                    {
-                        "frame": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Cause_expansion"
-                        },
-                        "inheritsFromFrame": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Transitive_action"
-                        }
-                    }
-                ]
-            }
-        }
-    },
-    {
-        "frame_name": "worsen.01",
-        "tweet_id": "1457055231225778177",
-        "text": "peanut pitbull chrisjo therealearns marinamedvin government money spend receive via tax borrow fed worsens inflation worsens wealth inequality inflates bubble good road etc priced purchasing good unable pay rent saving",
-        "frame_roles": {
-            "V": [
-                "worsens"
-            ],
-            "arg1": [
-                "inflation"
-            ]
-        },
-        "topics": [
-            "good",
-            "worsens",
-            "inequality",
-            "chrisjo",
-            "priced",
-            "bubble",
-            "tax",
-            "rent",
-            "road",
-            "fed"
-        ],
-        "results": {
-            "head": {
-                "link": [],
-                "vars": [
-                    "frame",
-                    "inheritsFromFrame"
-                ]
-            },
-            "results": {
-                "distinct": false,
-                "ordered": true,
-                "bindings": []
-            }
-        }
-    },
-    {
-        "frame_name": "feed.01",
-        "tweet_id": "1457055231225778177",
-        "text": "peanut pitbull chrisjo therealearns marinamedvin government money spend receive via tax borrow fed worsens inflation worsens wealth inequality inflates bubble good road etc priced purchasing good unable pay rent saving",
-        "frame_roles": {
-            "V": [
-                "fed"
-            ]
-        },
-        "topics": [
-            "good",
-            "worsens",
-            "inequality",
-            "chrisjo",
-            "priced",
-            "bubble",
-            "tax",
-            "rent",
-            "road",
-            "fed"
-        ],
-        "results": {
-            "head": {
-                "link": [],
-                "vars": [
-                    "frame",
-                    "inheritsFromFrame"
-                ]
-            },
-            "results": {
-                "distinct": false,
-                "ordered": true,
-                "bindings": [
-                    {
-                        "frame": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Giving"
-                        },
-                        "inheritsFromFrame": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Lose_possession"
-                        }
-                    },
-                    {
-                        "frame": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Giving"
-                        },
-                        "inheritsFromFrame": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Intentionally_act"
-                        }
-                    },
-                    {
-                        "frame": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Ingestion"
-                        },
-                        "inheritsFromFrame": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Ingest_substance"
-                        }
-                    },
-                    {
-                        "frame": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Ingestion"
-                        },
-                        "inheritsFromFrame": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Manipulation"
-                        }
-                    }
-                ]
-            }
-        }
-    },
-    {
-        "frame_name": "borrow.01",
-        "tweet_id": "1457055231225778177",
-        "text": "peanut pitbull chrisjo therealearns marinamedvin government money spend receive via tax borrow fed worsens inflation worsens wealth inequality inflates bubble good road etc priced purchasing good unable pay rent saving",
-        "frame_roles": {
-            "V": [
-                "borrow"
-            ]
-        },
-        "topics": [
-            "good",
-            "worsens",
-            "inequality",
-            "chrisjo",
-            "priced",
-            "bubble",
-            "tax",
-            "rent",
-            "road",
-            "fed"
-        ],
-        "results": {
-            "head": {
-                "link": [],
-                "vars": [
-                    "frame",
-                    "inheritsFromFrame"
-                ]
-            },
-            "results": {
-                "distinct": false,
-                "ordered": true,
-                "bindings": [
-                    {
-                        "frame": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Borrowing"
-                        },
-                        "inheritsFromFrame": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Receiving"
-                        }
-                    }
-                ]
-            }
-        }
-    },
-    {
-        "frame_name": "tax.01",
-        "tweet_id": "1457055231225778177",
-        "text": "peanut pitbull chrisjo therealearns marinamedvin government money spend receive via tax borrow fed worsens inflation worsens wealth inequality inflates bubble good road etc priced purchasing good unable pay rent saving",
-        "frame_roles": {
-            "V": [
-                "tax"
-            ]
-        },
-        "topics": [
-            "good",
-            "worsens",
-            "inequality",
-            "chrisjo",
-            "priced",
-            "bubble",
-            "tax",
-            "rent",
-            "road",
-            "fed"
-        ],
-        "results": {
-            "head": {
-                "link": [],
-                "vars": [
-                    "frame",
-                    "inheritsFromFrame"
-                ]
-            },
-            "results": {
-                "distinct": false,
-                "ordered": true,
-                "bindings": [
-                    {
-                        "frame": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Self_motion"
-                        },
-                        "inheritsFromFrame": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Intentionally_act"
-                        }
-                    },
-                    {
-                        "frame": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Self_motion"
-                        },
-                        "inheritsFromFrame": {
-                            "type": "uri",
-                            "value": "https://w3id.org/framester/framenet/abox/frame/Motion"
-                        }
-                    }
-                ]
-            }
-        }
-    },
-    {
         "frame_name": "argue.01",
         "tweet_id": "1457055229468348420",
         "text": "litupmagazine thomaschattwill nhannahjones well argument made people coming different background affect also mostly explain inequality better race poor people tend worse middle class rich people ethnicity tends poorer others",
+        "date": "2021-11-06T18:40:12.000Z",
+        "subjectivity": "0.5071428571428572",
+        "polarity": "0.08214285714285714",
+        "analysis": "Positive",
         "frame_roles": {
             "V": [
                 "argument"
             ]
         },
         "topics": [
-            "people",
             "inequality",
-            "effect",
-            "everywhere",
-            "also",
-            "tend",
-            "class",
-            "mostly",
-            "ethnicity",
-            "thomaschattwill"
+            "people",
+            "amp",
+            "woman",
+            "u",
+            "get",
+            "like",
+            "poverty",
+            "gender",
+            "fight"
         ],
         "results": {
             "head": {
@@ -610,6 +43,10 @@
         "frame_name": "make.02",
         "tweet_id": "1457055229468348420",
         "text": "litupmagazine thomaschattwill nhannahjones well argument made people coming different background affect also mostly explain inequality better race poor people tend worse middle class rich people ethnicity tends poorer others",
+        "date": "2021-11-06T18:40:12.000Z",
+        "subjectivity": "0.5071428571428572",
+        "polarity": "0.08214285714285714",
+        "analysis": "Positive",
         "frame_roles": {
             "V": [
                 "made"
@@ -622,16 +59,16 @@
             ]
         },
         "topics": [
-            "people",
             "inequality",
-            "effect",
-            "everywhere",
-            "also",
-            "tend",
-            "class",
-            "mostly",
-            "ethnicity",
-            "thomaschattwill"
+            "people",
+            "amp",
+            "woman",
+            "u",
+            "get",
+            "like",
+            "poverty",
+            "gender",
+            "fight"
         ],
         "results": {
             "head": {
@@ -673,6 +110,10 @@
         "frame_name": "come.01",
         "tweet_id": "1457055229468348420",
         "text": "litupmagazine thomaschattwill nhannahjones well argument made people coming different background affect also mostly explain inequality better race poor people tend worse middle class rich people ethnicity tends poorer others",
+        "date": "2021-11-06T18:40:12.000Z",
+        "subjectivity": "0.5071428571428572",
+        "polarity": "0.08214285714285714",
+        "analysis": "Positive",
         "frame_roles": {
             "V": [
                 "coming"
@@ -682,16 +123,16 @@
             ]
         },
         "topics": [
-            "people",
             "inequality",
-            "effect",
-            "everywhere",
-            "also",
-            "tend",
-            "class",
-            "mostly",
-            "ethnicity",
-            "thomaschattwill"
+            "people",
+            "amp",
+            "woman",
+            "u",
+            "get",
+            "like",
+            "poverty",
+            "gender",
+            "fight"
         ],
         "results": {
             "head": {
@@ -783,6 +224,10 @@
         "frame_name": "affect.01",
         "tweet_id": "1457055229468348420",
         "text": "litupmagazine thomaschattwill nhannahjones well argument made people coming different background affect also mostly explain inequality better race poor people tend worse middle class rich people ethnicity tends poorer others",
+        "date": "2021-11-06T18:40:12.000Z",
+        "subjectivity": "0.5071428571428572",
+        "polarity": "0.08214285714285714",
+        "analysis": "Positive",
         "frame_roles": {
             "V": [
                 "affect"
@@ -795,16 +240,16 @@
             ]
         },
         "topics": [
-            "people",
             "inequality",
-            "effect",
-            "everywhere",
-            "also",
-            "tend",
-            "class",
-            "mostly",
-            "ethnicity",
-            "thomaschattwill"
+            "people",
+            "amp",
+            "woman",
+            "u",
+            "get",
+            "like",
+            "poverty",
+            "gender",
+            "fight"
         ],
         "results": {
             "head": {
@@ -836,6 +281,10 @@
         "frame_name": "explain.01",
         "tweet_id": "1457055229468348420",
         "text": "litupmagazine thomaschattwill nhannahjones well argument made people coming different background affect also mostly explain inequality better race poor people tend worse middle class rich people ethnicity tends poorer others",
+        "date": "2021-11-06T18:40:12.000Z",
+        "subjectivity": "0.5071428571428572",
+        "polarity": "0.08214285714285714",
+        "analysis": "Positive",
         "frame_roles": {
             "V": [
                 "explain"
@@ -854,16 +303,16 @@
             ]
         },
         "topics": [
-            "people",
             "inequality",
-            "effect",
-            "everywhere",
-            "also",
-            "tend",
-            "class",
-            "mostly",
-            "ethnicity",
-            "thomaschattwill"
+            "people",
+            "amp",
+            "woman",
+            "u",
+            "get",
+            "like",
+            "poverty",
+            "gender",
+            "fight"
         ],
         "results": {
             "head": {
@@ -884,6 +333,10 @@
         "frame_name": "race.02",
         "tweet_id": "1457055229468348420",
         "text": "litupmagazine thomaschattwill nhannahjones well argument made people coming different background affect also mostly explain inequality better race poor people tend worse middle class rich people ethnicity tends poorer others",
+        "date": "2021-11-06T18:40:12.000Z",
+        "subjectivity": "0.5071428571428572",
+        "polarity": "0.08214285714285714",
+        "analysis": "Positive",
         "frame_roles": {
             "V": [
                 "race"
@@ -893,16 +346,16 @@
             ]
         },
         "topics": [
-            "people",
             "inequality",
-            "effect",
-            "everywhere",
-            "also",
-            "tend",
-            "class",
-            "mostly",
-            "ethnicity",
-            "thomaschattwill"
+            "people",
+            "amp",
+            "woman",
+            "u",
+            "get",
+            "like",
+            "poverty",
+            "gender",
+            "fight"
         ],
         "results": {
             "head": {
@@ -944,6 +397,10 @@
         "frame_name": "love.01",
         "tweet_id": "1457055203388280833",
         "text": "nothing libs love talking institutional problem parliament one set sort investigative committee set proposal great way actually address economic inequality faced black community",
+        "date": "2021-11-06T18:40:05.000Z",
+        "subjectivity": "0.4166666666666667",
+        "polarity": "0.26666666666666666",
+        "analysis": "Positive",
         "frame_roles": {
             "V": [
                 "love"
@@ -952,20 +409,20 @@
                 "nothing libs"
             ],
             "arg1": [
-                "talking"
+                "talking institutional problem parliament"
             ]
         },
         "topics": [
-            "equity",
             "inequality",
-            "set",
-            "problem",
-            "love",
-            "committee",
-            "way",
-            "community",
-            "handled",
-            "libs"
+            "amp",
+            "worker",
+            "job",
+            "low",
+            "review",
+            "japan",
+            "apartheid",
+            "black",
+            "help"
         ],
         "results": {
             "head": {
@@ -986,6 +443,10 @@
         "frame_name": "talk.01",
         "tweet_id": "1457055203388280833",
         "text": "nothing libs love talking institutional problem parliament one set sort investigative committee set proposal great way actually address economic inequality faced black community",
+        "date": "2021-11-06T18:40:05.000Z",
+        "subjectivity": "0.4166666666666667",
+        "polarity": "0.26666666666666666",
+        "analysis": "Positive",
         "frame_roles": {
             "V": [
                 "talking"
@@ -998,16 +459,16 @@
             ]
         },
         "topics": [
-            "equity",
             "inequality",
-            "set",
-            "problem",
-            "love",
-            "committee",
-            "way",
-            "community",
-            "handled",
-            "libs"
+            "amp",
+            "worker",
+            "job",
+            "low",
+            "review",
+            "japan",
+            "apartheid",
+            "black",
+            "help"
         ],
         "results": {
             "head": {
@@ -1039,6 +500,10 @@
         "frame_name": "base.02",
         "tweet_id": "1457054652197920770",
         "text": "equity based education handled equity alliance minnesota know anything heard change anyone point focus changed equity outcome guaranteed inequity inequality notice explanation",
+        "date": "2021-11-06T18:37:54.000Z",
+        "subjectivity": "0.0",
+        "polarity": "0.0",
+        "analysis": "Neutral",
         "frame_roles": {
             "V": [
                 "based"
@@ -1051,16 +516,16 @@
             ]
         },
         "topics": [
-            "equity",
             "inequality",
-            "set",
-            "problem",
-            "love",
-            "committee",
-            "way",
-            "community",
-            "handled",
-            "libs"
+            "people",
+            "amp",
+            "woman",
+            "u",
+            "get",
+            "like",
+            "poverty",
+            "gender",
+            "fight"
         ],
         "results": {
             "head": {
@@ -1081,6 +546,10 @@
         "frame_name": "educate.01",
         "tweet_id": "1457054652197920770",
         "text": "equity based education handled equity alliance minnesota know anything heard change anyone point focus changed equity outcome guaranteed inequity inequality notice explanation",
+        "date": "2021-11-06T18:37:54.000Z",
+        "subjectivity": "0.0",
+        "polarity": "0.0",
+        "analysis": "Neutral",
         "frame_roles": {
             "V": [
                 "education"
@@ -1090,16 +559,16 @@
             ]
         },
         "topics": [
-            "equity",
             "inequality",
-            "set",
-            "problem",
-            "love",
-            "committee",
-            "way",
-            "community",
-            "handled",
-            "libs"
+            "people",
+            "amp",
+            "woman",
+            "u",
+            "get",
+            "like",
+            "poverty",
+            "gender",
+            "fight"
         ],
         "results": {
             "head": {

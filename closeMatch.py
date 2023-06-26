@@ -152,7 +152,6 @@ for output in fcg_output_list:
             sparql.addParameter('User-Agent', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36')
             results = sparql.query().convert()
 
-            # print("RESULTS:", results)
             results_with_frame_name = {
                 "frame_name": frame_name,
                 "tweet_id": tweet_id,
