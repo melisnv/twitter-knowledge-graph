@@ -79,7 +79,7 @@ for entry in merged_data:
     frame_number_node = URIRef(f"http://example.org/FrameNumber/{tweet_id}/{frame_counter}")
     g_all_tweets.add((frame_number_node, RDFS.label, Literal(str(frame_counter))))
     g_all_tweets.add((tweet_uri, URIRef('http://example.com/hasInstantiatedFrame'), frame_number_node))
-    g_all_tweets.add((frame_number_node, URIRef('http://example.com/instantiatedFrameOf'), tweet_uri))
+    #g_all_tweets.add((frame_number_node, URIRef('http://example.com/instantiatedFrameOf'), tweet_uri))
 
     g_all_tweets.add((frame_FCG, RDF.type, URIRef('http://example.com/Frame')))
     g_all_tweets.add((frame_FCG, RDFS.label, Literal(frame_name)))
