@@ -118,6 +118,18 @@ for entry in merged_data:
     sameAs_results = results["sameAs"]
     hasRole_results = results["hasRole"]
     inheritsFrom_results = results["inheritsFrom"]
+    hasComment_results = results["hasComment"]
+    hasFrameElement_results = results["hasFrameElement"]
+
+    for result in hasComment_results:
+        frame_uri = rdflib.URIRef(result['frame']['value'])
+        frameName = result['frame']['value'].split("/")[-1]
+
+        hasComment_uri = rdflib.URIRef(result['comment']['value'])
+        hasComment = result['comment']['value']
+
+        g_all_tweets.add((frame_FCG, RDFS.comment, Literal(hasComment)))
+
 
     for result in hasFrameRelation_results:
         frame_uri = rdflib.URIRef(result['frame']['value'])
@@ -200,7 +212,7 @@ for entry in merged_data:
         g_all_tweets.add((matchedFrames_uri, URIRef('http://example.com/synonymOf'), frame_uri))
 
 # Serialize the RDF graph and save it to a file
-with open("graphs/26thJunedeneme.ttl", 'wb') as f:
+with open("graphs/1Julydeneme.ttl", 'wb') as f:
     f.write(g_all_tweets.serialize(format="turtle").encode())
 
 print(f"RDF graph saved to 26thJunedeneme.ttl file.")

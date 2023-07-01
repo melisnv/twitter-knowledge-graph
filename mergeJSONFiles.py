@@ -19,6 +19,9 @@ with open('data/hasRole/hasRole.json') as file:
 with open('data/hasFrameElement/hasFrameElement.json') as file:
     hasFrameElement_data = json.load(file)
 
+with open('data/hasComment/hasComment.json') as file:
+    hasComment_data = json.load(file)
+
 # Combine the JSON data
 combined_data = []
 for hasFrame_entry in hasFrame_data:
@@ -38,12 +41,14 @@ for hasFrame_entry in hasFrame_data:
     inheritsFrom_entry = next((entry for entry in inheritsFrom_data if entry['frame_name'] == frame_name), None)
     hasRole_entry = next((entry for entry in hasRole_data if entry['frame_name'] == frame_name), None)
     hasFrameElement_entry = next((entry for entry in hasFrameElement_data if entry['frame_name'] == frame_name), None)
+    hasComment_entry = next((entry for entry in hasComment_data if entry['frame_name'] == frame_name), None)
 
     closeMatch_results = closeMatch_entry['results']['results']['bindings'] if closeMatch_entry else []
     sameAs_results = sameAs_entry['results']['results']['bindings'] if sameAs_entry else []
     inheritsFrom_results = inheritsFrom_entry['results']['results']['bindings'] if inheritsFrom_entry else []
     hasRole_results = hasRole_entry['results']['results']['bindings'] if hasRole_entry else []
     hasFrameElement_results = hasFrameElement_entry['results']['results']['bindings'] if hasFrameElement_entry else []
+    hasComment_results = hasComment_entry['results']['results']['bindings'] if hasComment_entry else []
 
     combined_entry = {
         'frame_name': frame_name,
@@ -61,7 +66,8 @@ for hasFrame_entry in hasFrame_data:
             'sameAs': sameAs_results,
             'inheritsFrom': inheritsFrom_results,
             'hasRole': hasRole_results,
-            'hasFrameElement': hasFrameElement_results
+            'hasFrameElement': hasFrameElement_results,
+            'hasComment': hasComment_results
         }
     }
 
