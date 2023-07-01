@@ -46,28 +46,26 @@ for result in results:
         "closeMatchOfs": closeMatchOf
     })
 
-    # Extract comments from the query results
-    comments = [result["comment"] for result in query_results]
+comments = [result["comment"] for result in query_results]
 
-    # Create TF-IDF vectors for the comments
-    vectorizer = TfidfVectorizer()
-    tfidf_matrix = vectorizer.fit_transform(comments)
+vectorizer = TfidfVectorizer()
+tfidf_matrix = vectorizer.fit_transform(comments)
+similarity_scores = cosine_similarity(tfidf_matrix)
 
-    # Calculate cosine similarity scores between comments
-    similarity_scores = cosine_similarity(tfidf_matrix)
+most_similar_indices = []
+for i in range(len(comments)):
+    similarity_scores[i, i] = 0  # Set self-similarity to 0
+    most_similar_index = similarity_scores[i].argmax()
+    most_similar_indices.append((i, most_similar_index))
 
-    # Find the indices of the most similar comments
-    most_similar_indices = []
-    for i in range(len(comments)):
-        similarity_scores[i, i] = 0  # Set self-similarity to 0
-        most_similar_index = similarity_scores[i].argmax()
-        most_similar_indices.append((i, most_similar_index))
+# the comments with the highest similarity scores
+for index_pair in most_similar_indices:
+    index1, index2 = index_pair
+    similarity_score = similarity_scores[index1, index2]
 
-    # Display the comments with the highest similarity scores
-    for index_pair in most_similar_indices:
-        index1, index2 = index_pair
-        similarity_score = similarity_scores[index1, index2]
 
+    # cheking if the comments are the same or have exact string match
+    if index1 != index2 and comments[index1] != comments[index2]:
         comment1 = comments[index1]
         comment2 = comments[index2]
 
