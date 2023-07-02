@@ -21,14 +21,14 @@ print("\n")
 print("Framester Part")
 
 graph = Graph()
-graph.parse("graphs/26thJunedeneme.ttl", format="ttl")
+graph.parse("graphs/1stJuly2.ttl", format="ttl")
 
-# Defining the namespaces used in the graph
+# the namespaces used in the graph
 ns1 = Namespace("http://example.com/")
 rdfs = Namespace("http://www.w3.org/2000/01/rdf-schema#")
 xsd = Namespace("http://www.w3.org/2001/XMLSchema#")
 
-# Construct the query to retrieve only the frames (RoleOf) that have ARG1
+# the query to retrieve only the frames (RoleOf) that have ARG1
 query = """
     PREFIX ns1: <http://example.com/>
     PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>

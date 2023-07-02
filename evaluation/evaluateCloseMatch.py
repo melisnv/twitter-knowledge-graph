@@ -7,7 +7,7 @@ pd.set_option('display.width', None)        # Auto-adjust width
 
 # loading the knowledge graph from the TTL file
 g = Graph()
-g.parse("graphs/15thJune3.ttl", format="ttl")
+g.parse("graphs/1stJuly2.ttl", format="ttl")
 
 # the namespaces used in the TTL file
 ns1 = Namespace("http://example.com/")
