@@ -1,7 +1,7 @@
 from rdflib import Graph, Namespace
 
 graph = Graph()
-graph.parse("graphs/26thJunedeneme.ttl", format="ttl")
+graph.parse("graphs/1stJuly2.ttl", format="ttl")
 
 # Defining the namespaces used in the graph
 ns1 = Namespace("http://example.com/")
