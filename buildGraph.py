@@ -121,15 +121,6 @@ for entry in merged_data:
     hasComment_results = results["hasComment"]
     hasFrameElement_results = results["hasFrameElement"]
 
-    for result in hasComment_results:
-        frame_uri = rdflib.URIRef(result['frame']['value'])
-        frameName = result['frame']['value'].split("/")[-1]
-
-        hasComment_uri = rdflib.URIRef(result['comment']['value'])
-        hasComment = result['comment']['value']
-
-        g_all_tweets.add((frame_FCG, RDFS.comment, Literal(hasComment)))
-
 
     for result in hasFrameRelation_results:
         frame_uri = rdflib.URIRef(result['frame']['value'])
@@ -149,6 +140,15 @@ for entry in merged_data:
         g_all_tweets.add((frame_FCG, URIRef('http://example.com/closeMatchOf'), frame_uri))
         g_all_tweets.add((frame_uri, URIRef('http://example.com/hasFrameRelation'), relatedFrame_uri))
         g_all_tweets.add((relatedFrame_uri, URIRef('http://example.com/isRelated'), frame_uri))
+
+    for result in hasComment_results:
+        frame_uri = rdflib.URIRef(result['frame']['value'])
+        frameName = result['frame']['value'].split("/")[-1]
+
+        hasComment_uri = rdflib.URIRef(result['comment']['value'])
+        hasComment = result['comment']['value']
+
+        g_all_tweets.add((frame_uri, RDFS.comment, Literal(hasComment)))
 
     for result in sameAs_results:
         frame_uri = rdflib.URIRef(result['frame']['value'])
@@ -212,7 +212,7 @@ for entry in merged_data:
         g_all_tweets.add((matchedFrames_uri, URIRef('http://example.com/synonymOf'), frame_uri))
 
 # Serialize the RDF graph and save it to a file
-with open("graphs/1Julydeneme.ttl", 'wb') as f:
+with open("graphs/1stJuly2.ttl", 'wb') as f:
     f.write(g_all_tweets.serialize(format="turtle").encode())
 
 print(f"RDF graph saved to 26thJunedeneme.ttl file.")
