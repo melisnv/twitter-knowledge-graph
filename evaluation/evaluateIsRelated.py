@@ -7,7 +7,7 @@ pd.set_option('display.width', None)        # Auto-adjust width
 
 # loading the knowledge graph from the TTL file
 g = Graph()
-g.parse("graphs/15thJune3.ttl", format="ttl")
+g.parse("graphs/1stJuly2.ttl", format="ttl")
 
 # defining the namespaces used in the TTL file
 ns1 = Namespace("http://example.com/")
@@ -17,12 +17,11 @@ rdfs = Namespace("http://www.w3.org/2000/01/rdf-schema#")
 query = """
     PREFIX ns1: <http://example.com/>
     PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-
     SELECT ?frame ?label ?isRelated
     WHERE {
-        ?frame a ns1:Frame ;
-               rdfs:label ?label ;
-               ns1:isRelated ?isRelated .
+      ?frame a ns1:SymmetricProperty ;
+             rdfs:label ?label ;
+             ns1:isRelated ?isRelated .
     }
 """
 
