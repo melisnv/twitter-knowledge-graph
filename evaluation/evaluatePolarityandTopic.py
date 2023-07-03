@@ -1,14 +1,12 @@
 from rdflib import Graph, Namespace
 
 graph = Graph()
-graph.parse("graphs/26thJunedeneme.ttl", format="ttl")
+graph.parse("graphs/1stJuly2.ttl", format="ttl")
 
-# Defining the namespaces used in the graph
 ns1 = Namespace("http://example.com/")
 rdfs = Namespace("http://www.w3.org/2000/01/rdf-schema#")
 xsd = Namespace("http://www.w3.org/2001/XMLSchema#")
 
-# Combining the queries
 query = """
     PREFIX ns1: <http://example.com/>
     PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -29,7 +27,7 @@ query = """
 
 results = graph.query(query, initNs={"ns1": ns1, "rdfs": rdfs, "xsd": xsd})
 
-# The query results
+# query results
 for result in results:
     tweet_id = result[0].split("/")[-1]  # Extract the value after the last '/'
     tweet_text = result[1]

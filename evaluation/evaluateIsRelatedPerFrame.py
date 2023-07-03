@@ -1,9 +1,8 @@
 from rdflib import Graph, Namespace
 
 graph = Graph()
-graph.parse("graphs/26thJunedeneme.ttl", format="ttl")
+graph.parse("graphs/1stJuly2.ttl", format="ttl")
 
-# Defining the namespaces used in the graph
 ns1 = Namespace("http://example.com/")
 rdfs = Namespace("http://www.w3.org/2000/01/rdf-schema#")
 xsd = Namespace("http://www.w3.org/2001/XMLSchema#")
@@ -11,10 +10,10 @@ xsd = Namespace("http://www.w3.org/2001/XMLSchema#")
 # define the desired frame name (for example Statement etc.)
 frame_name = "Statement"
 
-# Specify the frame URI as a variable
+# the frame URI as a variable
 frame_uri = f"<https://w3id.org/framester/framenet/abox/frame/{frame_name}>"
 
-# Construct the query with the frame URI variable
+# the query with the frame URI variable
 query = """
     PREFIX ns1: <http://example.com/>
     PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
