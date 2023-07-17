@@ -1,6 +1,6 @@
 import json
 
-input_file = "data/denemehasFrameRelation/fcg_output_denemehasFrameRelation.json"
+input_file = "fcg_output_denemehasFrameRelation.json"
 output_file = "filtered_json.json"
 target_id = "1457383855896162305"
 max_tweets = 2000

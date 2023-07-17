@@ -2,7 +2,7 @@ import json
 import time
 from SPARQLWrapper import SPARQLWrapper, JSON
 
-#with open('data/denemehasFrameRelation/fcg_output_denemehasFrameRelation.json', 'r') as f:
+#with open('data/lastQueryResults/fcg_output_denemehasFrameRelation.json', 'r') as f:
 #    fcg_output_list = json.load(f)
 
 with open('filtered_json.json', 'r') as f:
@@ -94,5 +94,5 @@ for output in fcg_output_list:
         combined_results_list.extend(results_list)
 
 # writing the combined_results_list to a single JSON file
-with open('data/denemehasFrameRelation/hasFrameRelation2000.json', 'w') as f:
+with open('data/lastQueryResults/closeMatch2000.json', 'w') as f:
     json.dump(combined_results_list, f, indent=4)

@@ -81,7 +81,7 @@ with open('data/twitter_data.csv', 'r', encoding="utf8") as csvfile:
 
 
 # writing the list to a JSON file
-with open('data/denemehasFrameRelation/fcg_output_denemehasFrameRelation.json', 'w') as outfile:
+with open('fcg_output_denemehasFrameRelation.json', 'w') as outfile:
     json.dump(fcg_output_list, outfile)
 
 
@@ -166,5 +166,5 @@ for output in fcg_output_list:
         print(combined_results_list)
 
 # writing the combined_results_list to a single JSON file
-with open('data/denemehasFrameRelation/8000hasFrameRelation.json', 'w') as f:
+with open('data/lastQueryResults/8000hasFrameRelation.json', 'w') as f:
     json.dump(combined_results_list, f, indent=4)
