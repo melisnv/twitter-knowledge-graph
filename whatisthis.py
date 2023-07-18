@@ -49,16 +49,20 @@ for output in fcg_output_list:
 
             # the SPARQL query to retrieve information about the frame from Framester
             sparql_template = r'''
-            PREFIX tbox: <https://w3id.org/framester/framenet/tbox/>
-            PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-            SELECT DISTINCT ?frame ?related
-            WHERE {{
-                ?frame a tbox:Frame ;
-                    tbox:hasFrameRelation ?related ;
-                    skos:closeMatch ?closeFrames .
-                FILTER regex(str(?closeFrames), "{frame_name}")
-            }}
-            '''
+                        PREFIX tbox: <https://w3id.org/framester/framenet/tbox/>
+                        PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+                        PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+                        
+                        SELECT DISTINCT ?frame ?sameAs ?label
+                        WHERE {{
+                            ?frame a tbox:Frame ;
+                            owl:sameAs ?sameAs ;
+                            skos:closeMatch ?closeFrames ;
+                            rdfs:label ?label .
+                          FILTER regex(str(?closeFrames), "{frame_name}")
+                          FILTER (?sameAs = ?targetSameAs)
+                        }}
+                    '''
 
             sparql_query = sparql_template.format(frame_name=frame_name, sent_number=1)
             sparql_endpoint = "http://localhost:7200/repositories/framester"  # GraphDB endpoint
@@ -94,5 +98,5 @@ for output in fcg_output_list:
         combined_results_list.extend(results_list)
 
 # writing the combined_results_list to a single JSON file
-with open('data/lastQueryResults/closeMatch2000.json', 'w') as f:
+with open('data/lastQueryResults/sameAs2000.json', 'w') as f:
     json.dump(combined_results_list, f, indent=4)
