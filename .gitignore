@@ -26,10 +26,11 @@ share/python-wheels/
 *.egg
 MANIFEST
 Pipfile
-thesis-plan
-graphs
+thesis-plan/
+graphs/
 evaluation/query_instances
-data
+data/
+.idea/
 
 
 # PyInstaller
