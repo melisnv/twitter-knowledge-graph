@@ -30,7 +30,7 @@ thesis-plan/
 graphs/
 evaluation/query_instances
 data/
-.idea/
+.idea
 
 
 # PyInstaller
