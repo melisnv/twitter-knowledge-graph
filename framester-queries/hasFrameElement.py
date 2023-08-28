@@ -1,75 +1,10 @@
-import csv
 import urllib
-import requests
 import json
 from SPARQLWrapper import SPARQLWrapper, JSON
 
-fcg_url = "http://127.0.0.1:1170/extract-frames"
-
-headers = {
-    'Content-Type': 'application/json',
-}
-
-fcg_output_list = []
-output_dict = {}
-
-# open the data.csv file in read mode
-with open('../data/twitter_data.csv', 'r', encoding="utf8") as csvfile:
-    reader = csv.DictReader(csvfile)
-    for row in reader:
-        # extract the text of the tweet from the 'text' column
-        tweet_text = row['cleaned_text']
-        tweet_id = row['id']
-        tweet_topic = row['topic']
-        tweet_date = row['created_at']
-        tweet_subjectivity = row['Subjectivity']
-        tweet_polarity = row['Polarity']
-        tweet_analysis = row['Analysis']
-
-        # the data dictionary for the API call
-        data = {
-            "utterance": tweet_text,
-            "package": "propbank-grammar",
-            "grammar": "*propbank-grammar*",
-            "timeout": 100,
-        }
-
-        # make the API call to extract frames for the tweet text
-        response = requests.post(fcg_url, headers=headers, json=data)
-        fcg_output = json.loads(response.text)
-
-        try:
-            fcg_output = json.loads(response.text)
-        except json.decoder.JSONDecodeError:
-            print("Error decoding JSON response. Skipping to the next utterance.")
-            continue
-
-        # adding tweet ID to output
-        fcg_output['id'] = tweet_id
-        output_dict[tweet_id] = fcg_output
-
-        # adding tweet topic to output
-        fcg_output['topic'] = tweet_topic
-        output_dict[tweet_topic] = fcg_output
-        # adding tweet text to output
-        fcg_output['text'] = tweet_text
-        output_dict[tweet_text] = fcg_output
-        # adding tweet date to output
-        fcg_output['date'] = tweet_date
-        output_dict[tweet_date] = fcg_output
-        # adding tweet subjectivity to output
-        fcg_output['subjectivity'] = tweet_subjectivity
-        output_dict[tweet_subjectivity] = fcg_output
-        # adding tweet polarity to output
-        fcg_output['polarity'] = tweet_polarity
-        output_dict[tweet_polarity] = fcg_output
-        # adding tweet analysis to output
-        fcg_output['analysis'] = tweet_analysis
-        output_dict[tweet_analysis] = fcg_output
-
-        # appending the fcg_output to the list
-        fcg_output_list.append(fcg_output)
-
+# loading the previously extracted fcg_output data
+with open('./data/fcg_output.json', 'r') as f:
+    fcg_output_list = json.load(f)
 
 # creating an list to store the results of all frames from all tweets
 combined_results_list = []
@@ -150,5 +85,5 @@ for output in fcg_output_list:
         combined_results_list.extend(results_list)
 
 # writing the combined_results_list to a single JSON file
-with open('../data/hasFrameElement/hasFrameElement.json', 'w') as f:
+with open('../data/hasFrameElement.json', 'w') as f:
     json.dump(combined_results_list, f, indent=4)
