@@ -109,7 +109,7 @@ def main():
     # cleaning the columns in order to remove the unnecessary features
     data = data[['id', 'text', 'created_at', 'cleaned_text', 'topic', 'analysis', 'subjectivity', 'polarity']]
     # saving the processed data to a CSV file
-    data.to_csv('twitter_data.csv', index=False)  # Set index=False to exclude index column
+    data.to_csv('data/twitter_data.csv', index=False)  # Set index=False to exclude index column
 
 
 if __name__ == "__main__":
