@@ -36,8 +36,7 @@ Follow these steps to run the program on your local machine:
    ```
 
    This will install all the required packages specified in the `requirements.txt` file.
-4. **Run the Program in Sequence** : Run the program files in the specified sequence to achieve the desired functionality. 
-
+4. **Run the Program in Sequence** : Run the program files in the specified sequence to achieve the desired functionality.
 
    ## How to Run the Code
 
@@ -72,9 +71,3 @@ Follow these steps to run the program on your local machine:
 
    - Finally, run `build_knowledge_graph.py` to create a knowledge graph using the JSON file obtained from the previous step.
    - The resulting knowledge graph contains enriched information from the processed data.
-
-   Make sure to install any required dependencies before running the scripts. You can use the following command to install the necessary packages:
-
-   ```bash
-   pip install -r requirements.txt
-   ```
