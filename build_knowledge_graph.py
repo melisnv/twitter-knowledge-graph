@@ -146,6 +146,7 @@ def build_graph():
             frameName = result['frame']['value'].split("/")[-1]
             hasComment_uri = rdflib.URIRef(result['comment']['value'])
             hasComment = result['comment']['value']
+            g_all_tweets.add((hasComment_uri, RDF.type, URIRef('http://www.w3.org/2002/07/owl#DatatypeProperty')))
             g_all_tweets.add((frame_FCG, RDFS.comment, Literal(hasComment)))
 
         for result in sameAs_results:
