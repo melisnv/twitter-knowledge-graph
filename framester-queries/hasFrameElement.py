@@ -14,7 +14,7 @@ fcg_output_list = []
 output_dict = {}
 
 # open the data.csv file in read mode
-with open('../data/sample_tweet_data.csv', 'r', encoding="utf8") as csvfile:
+with open('../data/twitter_data.csv', 'r', encoding="utf8") as csvfile:
     reader = csv.DictReader(csvfile)
     for row in reader:
         # extract the text of the tweet from the 'text' column
@@ -51,34 +51,24 @@ with open('../data/sample_tweet_data.csv', 'r', encoding="utf8") as csvfile:
         # adding tweet topic to output
         fcg_output['topic'] = tweet_topic
         output_dict[tweet_topic] = fcg_output
-
         # adding tweet text to output
         fcg_output['text'] = tweet_text
         output_dict[tweet_text] = fcg_output
-
         # adding tweet date to output
         fcg_output['date'] = tweet_date
         output_dict[tweet_date] = fcg_output
-
         # adding tweet subjectivity to output
         fcg_output['subjectivity'] = tweet_subjectivity
         output_dict[tweet_subjectivity] = fcg_output
-
         # adding tweet polarity to output
         fcg_output['polarity'] = tweet_polarity
         output_dict[tweet_polarity] = fcg_output
-
         # adding tweet analysis to output
         fcg_output['analysis'] = tweet_analysis
         output_dict[tweet_analysis] = fcg_output
 
         # appending the fcg_output to the list
         fcg_output_list.append(fcg_output)
-
-
-# writing the list to a JSON file
-with open('data/hasFrameElement/fcg_output_hasFrameElement.json', 'w') as outfile:
-    json.dump(fcg_output_list, outfile)
 
 
 # creating an list to store the results of all frames from all tweets
@@ -128,7 +118,6 @@ for output in fcg_output_list:
 
             sparql_query = sparql_template.format(frame_name=frame_name, sent_number=1)
             sparql = SPARQLWrapper("http://etna.istc.cnr.it/framester2/sparql")
-
             sparql.setTimeout(300)
             sparql.setQuery(sparql_query)
             sparql.setReturnFormat(JSON)
@@ -159,7 +148,6 @@ for output in fcg_output_list:
 
         # appending the results_list to the combined_results_list
         combined_results_list.extend(results_list)
-        print(combined_results_list)
 
 # writing the combined_results_list to a single JSON file
 with open('../data/hasFrameElement/hasFrameElement.json', 'w') as f:

@@ -13,7 +13,7 @@ fcg_output_list = []
 output_dict = {}
 
 # open the data.csv file in read mode
-with open('../data/sample_tweet_data.csv', 'r', encoding="utf8") as csvfile:
+with open('../data/twitter_data.csv', 'r', encoding="utf8") as csvfile:
     reader = csv.DictReader(csvfile)
     for row in reader:
         # extract the text of the tweet from the 'text' column
@@ -35,9 +35,6 @@ with open('../data/sample_tweet_data.csv', 'r', encoding="utf8") as csvfile:
 
         # make the API call to extract frames for the tweet text
         response = requests.post(fcg_url, headers=headers, json=data)
-
-        print(response.status_code)  # Print the status code of the response
-        print(response.text)  # Print the response text
 
         try:
             fcg_output = json.loads(response.text)
@@ -68,11 +65,6 @@ with open('../data/sample_tweet_data.csv', 'r', encoding="utf8") as csvfile:
         output_dict[tweet_analysis] = fcg_output
         # appending the fcg_output to the list
         fcg_output_list.append(fcg_output)
-
-
-# writing the list to a JSON file
-with open('data/hasFrameRelation/fcg_output_hasFrameRelation.json', 'w') as outfile:
-    json.dump(fcg_output_list, outfile)
 
 
 # creating an list to store the results of all frames from all tweets
@@ -145,7 +137,6 @@ for output in fcg_output_list:
 
         # appending the results_list to the combined_results_list
         combined_results_list.extend(results_list)
-        print(combined_results_list)
 
 # writing the combined_results_list to a single JSON file
 with open('../data/hasFrameRelation/hasFrameRelation.json', 'w') as f:

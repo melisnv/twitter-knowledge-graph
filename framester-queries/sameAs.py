@@ -13,7 +13,7 @@ fcg_output_list = []
 output_dict = {}
 
 # open the data.csv file in read mode
-with open('../data/sample_tweet_data.csv', 'r', encoding="utf8") as csvfile:
+with open('../data/twitter_data.csv', 'r', encoding="utf8") as csvfile:
     reader = csv.DictReader(csvfile)
     for row in reader:
 
@@ -68,14 +68,6 @@ with open('../data/sample_tweet_data.csv', 'r', encoding="utf8") as csvfile:
 
         # append the fcg_output to the list
         fcg_output_list.append(fcg_output)
-
-        # print the frames extracted for the tweet text
-        print(fcg_output)
-
-# write the list to a JSON file
-with open('data/sameAs/fcg_output_sameAs.json', 'w') as outfile:
-    json.dump(fcg_output_list, outfile)
-
 
 # creating an empty list to store the results of all frames from all tweets
 combined_results_list = []
@@ -148,7 +140,6 @@ for output in fcg_output_list:
 
         # appending the results_list to the combined_results_list
         combined_results_list.extend(results_list)
-        print(combined_results_list)
 
 # save result to the combined_results_list
 with open('../data/sameAs/sameAs.json', 'w') as f:
